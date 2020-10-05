@@ -1,0 +1,6 @@
+title: Embed component
+context:
+  url: https://placeimg.com/640/480/any
+  srcset: ["https://placeimg.com/320/240/animals 320w, https://placeimg.com/640/360/nature 480w, https://placeimg.com/800/600/architecture 800w"]
+  sizes: ["(max-width: 320px) 280px,max-width: 480px) 440px, 800px"]
+  alt: banner alt text
