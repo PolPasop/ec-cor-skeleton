@@ -87,6 +87,26 @@
   </section>
   <!-- /Report -->
 
+  <div class="ec-cor-barometer-separator"></div>
+
+  <!-- News -->
+  <section class="ec-cor-barometer-news">
+    <ol class="ec-cor-barometer-news__list">
+      <li class="ec-cor-barometer-news__item">
+        {% render '@news--barometer' %}
+      </li>
+      <li class="ec-cor-barometer-news__item">
+        {% render '@news--barometer' %}
+      </li>
+      <li class="ec-cor-barometer-news__item">
+        {% render '@news--barometer' %}
+      </li>
+    </ol>
+  </section>
+  <!-- /News -->
+
+  <div class="ec-cor-barometer-separator"></div>
+
   <!-- Media fact sheets -->
   <section class="ec-cor-barometer-mediafactsheets">
 
@@ -126,5 +146,11 @@
     </a>
   </section>
   <!-- /Public opinion survey -->
+
+  <!-- Twitter -->
+  <section class="ec-cor-barometer-twitter">
+    {% render '@twitter' %}
+  </section>
+  <!-- /Twitter -->
 
 </div>

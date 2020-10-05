@@ -1,0 +1,17 @@
+{
+  "title": "Notification Banner",
+  "status": "ready",
+  "context": {
+    "modifier": "default",
+    "title": "European Committee of the Regions launches UK Contact Group",
+    "date": "22.09.2020"
+  },
+  "variants": [
+    {
+      "name": "barometer",
+      "context": {
+        "modifier": "barometer"
+      }
+    }
+  ]
+}
