@@ -1,3 +1,125 @@
-.ec-cor-barometer {
-
+.ec-cor-barometer section + section {
+  margin-top: var(--s2);
 }
+
+/*
+ * Typography
+ */
+.ec-cor-barometer {
+  color: var(--text-color);
+}
+
+.ec-cor-barometer p {
+  line-height: 1.5;
+  font-size: 1rem;
+  max-width: 45rem;
+  padding: 0 0 var(--s-2);
+}
+
+@media screen and ( min-width:60em) {
+  .ec-cor-barometer p {
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and ( min-width:120em) {
+  .ec-cor-barometer p {
+    font-size: 1.137rem;
+  }
+}
+
+.ec-cor-barometer a, .ec-cor-barometer a:link, .ec-cor-barometer a:visited, .ec-cor-barometer a:focus {
+  color: var(--c-eu);
+}
+
+.ec-cor-barometer a span {
+  border-bottom: solid 2px var(--c-eu);
+  padding: 0 0 var(--s-3)
+}
+
+/*
+ * Background
+ */
+ .ec-cor-barometer-masked {
+  position: relative;
+ }
+
+ .ec-cor-barometer-mask + * {
+  padding-top: calc(var(--s2) * 2);
+  padding-bottom: var(--s2);
+ }
+
+ .ec-cor-barometer-mask {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+ }
+
+ .ec-cor-barometer-background {
+  background-color: var(--c-secondary);
+  height: 100%;
+  left: 0;
+  position: relative;
+  top: 0;
+  transform: skewY(-6deg);
+  width: 100%;
+}
+
+.ec-cor-barometer-stories__list {
+  position: relative;
+  z-index: 1;
+}
+
+/*
+ * Separator
+ */
+.ec-cor-barometer-separator {
+  border: solid 2px var(--c-eu);
+  margin: var(--s2) auto;
+  width: 50%;
+}
+
+/*
+ * Web streaming
+ */
+.ec-cor-barometer-webstreaming .blockquote {
+  margin-top: var(--s0);
+}
+
+/*
+ *  Report
+ */
+
+/*
+ *  Stories
+ */
+.ec-cor-barometer-stories__list {
+  list-style: none;
+}
+
+.ec-cor-barometer-stories__item + .ec-cor-barometer-stories__item {
+  margin-top: var(--s2);
+}
+
+.ec-cor-barometer-stories__item__title {
+  color: var(--text-color);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.ec-cor-barometer-stories__item__link {
+  align-items: center;
+  display: flex;
+}
+
+.ec-cor-barometer-stories__item__link svg {
+  margin-left: var(--s-2);
+}
+
+/*
+ * Overrides
+ */
+.ec-cor-barometer h2.ec-cor-heading--2 {
+  font-size: var(--heading-size) !important;
+}
+

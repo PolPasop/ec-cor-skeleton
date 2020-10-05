@@ -89,4 +89,4 @@ function watch() {
 }
 
 // exports.default = gulp.series(fractalStart, css, watch);
-exports.default = gulp.series(deleteOldMainStyles, css, watch);
+exports.default = gulp.series(fractalStart, css, watch);
