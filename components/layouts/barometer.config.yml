@@ -2,7 +2,7 @@ title: Example component
 context:
   video:
     title: State of the regions and cities of the Europe Union
-  quote: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+  quote: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer au posuere erat a ante.
   report:
     title: Title for report
     intro: Our Members have the power to shape the future of Europe from the ground up. They represent the EU's one million locally elected leaders, and come together at the CoR to ensure that the needs, ambitions and aspirations of millions of citizens are heard and acted​​ upon. 
