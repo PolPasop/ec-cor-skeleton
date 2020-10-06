@@ -8,12 +8,24 @@
 
   <!-- Web streaming section -->
   <section class="ec-cor-barometer-webstreaming container">
-    <h2 class="ec-cor-heading--2">{{ video.title }}</h2>
+    <h2 class="ec-cor-barometer-webstreaming__title ec-cor-heading--2">{{ video.title }}</h2>
     {% render '@embed' %}
-    <p>
+    <!--p>
       <a class="ec-cor-barometer-link" href="#"><span>Read the full speech</span></a>
       <small>also available in <a href="">other languages</a></small>
-    </p>
+    </p-->
+    
+    <div class="ec-cor-barometer-webstreaming__links">
+      <a class="ec-cor-barometer-link" href="#"><span>Read the full speech</span></a>
+      <small>also available in <a href="">FR</a> / <a href="">DE</a> / <a href="">GR</a></small>
+    </div>
+    
+    <!--p>
+      <a class="ec-cor-barometer-link" href="#"><span>Read the full speech</span></a>
+      <a class="ec-cor-barometer-link" href="#"><span>Read the full speech</span></a>
+      <a class="ec-cor-barometer-link" href="#"><span>Read the full speech</span></a>
+      <a class="ec-cor-barometer-link" href="#"><span>Read the full speech</span></a>
+    </p-->
     {% render '@quote' %}
   </section>
   <!-- /Web streaming section -->
@@ -46,7 +58,7 @@
         </li>
       </ul>
 
-      <img class="ec-cor-barometer-report__cover" src="https://placeimg.com/180/234/any"/>
+      <img class="ec-cor-barometer-report__cover" src="https://placeimg.com/180/234/nature"/>
     </div>
     
 
