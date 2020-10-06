@@ -6,6 +6,8 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const path = require('path');
+const { rollup } = require('rollup');
+const { babel } = require('@rollup/plugin-babel');
 
 sass.compiler = require('node-sass');
 
@@ -22,6 +24,22 @@ const paths = {
     src: "./icons/*.svg"
   }
 };
+
+async function bundle() {
+  const bundle = await rollup({
+    input: 'assets/app.js',
+    plugins: [babel()]
+  });
+
+  return bundle.write({
+    file: 'public/js/bundle.js',
+    format: 'iife'
+  });
+}
+
+function deleteOldBundle() {
+  return del('public/js')
+}
 
 function css() {
   return gulp
@@ -86,7 +104,8 @@ gulp.task('fractalBuild', function () {
 
 function watch() {
   gulp.watch(['components/**/*.scss', 'assets/*.scss'], gulp.series(deleteOldMainStyles, css));
+  gulp.watch(['components/**/*.js', 'assets/*.js'], gulp.series(deleteOldBundle, bundle));
 }
 
 // exports.default = gulp.series(fractalStart, css, watch);
-exports.default = gulp.series(fractalStart, css, watch);
+exports.default = gulp.series(fractalStart, bundle, css, watch);

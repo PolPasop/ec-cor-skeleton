@@ -6,7 +6,9 @@ context:
   report:
     title: Title for report
     intro: Our Members have the power to shape the future of Europe from the ground up. They represent the EU's one million locally elected leaders, and come together at the CoR to ensure that the needs, ambitions and aspirations of millions of citizens are heard and acted​​ upon. 
-  mediafactsheets:
+  news:
+    title: News title
+  mediafactsheets: 
     title: Media factsheets title
   publicOpinion:
     title: Public opinion survey

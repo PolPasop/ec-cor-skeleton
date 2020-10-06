@@ -184,16 +184,11 @@
 }
 
 .ec-cor-barometer-news__item {
-  padding: var(--s0);
+  padding: var(--s0) 0;
 }
 
 .ec-cor-barometer-news__item + .ec-cor-barometer-news__item {
   border-top: solid 1px var(--border-color);
-}
-
-.ec-cor-news__title {
-  font-size: var(--text-size);
-  margin-bottom: var(--s-1);
 }
 
 .ec-cor-news__date {
@@ -204,6 +199,7 @@
  * Overrides
  */
 .ec-cor-barometer h2.ec-cor-heading--2 {
+  color: var(--text-color);
   font-size: var(--heading-size) !important;
 }
 
