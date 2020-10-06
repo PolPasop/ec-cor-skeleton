@@ -9,6 +9,18 @@
   color: var(--text-color);
 }
 
+.ec-cor-barometer .ec-cor-heading--2 {
+  font-size: var(--heading-size);
+  margin-bottom: var(--s0);
+}
+
+.ec-cor-barometer .ec-cor-heading--3 {
+  color: var(--text-color);
+  font-size: var(--heading-size-secondary);
+  margin-bottom: var(--s0);
+  text-transform: uppercase;
+}
+
 .ec-cor-barometer p {
   line-height: 1.5;
   font-size: 1rem;
@@ -38,6 +50,23 @@
 }
 
 /*
+ * Links
+ */
+.ec-cor-barometer-link {
+  display: flex;
+  align-items: center;
+}
+
+.ec-cor-barometer-link svg {
+  margin-right: var(--s-2);
+}
+
+.ec-cor-barometer-link span + svg {
+  margin-left: var(--s-2);
+  margin-right: 0;
+}
+
+/*
  * Background
  */
  .ec-cor-barometer-masked {
@@ -45,7 +74,7 @@
  }
 
  .ec-cor-barometer-mask + * {
-  padding-top: calc(var(--s2) * 2);
+  padding-top: calc(var(--s2) * 1.5);
   padding-bottom: var(--s2);
  }
 
@@ -89,16 +118,46 @@
 /*
  *  Report
  */
+.ec-cor-barometer-report__links__list {
+  list-style: none;
+  padding: 0;
+}
+
+.ec-cor-barometer-report__links__item {
+  align-items: center;
+  display: flex;
+  padding: var(--s-1) 0;
+}
+
+.ec-cor-barometer-link--report {
+  margin-right: var(--s0);
+}
+
+.ec-cor-barometer-report__cover {
+  border-radius: 4px;
+  box-shadow: var(--shadow-02);
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
 
 /*
  *  Stories
  */
+.ec-cor-barometer-stories {
+  transform: translateY(calc(-1 * var(--s1)));
+}
+
 .ec-cor-barometer-stories__list {
   list-style: none;
 }
 
 .ec-cor-barometer-stories__item + .ec-cor-barometer-stories__item {
-  margin-top: var(--s2);
+  margin-top: var(--s3);
+}
+
+.ec-cor-barometer-stories__item > svg {
+  width: 20px;
 }
 
 .ec-cor-barometer-stories__item__title {
@@ -117,9 +176,38 @@
 }
 
 /*
+ * News
+ */
+.ec-cor-barometer-news__list {
+  list-style: none;
+  padding: 0;
+}
+
+.ec-cor-barometer-news__item {
+  padding: var(--s0);
+}
+
+.ec-cor-barometer-news__item + .ec-cor-barometer-news__item {
+  border-top: solid 1px var(--border-color);
+}
+
+.ec-cor-news__title {
+  font-size: var(--text-size);
+  margin-bottom: var(--s-1);
+}
+
+.ec-cor-news__date {
+  color: var(--c-g-6);
+}
+
+/*
  * Overrides
  */
 .ec-cor-barometer h2.ec-cor-heading--2 {
   font-size: var(--heading-size) !important;
+}
+
+h1.ec-cor-news__title {
+  font-size: var(--text-size) !important;
 }
 

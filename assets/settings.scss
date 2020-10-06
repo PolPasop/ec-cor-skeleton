@@ -1,7 +1,9 @@
 :root {
   --heading-size: 24px;
+  --heading-size-secondary: 19px;
   --text-size: 19px;
   --text-color: #474746;
+  --text-color-light: hsl(var(--text-color), 100%, 44%);
   --c-eu: #004896;
   --c-secondary: #FCD838;
   
@@ -23,6 +25,17 @@
   --color--primary: hsl(var(--primary-hue), 100%, 44%);
   --color--primary--hover: hsl(var(--primary-hue), 100%, 39%);
   --color--primary--active: hsl(var(--primary-hue), 100%, 30%);
+
+  /* Grays */
+  --c-g-1: hsl(0, 0%, 10%);
+  --c-g-2: hsl(0, 0%, 20%);
+  --c-g-3: hsl(0, 0%, 30%);
+  --c-g-4: hsl(0, 0%, 40%);
+  --c-g-5: hsl(0, 0%, 50%);
+  --c-g-6: hsl(0, 0%, 60%);
+  --c-g-7: hsl(0, 0%, 70%);
+  --c-g-8: hsl(0, 0%, 80%);
+  --c-g-9: hsl(0, 0%, 90%);
 
   /* */
   --border-color: #ebebeb;
