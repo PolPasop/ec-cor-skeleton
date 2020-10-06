@@ -44,14 +44,15 @@
   color: var(--c-eu);
 }
 
-.ec-cor-barometer a span {
-  border-bottom: solid 2px var(--c-eu);
-  padding: 0 0 var(--s-3)
-}
 
 /*
  * Links
  */
+.ec-cor-barometer-link span {
+  border-bottom: solid 2px var(--c-eu);
+  padding: 0 0 var(--s-3)
+}
+
 .ec-cor-barometer-link {
   display: flex;
   align-items: center;
@@ -103,9 +104,9 @@
  * Separator
  */
 .ec-cor-barometer-separator {
-  border: solid 2px var(--c-eu);
+  border: solid 1px var(--c-secondary);
   margin: var(--s2) auto;
-  width: 50%;
+  width: 25%;
 }
 
 /*
@@ -135,8 +136,9 @@
 
 .ec-cor-barometer-report__cover {
   border-radius: 4px;
-  box-shadow: var(--shadow-02);
+  box-shadow: var(--shadow);
   display: inline-block;
+  float: right;
   position: relative;
   z-index: 2;
 }
@@ -145,6 +147,7 @@
  *  Stories
  */
 .ec-cor-barometer-stories {
+  clear: both;
   transform: translateY(calc(-1 * var(--s1)));
 }
 
@@ -194,6 +197,19 @@
 .ec-cor-news__date {
   color: var(--c-g-6);
 }
+
+/*
+ * Survey
+ */
+ .ec-cor-barometer-link--survey {
+   background: var(--c-secondary);
+   border-radius: 4px;
+   padding: var(--s2) var(--s0);
+ }
+
+ .ec-cor-barometer-link--survey span {
+   margin: var(--s0);
+ }
 
 /*
  * Overrides
