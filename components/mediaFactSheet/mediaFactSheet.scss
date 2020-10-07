@@ -3,26 +3,12 @@
   padding: 0;
 }
 
-.ec-cor-barometer-mediafactsheets__item {
-  display: grid;
-  grid: 1fr ;
-}
-
-.ec-cor-mediafactsheet {
-  display: grid;
-  grid-template-columns: 1fr 100px;
-}
-
 .ec-cor-mediafactsheet {  
   display: grid;
   grid-template-columns: 1fr 100px;
 }
 
-.ec-cor-barometer-mediafactsheets__item + .ec-cor-barometer-mediafactsheets__item {  
-  border-top: solid 1px var(--border-color);
-}
-
-.ec-cor-mediafactsheet__container {
+.ec-cor-mediafactsheet--sliding .ec-cor-mediafactsheet__container {
   align-items: center;
   background: #fff;
   display: grid;
@@ -34,7 +20,7 @@
   transition: transform .15s ease-out;
 }
 
-.ec-cor-mediafactsheet.open .ec-cor-mediafactsheet__container {
+.ec-cor-mediafactsheet--sliding.open .ec-cor-mediafactsheet__container {
   transform: translateX(-100%);
 }
 
@@ -58,4 +44,33 @@
 .ec-cor-mediafactsheet__sliderbutton {
   border: none;
   background: none;
+}
+
+.ec-cor-mediafactsheet--card {
+  grid-template-columns: auto 1fr;
+  gap: var(--s0);
+}
+
+.ec-cor-mediafactsheet--card .ec-cor-barometer-mediafactsheets__title {
+  color: var(--text-color);
+}
+
+.ec-cor-mediafactsheet--card .ec-cor-barometer-mediafactsheets__country {
+  color: var(--c-g-6);
+}
+
+.ec-cor-mediafactsheet--card .ec-cor-mediafactsheet__container {
+  display: grid;
+  gap: var(--s0);
+}
+
+
+.ec-cor-barometer-mediafactsheets__languageselector .dropdown-toggle {
+  background-color: var(--c-eu);
+  border: none;
+  color: #fff;
+}
+
+.ec-cor-barometer-mediafactsheets__languageselector .dropdown-menu a {
+  color: var(--text-color);
 }

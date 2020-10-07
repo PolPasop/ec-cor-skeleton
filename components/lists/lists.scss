@@ -1,0 +1,22 @@
+.ec-cor-list--cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--s3);
+  list-style: none;
+  padding: 0;
+}
+
+
+
+
+@media screen and (min-width:768px) {
+  .ec-cor-list--cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width:1000px) {
+  .ec-cor-list--cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

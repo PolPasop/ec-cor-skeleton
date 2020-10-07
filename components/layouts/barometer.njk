@@ -7,7 +7,7 @@
   <!-- /Banner -->
 
   <!-- Web streaming section -->
-  <section class="ec-cor-barometer-webstreaming container">
+  <section class="ec-cor-barometer-webstreaming ec-cor-barometer-container">
     <h2 class="ec-cor-barometer-webstreaming__title ec-cor-heading--2">{{ video.title }}</h2>
     {% render '@embed' %}
     <!--p>
@@ -34,7 +34,7 @@
 
   <!-- Report -->
   <section class="ec-cor-barometer-report">
-    <div class="container">
+    <div class="ec-cor-barometer-container">
       <h2 class="ec-cor-heading--2">{{ report.title }}</h2>
 
       <p>{{ report.intro }}</p>
@@ -65,7 +65,7 @@
     <!-- Stories -->
     <div class="ec-cor-barometer-stories ec-cor-barometer-masked">
       <div class="ec-cor-barometer-mask"><div class="ec-cor-barometer-background"></div></div>
-      <ul class="ec-cor-barometer-stories__list container">
+      <ul class="ec-cor-barometer-stories__list ec-cor-barometer-container">
         <!-- Story -->
         <li class="ec-cor-barometer-stories__item">
           <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -107,7 +107,7 @@
   <!-- /Report -->
 
   <!-- News -->
-  <section class="ec-cor-barometer-news container">
+  <section class="ec-cor-barometer-news ec-cor-barometer-container">
 
     <h2 class="ec-cor-heading--2">{{ news.title }}</h2>
 
@@ -127,30 +127,8 @@
 
   <div class="ec-cor-barometer-separator"></div>
 
-  <!-- Media fact sheets -->
-  <section class="ec-cor-barometer-mediafactsheets container">
-
-    <h2 class="ec-cor-heading--2">{{ mediafactsheets.title }}</h2>
-
-    <ol class="ec-cor-barometer-mediafactsheets__list">
-      <li class="ec-cor-barometer-mediafactsheets__item">
-        {% render '@mediafactsheet' %}
-      </li>
-      <li class="ec-cor-barometer-mediafactsheets__item">
-        {% render '@mediafactsheet' %}
-      </li>
-      <li class="ec-cor-barometer-mediafactsheets__item">
-        {% render '@mediafactsheet' %}
-      </li>
-    </ol>
-
-  </section>
-  <!-- /Media fact sheets -->
-
-  <div class="ec-cor-barometer-separator"></div>
-
   <!-- Public opinion survey -->
-  <section class="ec-cor-barometer-publicopinion container">
+  <section class="ec-cor-barometer-publicopinion ec-cor-barometer-container">
     <h2 class="ec-cor-heading--2">{{ publicOpinion.title }}</h2>
 
     <p>{{ publicOpinion.text }}</p>
@@ -170,7 +148,7 @@
   <div class="ec-cor-barometer-separator"></div>
 
   <!-- Twitter -->
-  <section class="ec-cor-barometer-twitter container">
+  <section class="ec-cor-barometer-twitter ec-cor-barometer-container">
     <h2 class="ec-cor-heading--2">Twitter</h2>
     {% render '@twitter' %}
   </section>

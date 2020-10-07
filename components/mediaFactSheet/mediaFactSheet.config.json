@@ -1,0 +1,25 @@
+{
+  "title": "Notification Banner",
+  "status": "ready",
+  "context": {
+    "modifier": "default",
+    "closeButtonText": "close",
+    "message": "This is the default banner"
+  },
+  "variants": [
+    {
+      "name": "card",
+      "context": {
+        "modifier": "card",
+        "message": "This is a warning banner"
+      }
+    },
+    {
+      "name": "sliding",
+      "context": {
+        "modifier": "sliding",
+        "message": "This is a warning banner"
+      }
+    }
+  ]
+}
