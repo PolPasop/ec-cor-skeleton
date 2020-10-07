@@ -5,6 +5,7 @@ const del = require("del");
 const postcss = require("gulp-postcss");
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
+const postcssCustomProperties = require('postcss-custom-properties');
 const path = require('path');
 const { rollup } = require('rollup');
 const { babel } = require('@rollup/plugin-babel');
@@ -47,7 +48,7 @@ function css() {
     .pipe(sassGlob())
     .pipe(sass())
     .on('error', sass.logError)
-    .pipe(postcss([autoprefixer(), cssnano()]))
+    .pipe(postcss([autoprefixer(), postcssCustomProperties(), cssnano()]))
     .pipe(gulp.dest("public/css"))
 }
 
