@@ -113,7 +113,8 @@
  * Separator
  */
 .ec-cor-barometer-separator {
-  border: solid 1px var(--c-secondary);
+  background: var(--c-secondary);
+  height: 2px;
   margin: var(--s2) auto;
   width: 25%;
 }
