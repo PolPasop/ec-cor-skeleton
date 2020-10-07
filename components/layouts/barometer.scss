@@ -73,6 +73,7 @@
 .ec-cor-barometer-container {
   max-width: 790px;
   margin: 0 auto;
+  padding: var(--s0);
 }
 
 /*
@@ -215,6 +216,7 @@
   box-shadow: var(--shadow);
   display: inline-block;
   float: right;
+  margin-right: var(--s0);
   position: relative;
   z-index: 2;
 }
