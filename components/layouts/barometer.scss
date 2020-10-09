@@ -10,6 +10,12 @@
   color: var(--text-color);
 }
 
+.ec-cor-barometer .ec-cor-heading--1 {
+  color: var(--text-color);
+  font-size: var(--heading-size-1);
+  margin-bottom: var(--s1);
+}
+
 .ec-cor-barometer .ec-cor-heading--2 {
   font-size: var(--heading-size);
   margin-bottom: var(--s0);
@@ -360,6 +366,11 @@
 /*
  * Overrides
  */
+ .ec-cor-barometer .ec-cor-heading--1 {
+  color: var(--text-color);
+  font-size: var(--heading-size-1) !important;
+}
+
 .ec-cor-barometer h2.ec-cor-heading--2 {
   color: var(--text-color);
   font-size: var(--heading-size) !important;
