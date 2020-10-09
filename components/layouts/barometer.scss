@@ -22,7 +22,8 @@
   text-transform: uppercase;
 }
 
-.ec-cor-barometer p {
+.ec-cor-barometer p,
+.ec-cor-barometer-paragraph {
   line-height: 1.5;
   font-size: 1rem;
   max-width: 45rem;
@@ -30,13 +31,15 @@
 }
 
 @media screen and ( min-width:60em) {
-  .ec-cor-barometer p {
+  .ec-cor-barometer p,
+  .ec-cor-barometer-paragraph {
     font-size: 1.125rem;
   }
 }
 
 @media screen and ( min-width:120em) {
-  .ec-cor-barometer p {
+  .ec-cor-barometer p,
+  .ec-cor-barometer-paragraph {
     font-size: 1.137rem;
   }
 }
@@ -351,7 +354,7 @@
  */
 .smk {
   margin: 0 auto;
-  max-width: 370px;
+  max-width: 450px;
 }
 
 /*
