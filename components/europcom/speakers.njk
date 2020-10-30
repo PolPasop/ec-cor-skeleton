@@ -1,0 +1,10 @@
+<ol class="ec-europcom-speakers-list">
+  {% for speaker in speakers %}
+  <li>
+    <img class="ec-europcom-speakers-list__item__portrait" src="{{ speaker.picture }}" alt="{{ speaker.name }} portrait" />
+    <span>{{ speaker.name }}</span>
+    <span>{{ speaker.picture }}</span>
+    <span>{{ speaker.jobTitle }} at {{ speaker.company }}</span>
+  </li>
+  {% endfor %}
+</ol>

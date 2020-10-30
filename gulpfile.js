@@ -52,6 +52,16 @@ function css() {
     .pipe(gulp.dest("public/css"))
 }
 
+function cssEuropcom() {
+  return gulp
+    .src('assets/europcom.scss')
+    .pipe(sassGlob())
+    .pipe(sass())
+    .on('error', sass.logError)
+    .pipe(postcss([autoprefixer(), postcssCustomProperties(), cssnano()]))
+    .pipe(gulp.dest("public/css"))
+}
+
 function deleteOldMainStyles() {
   return del('public/css')
 }
@@ -104,7 +114,7 @@ gulp.task('fractalBuild', function () {
 
 
 function watch() {
-  gulp.watch(['components/**/*.scss', 'assets/*.scss'], gulp.series(deleteOldMainStyles, css));
+  gulp.watch(['components/**/*.scss', 'assets/*.scss'], gulp.series(deleteOldMainStyles, css, cssEuropcom));
   gulp.watch(['components/**/*.js', 'assets/*.js'], gulp.series(deleteOldBundle, bundle));
 }
 

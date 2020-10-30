@@ -1,0 +1,14 @@
+<!-- Speakers -->
+  {% render '@speakers' %}
+<!-- /Speakers -->
+
+<!-- Key themes -->
+  <section class="ec-europcom-themes">
+    {% for theme in themes %}
+    <div class="ec-europcom-themes__theme--{{ theme.title | lower }}">
+      <h1>{{ theme.title }}</h1>
+      <p>{{ theme.description }}</p>
+    </div>
+    {% endfor %}
+  </section>
+<!-- /Key themes -->
