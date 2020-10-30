@@ -1,10 +1,22 @@
-<ol class="ec-europcom-speakers-list">
+<ul id="og-grid" class="og-grid row speakers-grid">
+
   {% for speaker in speakers %}
-  <li>
-    <img class="ec-europcom-speakers-list__item__portrait" src="{{ speaker.picture }}" alt="{{ speaker.name }} portrait" />
-    <span>{{ speaker.name }}</span>
-    <span>{{ speaker.picture }}</span>
-    <span>{{ speaker.jobTitle }} at {{ speaker.company }}</span>
-  </li>
+  <div class="col-sm-6 col-lg-4 col-xl-3">
+    <a href="#" data-largesrc="{{ speaker.picture }}" data-title="{{ speaker.name }}" data-job="{{ speaker.jobTitle }}, {{ speaker.company }}​​" data-description="{{ speaker.bio }}" data-link_url="" data-link_label="" >
+      <img class="img-fluid" loading="lazy" alt="{{ speaker.name }} portrait" src="{{ speaker.picture }}" />
+      <div class="speakerDescription">
+        <div class="speaker_name">{{ speaker.name }}</div>
+        <div class="speaker_jobTitle">{{ speaker.jobTitle }}, {{ speaker.company }}​</div>
+      </div>
+    </a>
+  </div>
   {% endfor %}
-</ol>
+
+</ul>
+
+<script src="https://cor.europa.eu/Style%20Library/Summit2019/js/modernizr.js"></script>
+<script src="https://cor.europa.eu/Style%20Library/Summit2019/js/grid.js"></script>
+<script>$(document).ready(function() {
+		Grid.init();
+	});</script>
+ 

@@ -1,3 +1,8 @@
 @import "settings.scss";
 @import "../components/layouts/europcom.scss";
 @import "../components/europcom/*.scss";
+
+#CorContainer *, #CorContainer ::before, #CorContainer ::after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
