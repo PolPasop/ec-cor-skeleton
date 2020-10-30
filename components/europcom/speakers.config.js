@@ -8,7 +8,8 @@ for (var i = 0; i < speakersCount; i++) {
     picture: faker.image.nature(),
     jobTitle: faker.name.jobTitle(),
     company: faker.company.companyName(),
-    bio: faker.lorem.paragraphs()
+    bio: faker.lorem.paragraphs(),
+    role: "Speaker"
   });
 }
 

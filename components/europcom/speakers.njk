@@ -5,6 +5,7 @@
     <a href="#" data-largesrc="{{ speaker.picture }}" data-title="{{ speaker.name }}" data-job="{{ speaker.jobTitle }}, {{ speaker.company }}​​" data-description="{{ speaker.bio }}" data-link_url="" data-link_label="" >
       <img class="img-fluid" loading="lazy" alt="{{ speaker.name }} portrait" src="{{ speaker.picture }}" />
       <div class="speakerDescription">
+        <div class="speaker_role text-uppercase">{{ speaker.role }}</div>
         <div class="speaker_name">{{ speaker.name }}</div>
         <div class="speaker_jobTitle">{{ speaker.jobTitle }}, {{ speaker.company }}​</div>
       </div>
