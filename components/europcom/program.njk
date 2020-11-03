@@ -1,0 +1,90 @@
+{% macro programItem(speach) %}
+  <div>
+
+    {% if speach.workshops %}
+    <div class="groupingSession">
+      <div class="col-8 offset-2 Summit2019_Session_Header">{{ speach.type }}</div>
+    </div>
+    {% endif %}
+
+    <div>
+      <div>
+        <a class="anchor" id="22" xmlns:ddwrt="http://schemas.microsoft.com/WebParts/v2/DataView/runtime">&nbsp;</a>
+            
+        <div class="row Summit2019_Prog_Item" xmlns:ddwrt="http://schemas.microsoft.com/WebParts/v2/DataView/runtime">
+          <div class="col-3 col-sm-2 Summit2019_Prog_Start">{{ speach.time }}</div>
+          <div class="col-9 col-sm-10 Summit2019_Prog_Body">
+            <div class="Summit2019_Prog_Title">{{ speach.title }}</div>
+            <div class="Summit2019_Prog_Desc">
+
+              {% if speach.more %}
+              <details>
+                <summary>{{ speach.description }}</summary>
+                {{ speach.more | safe }}
+              </details>
+              {% else %}
+                {{ speach.description }}
+              {% endif %}
+
+              <p>
+                  (by invitation only&#8203;)</p>
+                <p>
+                  <strong>Moderator: </strong>
+                  <strong>Jennifer Baker</strong>, Brussels, Belgium&#8203;&#8203;<br></p>
+
+              {% for workshop in speach.workshops %}
+                {% if workshop.more %}
+                  <details class="ec-europcom-program-item__workshop">
+                    <summary><strong>{{ workshop.category }}:</strong> {{ workshop.title }}</summary>
+                    <div class="ec-europcom-program-item__workshop__description">
+                      {{ workshop.more | safe }}
+                      <div class="Summit2019_Prog_Loc"><span class="Summit2019_Prog_Loc"><a href="www.google.be">Access the session</a></span></div>
+                    </div>
+                  </details>
+                  {% else %}
+                    {{ workshop.description }}
+                  {% endif %}
+              {% endfor %}
+
+            </div>
+
+            {% if speach.workshops %}
+            {% else %}
+              <div class="Summit2019_Prog_Loc"><span class="Summit2019_Prog_Loc"><a href="www.google.be">Access the session</a></span></div>
+            {% endif %}
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endmacro %}
+
+
+<div class="mainContent">
+
+  <div class="action-buttons">
+   <button class="btn pull-right" id="PrintButton" title="Print"> 
+      <i class="fa fa-2x fa-print">&#8203;&#8203;&#8203;</i></button> <button class="btn pull-right" id="DownloadPDF" title="Download PDF"> 
+      <i class="fa fa-2x fa-file-export">&#8203;&#8203;&#8203;</i></button></div><div class="clearfix"></div>
+  <div class="Summit2019_Prog_Main">
+
+
+        <div class="groupingSession">
+          <div class="col-12 Summit2019_Session_Date">Monday 7 December 2020</div>
+        </div>
+      
+        {% for speach in program7th %}
+          {{ programItem(speach) }}
+        {% endfor %}
+
+        <div class="groupingSession">
+          <div class="col-12 Summit2019_Session_Date">Thursday 8 December 2020</div>
+        </div>
+      
+        {% for speach in program8th %}
+          {{ programItem(speach) }}
+        {% endfor %}
+
+  </div>
+</div>

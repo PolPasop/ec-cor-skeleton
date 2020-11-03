@@ -6,3 +6,21 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+/* Program */
+.ec-europcom-program-item__workshop summary {
+  background-color: #232942;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: .5rem;
+}
+
+.ec-europcom-program-item__workshop__description {
+  background: white;
+  border-radius: 10px;
+  padding: .5rem;
+  margin-bottom: 1rem;
+}
