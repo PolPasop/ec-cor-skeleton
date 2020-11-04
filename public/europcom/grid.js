@@ -348,13 +348,14 @@ $(document).ready(function () {
         this.$title = $('<h3></h3>');
         this.$job = $('<h5></h5>');
         this.$description = $('<p></p>');
-        this.$href = $('<a href=""></a>');
+        this.$href = $('<a class="ec-europcom-speaker__btnlink" href=""></a>');
         this.$details = $('<div class="og-details"></div>').append(this.$title, this.$job, this.$description, this.$href);
         this.$loading = $('<div class="og-loading"></div>');
         this.$fullimage = $('<div class="og-fullimg"></div>').append(this.$loading);
         this.$closePreview = $('<span class="og-close"></span>');
         this.$previewInner = $('<div class="og-expander-inner"></div>').append(this.$closePreview, this.$fullimage, this.$details);
         this.$previewEl = $('<div class="og-expander"></div>').append(this.$previewInner);
+
         // append preview element to the item
         this.$item.append(this.getEl());
         // set the transitions for the preview and the item

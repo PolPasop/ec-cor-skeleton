@@ -24,3 +24,27 @@
   padding: .5rem;
   margin-bottom: 1rem;
 }
+
+.og-details a {
+  all: unset;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.og-details a::before {
+  content: '';
+}
+
+.og-details a.ec-europcom-speaker__btnlink {
+  font-weight: 700;
+  font-size: 16px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border: 3px solid #333;
+  display: inline-block;
+  margin: 30px 0 0;
+  outline: none;
+  cursor: pointer;
+}
