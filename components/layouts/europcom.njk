@@ -1,8 +1,28 @@
-<!-- Speakers -->
-  {% render '@speakers' %}
-<!-- /Speakers -->
+{% render '@mobilenav' %}
+{% render '@header' %}
+<!-- Nav -->
+  {% render '@nav' %}
+<!-- /Nav -->
+
+<div class="container" id="about-container">
+		<h2>&nbsp;Bucharest Declaration&nbsp;</h2>
+		<div class="about-description">
+			The European Union needs its regions and cities just as much as they need the EU. <br>This Friday 15 March 2019, EU local and regional leaders launched a call in Bucharest to rebuild Europe from the ground up. <br>The Bucharest Declaration is the contribution of Europe's regions and cities to the work on the Strategic Agenda 2019-2024.  <br>
+		</div>
+		<div class="about-button">
+			<a id="declarationLink" class="btn" href="/bucarest_declaration_en.go">Read the Bucharest Declaration</a>
+		</div>
+	</div>
+
+<div class="container" id="Speakers-container">
+  <div class="col-12">
+  {% render '@speakers--slider' %}
+  </div>
+</div>
+
 
 <!-- Key themes -->
+<div class="container">
   <section class="ec-europcom-themes">
     {% for theme in themes %}
     <div class="ec-europcom-themes__theme--{{ theme.title | lower }}">
@@ -11,4 +31,7 @@
     </div>
     {% endfor %}
   </section>
+</div>
 <!-- /Key themes -->
+
+  {% render '@footer' %}
