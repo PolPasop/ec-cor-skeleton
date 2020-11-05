@@ -1,6 +1,6 @@
 $(window).on("load", function () {
 
-  CorrectDeclarationButton();
+  // CorrectDeclarationButton();
   SetActiveVariation();
   SetLanguagesLink();
   resizeThemeTiles();
