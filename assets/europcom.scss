@@ -1,10 +1,13 @@
 @import "settings.scss";
-@import "../components/layouts/europcom.scss";
 @import "../components/europcom/*.scss";
 
 #CorContainer *, #CorContainer ::before, #CorContainer ::after {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+#CorContainer {
+  padding: 0;
 }
 
 /* Program */
@@ -47,4 +50,10 @@
   margin: 30px 0 0;
   outline: none;
   cursor: pointer;
+}
+
+/* Themes */
+.ec-europcom-themes {
+  display: grid;
+  grid: 1fr 1fr / 1fr 1fr 1fr;
 }

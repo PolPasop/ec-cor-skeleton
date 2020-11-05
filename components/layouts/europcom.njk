@@ -1,4 +1,4 @@
-{% render '@mobilenav' %}
+{% render '@nav--mobile' %}
 {% render '@header' %}
 <!-- Nav -->
   {% render '@nav' %}
@@ -22,15 +22,8 @@
 
 
 <!-- Key themes -->
-<div class="container">
-  <section class="ec-europcom-themes">
-    {% for theme in themes %}
-    <div class="ec-europcom-themes__theme--{{ theme.title | lower }}">
-      <h1>{{ theme.title }}</h1>
-      <p>{{ theme.description }}</p>
-    </div>
-    {% endfor %}
-  </section>
+<div class="container-fluid" id="Themes-container">
+  {% render '@themes' %}
 </div>
 <!-- /Key themes -->
 

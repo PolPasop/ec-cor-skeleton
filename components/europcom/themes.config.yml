@@ -1,0 +1,12 @@
+preview: "@europcompreview"
+context:
+  themes:
+    - title: "Green"
+      description: "Elit cillum sunt esse reprehenderit ut aute anim ullamco reprehenderit aliquip Lorem cupidatat veniam amet."
+      picture: "https://picsum.photos/seed/picsum/640/360"
+    - title: "Digital"
+      description: "Elit cillum sunt esse reprehenderit ut aute anim ullamco reprehenderit aliquip Lorem cupidatat veniam amet."
+      picture: "https://picsum.photos/seed/picsum/640/360"
+    - title: "Citizens"
+      description: "Elit cillum sunt esse reprehenderit ut aute anim ullamco reprehenderit aliquip Lorem cupidatat veniam amet."
+      picture: "https://picsum.photos/seed/picsum/640/360"

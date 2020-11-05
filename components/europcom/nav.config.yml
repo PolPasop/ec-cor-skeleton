@@ -1,1 +1,7 @@
 preview: "@europcompreview"
+context:
+  nav:
+    - label: Home
+    - label: Programme
+    - label: Speakers
+    - label: Practical information
