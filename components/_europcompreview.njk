@@ -21,6 +21,21 @@
 	<script src="https://kit.fontawesome.com/224dcd570d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<div id="CorContainer" class="container-fluid">{{ yield | safe }}</div>
+	<div id="CorContainer" class="container-fluid">
+	
+		{% render '@nav--mobile' %}
+		{% render '@header' %}
+		<!-- Nav -->
+		{% render '@nav' %}
+		<!-- /Nav -->
+
+		<div class="content">
+			<div class="mainContent">
+				{{ yield | safe }}
+				</div>
+		</div>
+
+		{% render '@footer' %}
+	</div>
 </body>
 </html>
