@@ -1,0 +1,12 @@
+preview: "@europcompreview"
+context:
+  themes:
+    - title: "Citizens"
+      description: Fugiat sit magna reprehenderit tempor labore. Reprehenderit aliqua veniam anim qui anim excepteur non minim Lorem tempor eiusmod nostrud. Do irure qui voluptate elit sit reprehenderit aliqua ipsum proident do sunt magna. Lorem non mollit quis deserunt amet id est laboris.
+      image: http://placeimg.com/640/480/city
+    - title: "Green"
+      description: Fugiat sit magna reprehenderit tempor labore. Reprehenderit aliqua veniam anim qui anim excepteur non minim Lorem tempor eiusmod nostrud. Do irure qui voluptate elit sit reprehenderit aliqua ipsum proident do sunt magna. Lorem non mollit quis deserunt amet id est laboris.
+      image: http://placeimg.com/640/480/nature
+    - title: "Digital"
+      description: Fugiat sit magna reprehenderit tempor labore. Reprehenderit aliqua veniam anim qui anim excepteur non minim Lorem tempor eiusmod nostrud. Do irure qui voluptate elit sit reprehenderit aliqua ipsum proident do sunt magna. Lorem non mollit quis deserunt amet id est laboris.
+      image: http://placeimg.com/640/480/technics
