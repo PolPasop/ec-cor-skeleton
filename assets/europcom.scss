@@ -1,6 +1,18 @@
 @import "settings.scss";
 @import "../components/europcom/*.scss";
 
+#CorContainer {
+  --color-1: #bac4ca;
+  --color-2: #e7e5dd;
+  --color-3: #cde5d7;
+  --color-4: #9bc5ce;
+  --color-5: #eaba52;
+  --color-6: #e16962;
+}
+
+
+
+
 #CorContainer *, #CorContainer ::before, #CorContainer ::after {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -56,4 +68,22 @@
 .ec-europcom-themes {
   display: grid;
   grid: 1fr 1fr / 1fr 1fr 1fr;
+}
+
+
+/* Header */
+header#title {
+  background-color: var(--color-4);
+}
+
+.highlight {
+  color: var(--color-6);
+}
+
+#about-container {
+  background-color: var(--color-3);
+}
+
+#Themes-container {
+  background-color: var(--color-5);
 }
