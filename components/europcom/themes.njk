@@ -1,9 +1,9 @@
-<ul class="ec-europcom-themes-grid">
+<section class="ec-europcom-themes">
   {% for theme in themes %}
-  <li>
-    <h2>{{ theme.title }}</h2>
-    <p>{{ theme.description }}</p>
-    <img class="img-fluid" src="{{ theme.image }}" />
-  </li>
+  <div class="ec-europcom-themes__theme ec-europcom-themes__theme--{{ theme.title | lower }} px-4">
+    <div class="theme-title">{{ theme.title }}</div>
+    <div class="theme-description">{{ theme.description }}</div>
+  </div>
+  <img class="img-fluid" src="{{ theme.picture }}">
   {% endfor %}
-</ul>
+</section>

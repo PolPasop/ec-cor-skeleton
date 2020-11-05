@@ -27,10 +27,7 @@ $(window).on("load", function () {
       });
     });
 
-    SP.SOD.executeFunc('sp.js', 'SP.ClientContext', new function () { });
-    ExecuteOrDelayUntilScriptLoaded(ActivateWebstreaming, "sp.js");
 
-    ExecuteOrDelayUntilScriptLoaded(ActivateRooms, "sp.js");
 
   }
 

@@ -2,8 +2,8 @@
 
   {% for speaker in speakers %}
   <div class="col-sm-6 col-lg-4 col-xl-3">
-    <a href="#" data-largesrc="{{ speaker.picture }}" data-title="{{ speaker.name }}" data-job="{{ speaker.jobTitle }}, {{ speaker.company }}​​" data-description="{{ speaker.bio }}" data-link_url="" data-link_label="" >
-      <img class="img-fluid" loading="lazy" alt="{{ speaker.name }} portrait" src="{{ speaker.picture }}" />
+    <a href="#" data-largesrc="{{ speaker.picture }}" data-title="{{ speaker.name }}" data-job="{{ speaker.jobTitle }},{{ speaker.company }} <a href='https://www.greenpeace.org'>{{ speaker.company }}</a>​​" data-description="{{ speaker.bio }}" data-link_url="https://www.greenpeace.org" data-link_label="Read More" >
+      <img class="img-fluid" alt="{{ speaker.name }} portrait" src="{{ speaker.picture }}" />
       <div class="speakerDescription">
         <div class="speaker_role text-uppercase">{{ speaker.role }}</div>
         <div class="speaker_name">{{ speaker.name }}</div>

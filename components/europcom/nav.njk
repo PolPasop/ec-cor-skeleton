@@ -1,0 +1,15 @@
+<div id="desktop-navigation" class="d-none d-lg-block sticky-top">
+  <nav class="navbar navbar-expand-lg">
+    <div class="collapse navbar-collapse">
+      <div class="container navbar-nav">
+        
+        {% for navitem in nav %}
+          <div class="nav-item">
+            <a id="" class="nav-link" href="{{ navitem.url }}"><span class="ms-splinkbutton-text">{{ navitem.label }}</span></a>
+          </div>
+        {% endfor %}
+        
+      </div>
+    </div>
+  </nav>	
+</div>

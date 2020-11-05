@@ -1,0 +1,17 @@
+<div id="mobile-navigation" class="d-block d-lg-none sticky-top">
+	<nav class="navbar navbar-expand-lg">
+			<a class="navbar-brand" href="#"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileNavigation" aria-controls="mobileNavigation" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="mobileNavigation">
+				<div class="container navbar-nav">
+					{% for navitem in nav %}
+					<a id="ctl00_navigationHomeMobile" class="nav-item nav-link" href="{{ navitem.url }}">
+						<span class="ms-splinkbutton-text">{{ navitem.label }}</span>
+					</a>
+        {% endfor %}
+				</div>
+			</div>
+		</nav>
+</div>

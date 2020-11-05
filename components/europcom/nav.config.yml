@@ -1,0 +1,11 @@
+preview: "@europcompreview"
+context:
+  nav:
+    - label: Home
+      url: "/components/preview/europcom"
+    - label: Programme
+      url: "/components/preview/europcom--program"
+    - label: Speakers
+      url: "/components/preview/europcom--speakers"
+    - label: Practical information
+      url: "/components/preview/europcom"
