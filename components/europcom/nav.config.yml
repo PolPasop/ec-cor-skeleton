@@ -9,3 +9,5 @@ context:
       url: "/components/preview/europcom--speakers"
     - label: Practical information
       url: "/components/preview/europcom"
+    - label: Live
+      url: "/components/preview/europcom--player"
