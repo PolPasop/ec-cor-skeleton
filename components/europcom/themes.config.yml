@@ -3,10 +3,10 @@ context:
   themes:
     - title: "Green"
       description: "Elit cillum sunt esse reprehenderit ut aute anim ullamco reprehenderit aliquip Lorem cupidatat veniam amet."
-      picture: "https://picsum.photos/seed/picsum/640/360"
+      picture: "/images/green.svg"
     - title: "Digital"
       description: "Elit cillum sunt esse reprehenderit ut aute anim ullamco reprehenderit aliquip Lorem cupidatat veniam amet."
-      picture: "https://picsum.photos/seed/picsum/640/360"
+      picture: "/images/digital.svg"
     - title: "Citizens"
       description: "Elit cillum sunt esse reprehenderit ut aute anim ullamco reprehenderit aliquip Lorem cupidatat veniam amet."
-      picture: "https://picsum.photos/seed/picsum/640/360"
+      picture: "/images/citizens.svg"

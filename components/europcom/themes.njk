@@ -1,9 +1,11 @@
 <section class="ec-europcom-themes">
   {% for theme in themes %}
-  <div class="ec-europcom-themes__theme ec-europcom-themes__theme--{{ theme.title | lower }} px-4">
-    <div class="theme-title">{{ theme.title }}</div>
-    <div class="theme-description">{{ theme.description }}</div>
+  <div class="ec-europcom-themes__theme ec-europcom-themes__theme--{{ theme.title | lower }} p-4">
+      <div class="theme-title">{{ theme.title }}</div>
+      <div class="theme-description">{{ theme.description }}</div>
   </div>
-  <img class="img-fluid" src="{{ theme.picture }}">
+  <div>
+    <img class="img-fluid" src="{{ theme.picture }}">
+  </div>
   {% endfor %}
 </section>
