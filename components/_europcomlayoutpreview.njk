@@ -23,12 +23,19 @@
 <body>
 	<div id="CorContainer" class="container-fluid">
 	
+		{% render '@nav--mobile' %}
+		{% render '@header' %}
+		<!-- Nav -->
+		{% render '@nav' %}
+		<!-- /Nav -->
+
 		<div class="content">
 			<div class="mainContent">
 				{{ yield | safe }}
 				</div>
 		</div>
 
+		{% render '@footer' %}
 	</div>
 </body>
 </html>

@@ -72,8 +72,31 @@
 
 
 /* Header */
+
+header#title .location {
+  margin-top: 0;
+}
+
+header#title .imageHeader {
+  text-align: center;
+}
+
+header#title .imageHeader>div {
+  margin-top: 35px;
+}
+
+header#title .title,
+header#title .sub-title {
+  padding-right: 0;
+}
+
 header#title {
+<<<<<<< HEAD
   background-color: var(--color-4);  
+=======
+  background-color: var(--color-4);
+  text-align: center;
+>>>>>>> 36822b60a8c8050f9fb93f550562856fda968d70
 }
 
 .highlight {
@@ -86,4 +109,9 @@ header#title {
 
 #Themes-container {
   background-color: var(--color-5);
+}
+
+header#title .twitter-location {
+  padding-right: 235px;
+  text-align: right;
 }
