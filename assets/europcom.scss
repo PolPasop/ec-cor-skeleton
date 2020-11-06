@@ -85,6 +85,11 @@ header#title .imageHeader>div {
   margin-top: 35px;
 }
 
+header#title .title,
+header#title .sub-title {
+  padding-right: 0;
+}
+
 header#title {
   background-color: var(--color-4);
   text-align: center;
@@ -103,6 +108,6 @@ header#title {
 }
 
 .twitter-location {
-  padding-right: 225px;
+  padding-right: 235px;
   text-align: right;
 }
