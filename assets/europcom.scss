@@ -13,16 +13,24 @@ body {
   --color-4: #9bc5ce;
   --color-5: #eaba52;
   --color-6: #e16962;
+  --color-7: #0f3753;
 }
 
-.ec-europcom-logo {
-  position: absolute;
-  top: 0;
-  left: 0;
+.navbar .navbar-collapse {
+  background-color: var(--color-7);
+}
+
+.navbar a.nav-link:hover, a.nav-link:focus, a.nav-link:active, a.nav-link.active {
+  background-color: var(--color-5);
+  color: var(--color-7);
 }
 
 header#title .title {
   margin-top: 70px;
+}
+
+#Speakers-container {
+  text-align: left ;
 }
 
 
@@ -241,3 +249,46 @@ header#logos {
   vertical-align: top;
   width: 25px;
 }
+
+.ec-europcom-align-center {
+  display: grid;
+  place-items: center;
+}
+
+.ec-europcom-socialmedia__title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.ec-europcom-socialmedia ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  place-items: center;
+  margin: 0;
+}
+
+.ec-europcom-socialmedia ul li {
+  padding: 1rem 1.5rem
+}
+
+.ec-europcom-flags {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 100px 100px;
+  justify-content: center;
+  padding: 2rem;
+  place-items: center;
+}
+
+.ec-europcom-footer {
+  background-color: var(--color-7);
+  color: white;
+}
+
+footer a, footer a:link, footer a:visited, footer a:focus {
+  color: white;
+}
+
