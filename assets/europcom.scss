@@ -247,7 +247,11 @@ header#logos {
 
 .ec-europcom-blockquote svg {
   vertical-align: top;
-  width: 25px;
+  width: 30px;
+}
+
+.ec-europcom-blockquote svg path {
+  fill: var(--color-2);
 }
 
 .ec-europcom-align-center {
@@ -257,6 +261,7 @@ header#logos {
 
 .ec-europcom-socialmedia__title {
   font-size: 1.5rem;
+  letter-spacing: .3rem;
   text-transform: uppercase;
   text-align: center;
 }
