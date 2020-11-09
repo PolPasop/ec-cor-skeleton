@@ -21,6 +21,10 @@ body {
   left: 0;
 }
 
+header#title .title {
+  margin-top: 70px;
+}
+
 
 #CorContainer *, #CorContainer ::before, #CorContainer ::after {
   -moz-box-sizing: border-box;
