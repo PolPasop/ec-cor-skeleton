@@ -22,6 +22,11 @@
   padding: 0;
 }
 
+/* Nav */
+.navbar .nav-item {
+  flex: 1;
+}
+
 /* Program */
 .ec-europcom-program-item__workshop summary {
   background-color: #232942;
