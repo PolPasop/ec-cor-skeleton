@@ -126,7 +126,7 @@ body {
 @media screen and (min-width: 500px) {
   .ec-europcom-themes {
     display: grid;
-    gap: 25px;
+    gap: 15px;
     grid: 1fr 1fr / 1fr 1fr 1fr;
   } 
 
@@ -195,7 +195,6 @@ header#title {
 @media screen and (min-width: 500px) {
   #Themes-container {
     margin-top: 5rem;
-    padding: 1.5rem;
   }
 
   #Themes-container > div {
