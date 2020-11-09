@@ -1,7 +1,7 @@
 preview: "@europcompreview"
 context:
   nav:
-    - label: Home
+    - label: Europcom 2020
       url: "/components/preview/europcom"
     - label: Programme
       url: "/components/preview/europcom--program"
