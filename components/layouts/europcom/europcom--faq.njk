@@ -1,0 +1,21 @@
+<div class="container">
+		<div class="row">
+			<div class="col-12">
+      
+        <h2 class="ec-europcom-pagetitle">Frequently Asked Questions(FAQ)</h2>
+
+        <ul class="ec-europcom-faq">
+        {% for item in faq %}
+          <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 itemprop="name">{{ item.question }}</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <div itemprop="text">
+               {{ item.answer | safe  }}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
