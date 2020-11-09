@@ -1,6 +1,11 @@
 @import "settings.scss";
 @import "../components/europcom/*.scss";
 
+body {
+  font-family: Arial;
+  font-stretch: initial;
+}
+
 #CorContainer {
   --color-1: #bac4ca;
   --color-2: #e7e5dd;
@@ -20,6 +25,14 @@
 
 #CorContainer {
   padding: 0;
+}
+
+.theme-title {
+  font-size: 1.75rem;
+}
+
+.theme-description {
+  font-size: 1rem;
 }
 
 /* Nav */
@@ -77,7 +90,12 @@
   gap: 1rem;
 }
 
+.ec-europcom-themes > div {
+  border-radius: 10px;
+}
+
 .ec-europcom-themes__theme {
+  background: white;
   grid-column: 2;
 }
 
@@ -108,7 +126,7 @@
 @media screen and (min-width: 500px) {
   .ec-europcom-themes {
     display: grid;
-    gap: 0;
+    gap: 25px;
     grid: 1fr 1fr / 1fr 1fr 1fr;
   } 
 
@@ -169,16 +187,19 @@ header#title {
 }
 
 #Themes-container {
-  background: none;
+  background: #9bc5ce;
   margin-top: 3rem;
   padding: 1rem;
 }
 
 @media screen and (min-width: 500px) {
   #Themes-container {
-    background: none;
     margin-top: 5rem;
-    padding: 0;
+    padding: 1.5rem;
+  }
+
+  #Themes-container > div {
+    
   }
 }
   
@@ -207,4 +228,9 @@ header#logos {
 #logo-cor .CoRLogo {
   height: 65px;
   top: 15px;
+}
+
+.ec-europcom-blockquote svg {
+  vertical-align: top;
+  width: 25px;
 }
