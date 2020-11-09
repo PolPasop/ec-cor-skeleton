@@ -1,13 +1,11 @@
 preview: "@europcompreview"
 context:
   nav:
-    - label: Europcom 2020
+    - label: Home
       url: "/components/preview/europcom"
-    - label: Programme
+    - label: Agenda
       url: "/components/preview/europcom--program"
-    - label: Speakers
+    - label: Contributors
       url: "/components/preview/europcom--speakers"
-    - label: Practical information
-      url: "/components/preview/europcom"
-    - label: Live
-      url: "/components/preview/europcom--player"
+    - label: FAQ
+      url: "/components/preview/europcom--faq"
