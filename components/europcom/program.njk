@@ -12,42 +12,58 @@
     <details>
       <summary>{{ speach.title }}</summary>
 
-      {{ speach.description }}
+      <div class="ec-europcom-program__item__description my-3 p-2">
+        {{ speach.description }}
 
-      <h4>Speakers</h4>
-      <ul class="ec-europcom-program__speakers-list">
-        <li class="ec-europcom-program__speakers-list__item">
-           <img class="rounded-circle img-fluid" alt="Mr. Delores Murphy portrait" src="https://fakeface.rest/face/view/0?minimum_age=25">
-            <div class="speakerDescription">
-              <div class="speaker_role text-uppercase">Speaker</div>
-              <div class="speaker_name">Mr. Delores Murphy</div>
-              <div class="speaker_jobTitle">Direct Web Planner, Goyette, White and Lakin&#8203;</div>
-            </div>
-        </li>
-        <li class="ec-europcom-program__speakers-list__item">
-           <img class="rounded-circle img-fluid" alt="Mr. Delores Murphy portrait" src="https://fakeface.rest/face/view/0?minimum_age=25">
-            <div class="speakerDescription">
-              <div class="speaker_role text-uppercase">Speaker</div>
-              <div class="speaker_name">Mr. Delores Murphy</div>
-              <div class="speaker_jobTitle">Direct Web Planner, Goyette, White and Lakin&#8203;</div>
-            </div>
-        </li>
-        <li class="ec-europcom-program__speakers-list__item">
-           <img class="rounded-circle img-fluid" alt="Mr. Delores Murphy portrait" src="https://fakeface.rest/face/view/0?minimum_age=25">
-            <div class="speakerDescription">
-              <div class="speaker_role text-uppercase">Speaker</div>
-              <div class="speaker_name">Mr. Delores Murphy</div>
-              <div class="speaker_jobTitle">Direct Web Planner, Goyette, White and Lakin&#8203;</div>
-            </div>
-        </li>
-      </ul>
+        <h4>Speakers</h4>
+        <ul class="ec-europcom-program__speakers-list">
+          <li class="ec-europcom-program__speakers-list__item">
+            <img class="rounded-circle img-fluid" alt="Mr. Delores Murphy portrait" src="https://fakeface.rest/face/view/0?minimum_age=25">
+              <div class="speakerDescription">
+                <div class="speaker_role text-uppercase">Speaker</div>
+                <div class="speaker_name">Mr. Delores Murphy</div>
+                <div class="speaker_jobTitle">Direct Web Planner, Goyette, White and Lakin&#8203;</div>
+              </div>
+          </li>
+          <li class="ec-europcom-program__speakers-list__item">
+            <img class="rounded-circle img-fluid" alt="Mr. Delores Murphy portrait" src="https://fakeface.rest/face/view/0?minimum_age=25">
+              <div class="speakerDescription">
+                <div class="speaker_role text-uppercase">Speaker</div>
+                <div class="speaker_name">Mr. Delores Murphy</div>
+                <div class="speaker_jobTitle">Direct Web Planner, Goyette, White and Lakin&#8203;</div>
+              </div>
+          </li>
+          <li class="ec-europcom-program__speakers-list__item">
+            <img class="rounded-circle img-fluid" alt="Mr. Delores Murphy portrait" src="https://fakeface.rest/face/view/0?minimum_age=25">
+              <div class="speakerDescription">
+                <div class="speaker_role text-uppercase">Speaker</div>
+                <div class="speaker_name">Mr. Delores Murphy</div>
+                <div class="speaker_jobTitle">Direct Web Planner, Goyette, White and Lakin&#8203;</div>
+              </div>
+          </li>
+        </ul>
+      </div>
+
     </details>
+
+    {% if speach.workshops %}
+    <div class="ec-europcom-program__item__workshops">
+      {% for workshop in speach.workshops %}
+      <details>
+        <summary>{{ workshop.title }}</summary>
+        {{ workshop.more }}
+      </details>
+      {% endfor %}
+    </div>
+    {% endif %}
         
   </div>
 {% endmacro %}
 
 
 <div class="mainContent">
+  
+  
 
   <div class="action-buttons">
     <button class="btn pull-right" id="PrintButton" title="Print"> 
@@ -59,10 +75,15 @@
   
   <div class="Summit2019_Prog_Main">
 
+      <div>
+        <a href="#firstday" class="btn">Monday 7 December 2020</a>
+        <a href="#secondday" class="btn">Thursday 8 December 2020</a>
+      </div>
+
         <button id="detailedAgenda">Detailed</button>
         <button id="summarydAgenda">Summary</button>
 
-        <div class="groupingSession">
+        <div class="groupingSession mt-5">
           <div class="col-12 Summit2019_Session_Date">Monday 7 December 2020</div>
         </div>
       
@@ -70,7 +91,7 @@
           {{ programItem(speach) }}
         {% endfor %}
 
-        <div class="groupingSession">
+        <div class="groupingSession mt-5">
           <div class="col-12 Summit2019_Session_Date">Thursday 8 December 2020</div>
         </div>
       

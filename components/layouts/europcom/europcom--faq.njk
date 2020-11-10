@@ -7,14 +7,16 @@
 
         <ul class="ec-europcom-faq">
         {% for item in faq %}
-          <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <h3 itemprop="name">{{ item.question }}</h3>
+          <li class="ec-europcom-faq__item py-3" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <details>
+              <summary  itemprop="name"><h3>{{ item.question }}</h3></summary>
             <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-              <div itemprop="text">
+              <div itemprop="text pt-3">
                {{ item.answer | safe  }}
               </div>
             </div>
-          </div>
+            </details>
+          </li>
         {% endfor %}
       </ul>
     </div>

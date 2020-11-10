@@ -2,11 +2,13 @@
   display: grid;
   gap: 2rem;
   grid-template-columns: auto 1fr;
+  margin: 1rem 2rem;
 }
 
 .ec-europcom-program__item summary{
   align-items: center;
   display: flex;
+  font-weight: bold;
 }
 
 .ec-europcom-program__speakers-list {
@@ -20,3 +22,12 @@
   padding: 1rem;
 } 
 
+.ec-europcom-program__item__description {
+  background: white;
+}
+
+.ec-europcom-program__item__workshops {
+  display: grid;
+  grid-column: 2;
+  grid-template-columns: 1fr 1fr 1fr;
+}
