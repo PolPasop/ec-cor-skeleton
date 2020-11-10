@@ -1,8 +1,8 @@
 title: Europcom layout
 preview: "@europcomlayoutpreview"
 variants:
-  - name:  Europcom 2020 faq
-    title: Europcom layout
+  - name:  faq
+    title: Europcom 2020 faq
     context:
       htmlattributes: itemscope itemtype="https://schema.org/FAQPage"
       faq:
