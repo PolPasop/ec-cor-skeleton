@@ -1,6 +1,12 @@
 title: Europcom layout
 preview: "@europcomlayoutpreview"
 variants:
+  - name: speakers
+    context:
+      title: Speakers
+  - name: program
+    context:
+      title: Agenda
   - name:  faq
     title: Europcom 2020 faq
     context:
