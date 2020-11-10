@@ -112,13 +112,11 @@ header#title .title {
 
 .ec-europcom-themes__theme {
   background: white;
-  grid-column: 2;
 }
 
 .ec-europcom-themes__theme + div {
   display: grid;
   place-items: center;
-  grid-column: 1;
   padding: 1rem;
 }
 
@@ -128,15 +126,29 @@ header#title .title {
 
 .ec-europcom-themes__theme--green + div {
   background-color: var(--color-3);
-  grid-row: -1;
+  grid-area: greentext;
 }
 
 .ec-europcom-themes__theme--citizens + div {
   background-color: var(--color-5);
+  grid-area: citizenstext;
 }
 
 .ec-europcom-themes__theme--digital + div {
   background-color: var(--color-6);
+  grid-area: digitaltext;
+}
+
+.ec-europcom-themes__theme--green {
+  grid-area: greenpicture;
+}
+
+.ec-europcom-themes__theme--citizens {
+  grid-area: citizenspicture;
+}
+
+.ec-europcom-themes__theme--digital {
+  grid-area: digitalpicture;
 }
 
 @media screen and (min-width: 500px) {
@@ -144,13 +156,9 @@ header#title .title {
     display: grid;
     gap: 15px;
     grid: 1fr 1fr / 1fr 1fr 1fr;
+    grid-template-areas: "greentext citizenspicture digitaltext"
+               "greenpicture citizenstext digitalpicture";
   } 
-
-  .ec-europcom-themes__theme + div,
-  .ec-europcom-themes__theme {
-    grid-row: initial;
-    grid-column: initial;
-  }
 }
 
 
