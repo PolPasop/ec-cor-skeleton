@@ -331,4 +331,64 @@ footer a, footer a:link, footer a:visited, footer a:focus {
 summary h3 {
   margin-left: 0;
   margin-right: 0;
-  }
+}
+
+/* Program */
+.ec-europcom-program__item {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: auto 1fr;
+  padding: 1rem 2rem;
+}
+
+.ec-europcom-program__item {
+  border-bottom: dotted 1px var(--color-7);
+} 
+
+.ec-europcom-program__item summary{
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+}
+
+.ec-europcom-program__speakers-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.ec-europcom-program__speakers-list__item {
+  width: 160px;
+  padding: 1rem;
+} 
+
+
+
+.ec-europcom-program__item__description {
+  background: white;
+}
+
+.ec-europcom-program__item__workshops {
+  display: grid;
+  gap: 1rem;
+  grid-column: 2;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ec-europcom-program__item__img {
+  background-color: white;
+  border-radius: 4px;
+  width: 35px;
+  height: 35px;
+  margin: 0 auto;
+  padding: 3px;
+  text-align: center;
+}
+
+.ec-europcom-program__item__img img {
+  max-height: 100%;
+}
+
+.ec-europcom-program__speakers-list__item__description {
+  font-size: 14px;
+}
