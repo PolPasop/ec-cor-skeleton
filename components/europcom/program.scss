@@ -1,0 +1,15 @@
+.ec-europcom-program__item summary{
+  display: flex;
+}
+
+.ec-europcom-program__speakers-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.ec-europcom-program__speakers-list__item {
+  width: 160px;
+  padding: 1rem;
+} 
+

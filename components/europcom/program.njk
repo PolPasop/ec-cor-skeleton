@@ -1,5 +1,5 @@
 {% macro programItem(speach) %}
-  <div>
+  <div class="ec-europcom-program__item">
 
     {% if speach.workshops %}
     <div class="groupingSession">
@@ -7,66 +7,44 @@
     </div>
     {% endif %}
 
-    <div>
-      <div>
-        <a class="anchor" id="22" xmlns:ddwrt="http://schemas.microsoft.com/WebParts/v2/DataView/runtime">&nbsp;</a>
-            
-        <div class="row Summit2019_Prog_Item" xmlns:ddwrt="http://schemas.microsoft.com/WebParts/v2/DataView/runtime">
-          <div class="col-3 col-sm-2 Summit2019_Prog_Start">{{ speach.time }}</div>
-          <div class="col-9 col-sm-10 Summit2019_Prog_Body">
-            <div class="Summit2019_Prog_Title">{{ speach.title }}</div>
-            <div class="Summit2019_Prog_Desc">
 
-              {% if speach.more %}
-              <details>
-                <summary>{{ speach.description }}</summary>
-                {{ speach.more | safe }}
-              </details>
-              {% else %}
-                {{ speach.description }}
-              {% endif %}
+    <details>
+      <summary>
+        <div class="Summit2019_Prog_Start">{{ speach.time }}</div>
+        <div class="Summit2019_Prog_Title">{{ speach.title }}</div>
+      </summary>
 
-              <p>
-                  (by invitation only&#8203;)</p>
-                <p>
-                  <strong>Moderator: </strong>
-                  <strong>Jennifer Baker</strong>, Brussels, Belgium&#8203;&#8203;<br></p>
+      {{ speach.description }}
 
-
-              {% if not speach.workshops %}
-              <a class="btn" href="www.google.be"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                  <path fill-rule="evenodd" d="M2 15v-1c0-1 1-4 6-4s6 3 6 4v1H2zm6-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                </svg> Access the session
-              </a>
-              {% endif %}
-
-              {% for workshop in speach.workshops %}
-                {% if workshop.more %}
-                  <details class="ec-europcom-program-item__workshop">
-                    <summary><strong>{{ workshop.category }}:</strong> {{ workshop.title }}</summary>
-                    <div class="ec-europcom-program-item__workshop__description">
-                      {{ workshop.more | safe }}
-                      <p>
-                        <a class="btn mt-2" href="www.google.be"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                            <path fill-rule="evenodd" d="M2 15v-1c0-1 1-4 6-4s6 3 6 4v1H2zm6-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                          </svg> Access the session
-                        </a>
-                      </p>
-                    </div>
-                  </details>
-                  {% else %}
-                    {{ workshop.description }}
-                  {% endif %}
-              {% endfor %}
-
+      <h4>Speakers</h4>
+      <ul class="ec-europcom-program__speakers-list">
+        <li class="ec-europcom-program__speakers-list__item">
+           <img class="rounded-circle img-fluid" alt="Mr. Delores Murphy portrait" src="https://fakeface.rest/face/view/0?minimum_age=25">
+            <div class="speakerDescription">
+              <div class="speaker_role text-uppercase">Speaker</div>
+              <div class="speaker_name">Mr. Delores Murphy</div>
+              <div class="speaker_jobTitle">Direct Web Planner, Goyette, White and Lakin&#8203;</div>
             </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
+        </li>
+        <li class="ec-europcom-program__speakers-list__item">
+           <img class="rounded-circle img-fluid" alt="Mr. Delores Murphy portrait" src="https://fakeface.rest/face/view/0?minimum_age=25">
+            <div class="speakerDescription">
+              <div class="speaker_role text-uppercase">Speaker</div>
+              <div class="speaker_name">Mr. Delores Murphy</div>
+              <div class="speaker_jobTitle">Direct Web Planner, Goyette, White and Lakin&#8203;</div>
+            </div>
+        </li>
+        <li class="ec-europcom-program__speakers-list__item">
+           <img class="rounded-circle img-fluid" alt="Mr. Delores Murphy portrait" src="https://fakeface.rest/face/view/0?minimum_age=25">
+            <div class="speakerDescription">
+              <div class="speaker_role text-uppercase">Speaker</div>
+              <div class="speaker_name">Mr. Delores Murphy</div>
+              <div class="speaker_jobTitle">Direct Web Planner, Goyette, White and Lakin&#8203;</div>
+            </div>
+        </li>
+      </ul>
+    </details>
+        
   </div>
 {% endmacro %}
 
@@ -74,11 +52,17 @@
 <div class="mainContent">
 
   <div class="action-buttons">
-   <button class="btn pull-right" id="PrintButton" title="Print"> 
-      <i class="fa fa-2x fa-print">&#8203;&#8203;&#8203;</i></button> <button class="btn pull-right" id="DownloadPDF" title="Download PDF"> 
-      <i class="fa fa-2x fa-file-export">&#8203;&#8203;&#8203;</i></button></div><div class="clearfix"></div>
+    <button class="btn pull-right" id="PrintButton" title="Print"> 
+      <i class="fa fa-2x fa-print">&#8203;&#8203;&#8203;</i>
+    </button> <button class="btn pull-right" id="DownloadPDF" title="Download PDF"> 
+      <i class="fa fa-2x fa-file-export">&#8203;&#8203;&#8203;</i>
+    </button>
+  </div>
+  
   <div class="Summit2019_Prog_Main">
 
+        <button id="detailedAgenda">Detailed</button>
+        <button id="summarydAgenda">Summary</button>
 
         <div class="groupingSession">
           <div class="col-12 Summit2019_Session_Date">Monday 7 December 2020</div>

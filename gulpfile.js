@@ -38,6 +38,18 @@ async function bundle() {
   });
 }
 
+async function bundleEuropcom() {
+  const bundle = await rollup({
+    input: 'assets/europcom.js',
+    plugins: [babel()]
+  });
+
+  return bundle.write({
+    file: 'public/js/europcom.js',
+    format: 'iife'
+  });
+}
+
 function deleteOldBundle() {
   return del('public/js')
 }
@@ -115,7 +127,7 @@ gulp.task('fractalBuild', function () {
 
 function watch() {
   gulp.watch(['components/**/*.scss', 'assets/*.scss'], gulp.series(deleteOldMainStyles, css, cssEuropcom));
-  gulp.watch(['components/**/*.js', 'assets/*.js'], gulp.series(deleteOldBundle, bundle));
+  gulp.watch(['components/**/*.js', 'assets/*.js'], gulp.series(deleteOldBundle, bundle, bundleEuropcom));
 }
 
 // exports.default = gulp.series(fractalStart, css, watch);
