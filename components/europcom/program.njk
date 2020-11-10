@@ -1,18 +1,16 @@
 {% macro programItem(speach) %}
-  <div class="ec-europcom-program__item">
-
-    {% if speach.workshops %}
+  {% if speach.workshops %}
     <div class="groupingSession">
       <div class="col-8 offset-2 Summit2019_Session_Header">{{ speach.type }}</div>
     </div>
     {% endif %}
 
+  <div class="ec-europcom-program__item">
 
+    
+    {{ speach.time }}
     <details>
-      <summary>
-        <div class="Summit2019_Prog_Start">{{ speach.time }}</div>
-        <div class="Summit2019_Prog_Title">{{ speach.title }}</div>
-      </summary>
+      <summary>{{ speach.title }}</summary>
 
       {{ speach.description }}
 
