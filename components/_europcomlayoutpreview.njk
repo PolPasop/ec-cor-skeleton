@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Preview Layout</title>
+	<title>{{ _target.label }} | My Component Library</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cor.europa.eu/Style%20Library/Cor/style/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
@@ -20,7 +20,7 @@
 	<script defer src="{{ '/js/bundle.js' | path }}"></script>
 	<script src="https://kit.fontawesome.com/224dcd570d.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body {{ _target.context.bodyattributes }}>
 	<div id="CorContainer" class="container-fluid">
 	
 		{% render '@nav--mobile' %}
