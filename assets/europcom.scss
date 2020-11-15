@@ -367,10 +367,18 @@ summary h3 {
 }
 
 .ec-europcom-program__item__workshops {
+  
+}
+
+.ec-europcom-program__item__workshops__details-container {
   display: grid;
   gap: 1rem;
-  grid-column: 2;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: auto 1fr;
+  padding: 1rem 1rem 1rem 0;
+}
+
+.ec-europcom-program__item__workshops__details-container details {
+  padding: 1rem;
 }
 
 .ec-europcom-program__item__img {
@@ -384,18 +392,25 @@ summary h3 {
 }
 
 .ec-europcom-program__item__img--citizens {
-  background-color: var(--color-5);
+  background-color: white;
 }
+
+.ec-europcom-program__item__img + details {
+  background: white;
+  border: solid 5px var(--color-5);
+  border-radius: 4px;
+}
+
 .ec-europcom-program__item__img--citizens + details {
-  border: solid 1px var(--color-5);
+  border-color: var(--color-5);
 }
 
 .ec-europcom-program__item__img--green + details {
-  background-color: var(--color-3);
+  border-color: var(--color-3);
 }
 
 .ec-europcom-program__item__img--digital + details {
-  background-color: var(--color-6);
+  border-color: var(--color-6);
 }
 
 .ec-europcom-program__item__img img {
