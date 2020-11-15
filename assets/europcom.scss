@@ -346,8 +346,6 @@ summary h3 {
 } 
 
 .ec-europcom-program__item summary{
-  align-items: center;
-  display: flex;
   font-weight: bold;
 }
 
@@ -385,6 +383,21 @@ summary h3 {
   text-align: center;
 }
 
+.ec-europcom-program__item__img--citizens {
+  background-color: var(--color-5);
+}
+.ec-europcom-program__item__img--citizens + details {
+  border: solid 1px var(--color-5);
+}
+
+.ec-europcom-program__item__img--green + details {
+  background-color: var(--color-3);
+}
+
+.ec-europcom-program__item__img--digital + details {
+  background-color: var(--color-6);
+}
+
 .ec-europcom-program__item__img img {
   max-height: 100%;
 }
@@ -392,3 +405,4 @@ summary h3 {
 .ec-europcom-program__speakers-list__item__description {
   font-size: 14px;
 }
+
