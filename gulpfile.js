@@ -29,7 +29,7 @@ const paths = {
 async function bundle() {
   const bundle = await rollup({
     input: 'assets/app.js',
-    plugins: [babel()]
+    plugins: [babel({ babelHelpers: 'bundled' })]
   });
 
   return bundle.write({
@@ -41,7 +41,10 @@ async function bundle() {
 async function bundleEuropcom() {
   const bundle = await rollup({
     input: 'assets/europcom.js',
-    plugins: [babel()]
+    plugins: [
+      babel({ babelHelpers: 'bundled' }),
+      uglify()
+    ]
   });
 
   return bundle.write({
@@ -52,6 +55,13 @@ async function bundleEuropcom() {
 
 function deleteOldBundle() {
   return del('public/js')
+}
+
+function compress() {
+  return gulp
+    .src('public/js/europcom.js'),
+    uglify(),
+    gulp.dest('public/js')
 }
 
 function css() {
@@ -127,8 +137,8 @@ gulp.task('fractalBuild', function () {
 
 function watch() {
   gulp.watch(['components/**/*.scss', 'assets/*.scss'], gulp.series(deleteOldMainStyles, css, cssEuropcom));
-  gulp.watch(['components/**/*.js', 'assets/*.js'], gulp.series(deleteOldBundle, bundle, bundleEuropcom));
+  gulp.watch(['components/**/*.js', 'assets/*.js'], gulp.series(deleteOldBundle, bundle, bundleEuropcom, compress));
 }
 
 // exports.default = gulp.series(fractalStart, css, watch);
-exports.default = gulp.series(fractalStart, bundle, css, watch);
+exports.default = gulp.series(fractalStart, css, watch);

@@ -1,6 +1,6 @@
 const detailedButton = document.querySelector("#detailedAgenda");
 const summaryButton = document.querySelector("#summarydAgenda");
-const activeButtons = () => document.querySelectorAll(".ec-europcom-program .active");
+const activeButtons = () => document.querySelectorAll(".ec-europcom-program .ec-europcom-program__change-detail-btn.active");
 const getExpandedElements = () => document.querySelectorAll("details");
 
 const toggleClass = el => {
@@ -9,7 +9,9 @@ const toggleClass = el => {
 }
 
 const changeVisibility = boolean => {
-  [...getExpandedElements()].map(element => element.open = boolean);
+  [...getExpandedElements()].map(element => {
+    element.open = boolean
+  });
 };
 
 const onClick = (el, text) => {

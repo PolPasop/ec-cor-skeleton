@@ -1,1 +1,1 @@
-import "../components/europcom/program.js"
+import "../components/europcom/expandall.js"
