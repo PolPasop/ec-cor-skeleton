@@ -1,10 +1,16 @@
 @import "settings.scss";
 @import "../components/europcom/*.scss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial;
   font-stretch: initial;
 }
+
+
 
 #CorContainer {
   --color-1: #bac4ca;
@@ -377,10 +383,6 @@ summary h3 {
   padding: 1rem 1rem 1rem 0;
 }
 
-.ec-europcom-program__item__workshops__details-container details {
-  padding: 1rem;
-}
-
 .ec-europcom-program__item__img {
   background-color: white;
   border-radius: 4px;
@@ -395,10 +397,8 @@ summary h3 {
   background-color: white;
 }
 
-.ec-europcom-program__item__img + details {
+.ec-europcom-program__item__workshops__details {
   background: white;
-  border: solid 5px var(--color-5);
-  border-radius: 4px;
 }
 
 .ec-europcom-program__item__img--citizens + details {
@@ -421,3 +421,38 @@ summary h3 {
   font-size: 14px;
 }
 
+.Summit2019_Session_Date {
+  color: var(--text-color);
+}
+
+.ec-europcom-program__tabs .btn {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.ec-europcom-program .btn-toolbar {
+  display: flex;
+}
+
+.ec-europcom-program .action-buttons {
+  margin-left: auto;
+}
+
+.ec-europcom-program .action-buttons .btn {
+  display: inline-flex;
+  align-items: center;
+}
+
+
+
+
+.ec-europcom-program :target {
+  all: unset;
+}
+
+.ec-europcom-program a.anchor {
+  display: block;
+  position: relative;
+  top: -10px;
+  visibility: hidden;
+}

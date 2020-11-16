@@ -1,9 +1,5 @@
 {% macro programItem(speach) %}
-  {% if speach.workshops %}
-    <div class="groupingSession mt-3">
-      <div class="col-10 offset-2 Summit2019_Session_Header">{{ speach.type }}</div>
-    </div>
-    {% endif %}
+  
 
   <div class="ec-europcom-program__item">
 
@@ -23,10 +19,18 @@
               <div class="ec-europcom-program__item__img ec-europcom-program__item__img--{{ workshop.category | lower }}">
                 <img src="/images/{{ workshop.category | lower }}.svg" alt="{{ workshop.category | lower }} theme logo"/>
               </div>
-              <details>
-                <summary>{{ workshop.title }}</summary>
-                <div class="mt-1">{{ workshop.more }}</div>
-              </details>
+              
+              <div>
+                <small class="text-uppercase">
+                  {{workshop.category }}
+                </small>
+                <details>
+                  <summary>
+                    {{ workshop.title }}
+                  </summary>
+                  <div class="mt-1 p-3 ec-europcom-program__item__workshops__details">{{ workshop.more }}</div>
+                </details>
+              </div>
             </div>
             {% endfor %}
       
@@ -65,29 +69,49 @@
 {% endmacro %}
 
 
-<div class="mainContent">
+<div class="ec-europcom-program">
   
   
+<div class="btn-toolbar mt-5 mb-5">
+  <div class="btn-group mr-2">
+    <button id="summarydAgenda" type="button" class="btn btn-sm btn-outline-secondary active">Summary program</button>
+    <button id="detailedAgenda" type="button" class="btn btn-sm btn-outline-secondary">Detailed program</button>
+  </div>
 
   <div class="action-buttons">
-    <button class="btn pull-right" id="PrintButton" title="Print"> 
-      <i class="fa fa-2x fa-print">&#8203;&#8203;&#8203;</i>
-    </button> <button class="btn pull-right" id="DownloadPDF" title="Download PDF"> 
-      <i class="fa fa-2x fa-file-export">&#8203;&#8203;&#8203;</i>
+    <button class="btn btn-outline" id="PrintButton" title="Print"> 
+      Print 
+      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-printer-fill ml-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5z"></path>
+        <path fill-rule="evenodd" d="M11 9H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"></path>
+        <path fill-rule="evenodd" d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"></path>
+      </svg>
+    </button> <button class="btn btn-outline" id="DownloadPDF" title="Download PDF"> 
+      Download 
+      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-earmark-arrow-down-fill ml-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M2 2a2 2 0 0 1 2-2h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm7.5 1.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4a.5.5 0 0 0-1 0v3.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 11.293V7.5z"/>
+      </svg>
     </button>
   </div>
+</div>
   
+  <ul class="ec-europcom-program__tabs nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" href="#firstday">Monday 7 December 2020</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#secondday">Thursday 8 December 2020</a>
+    </li>
+  </ul>
+    
   <div class="Summit2019_Prog_Main">
 
-      <div>
-        <a href="#firstday" class="btn">Monday 7 December 2020</a>
-        <a href="#secondday" class="btn">Thursday 8 December 2020</a>
-      </div>
+      
+        
+        
 
-        <button id="detailedAgenda">Detailed</button>
-        <button id="summarydAgenda">Summary</button>
-
-        <div class="groupingSession mt-5">
+        <a class="anchor" id="firstday"></a>
+        <div class="groupingSession mt-2" class="anchor">
           <div class="col-12 Summit2019_Session_Date">Monday 7 December 2020</div>
         </div>
       
@@ -95,7 +119,8 @@
           {{ programItem(speach) }}
         {% endfor %}
 
-        <div class="groupingSession mt-5">
+        <a class="anchor" id="secondday"></a>
+        <div class="groupingSession mt-5"  class="anchor">
           <div class="col-12 Summit2019_Session_Date">Thursday 8 December 2020</div>
         </div>
       
