@@ -9,7 +9,7 @@
         {% for item in faq %}
           <li class="ec-europcom-faq__item py-3" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
             <details>
-              <summary  itemprop="name"><h3>{{ item.question }}</h3></summary>
+              <summary itemprop="name"><span class="h3">{{ item.question }}</span></summary>
             <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
               <div itemprop="text pt-3">
                {{ item.answer | safe  }}

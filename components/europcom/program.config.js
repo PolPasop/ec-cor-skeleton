@@ -7,7 +7,7 @@ const data7 = [
   }, {
     "date": "07.10.20",
     "time": "10:30 - 12:00",
-    "title": "Opening session -  Time for Communica[c]tion",
+    "title": 'Opening session -  Time for Communica[c]tion <span class="badge badge-success">Live!</span>',
     "description": "A high-level panel of experts in the three conference themes of Citizens, Green and Digital, share their thoughts and ideas on communicating in the current pandemic and on the two flagship initiatives, and answer your questions.",
     "more": "<p>The COVID-19 pandemic has clearly highlighted the need for communication lead to action, as well as the key role of communication in facilitating government action and public response.</p><p>In this opening session of EuroPCom 2020 – Time for Communica[c]tion, the panel of expert speakers, drawn from organisations active in each of the three conference themes, will share their thoughts and ideas on communicating in the current pandemic, and the two flagship initiatives.</p>"
   },

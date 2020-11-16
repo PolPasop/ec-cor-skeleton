@@ -321,11 +321,6 @@ footer a, footer a:link, footer a:visited, footer a:focus {
   width: 50px;
 }
 
-.ec-europcom-faq summary {
-  display: flex;
-  align-items: center;
-}
-
 .ec-europcom-faq {
   list-style: none;
 }
@@ -349,6 +344,10 @@ summary h3 {
 
 .ec-europcom-program__item {
   border-bottom: dotted 1px var(--color-7);
+} 
+
+.ec-europcom-program__item:last-child {
+  border-bottom: none;
 } 
 
 .ec-europcom-program__item summary{
@@ -394,7 +393,15 @@ summary h3 {
 }
 
 .ec-europcom-program__item__img--citizens {
-  background-color: white;
+  background-color: var(--color-5);
+}
+
+.ec-europcom-program__item__img--green {
+  background-color: var(--color-3);
+}
+
+.ec-europcom-program__item__img--digital {
+  background-color: var(--color-6);
 }
 
 .ec-europcom-program__item__workshops__details {
