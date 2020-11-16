@@ -95,38 +95,43 @@
   </div>
 </div>
   
-  <ul class="ec-europcom-program__tabs nav nav-tabs">
+  <ul class="ec-europcom-program__tabs nav nav-tabs" id="program" role="tablist">
     <li class="nav-item">
-      <a class="nav-link active" href="#firstday">Monday 7 December 2020</a>
+      <a class="nav-link active" href="#firstday" id="firstday-tab" data-toggle="tab" role="tab" aria-controls="firstday" aria-selected="true">Monday 7 December 2020</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#secondday">Thursday 8 December 2020</a>
+      <a class="nav-link" href="#secondday" id="secondday-tab" data-toggle="tab" role="tab" aria-controls="secondday" aria-selected="false">Thursday 8 December 2020</a>
     </li>
   </ul>
     
-  <div class="Summit2019_Prog_Main">
+  <div class="Summit2019_Prog_Main tab-content" id="programContent">
 
-      
-        
-        
-
-        <a class="anchor" id="firstday"></a>
-        <div class="groupingSession mt-2" class="anchor">
+      <div class="tab-pane fade show active" id="firstday" role="tabpanel" aria-labelledby="firstday-tab">
+        <div class="groupingSession mt-2">
           <div class="col-12 Summit2019_Session_Date">Monday 7 December 2020</div>
         </div>
       
         {% for speach in program7th %}
           {{ programItem(speach) }}
         {% endfor %}
-
-        <a class="anchor" id="secondday"></a>
-        <div class="groupingSession mt-5"  class="anchor">
+      </div>
+      
+      <div class="tab-pane fade" id="secondday" role="tabpanel" aria-labelledby="secondday-tab">
+        <div class="groupingSession mt-2">
           <div class="col-12 Summit2019_Session_Date">Thursday 8 December 2020</div>
         </div>
       
         {% for speach in program8th %}
           {{ programItem(speach) }}
         {% endfor %}
+      </div>
+
+
+        
+        
+
+        
+        
 
   </div>
 </div>
