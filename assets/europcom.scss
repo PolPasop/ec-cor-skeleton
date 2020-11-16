@@ -479,3 +479,9 @@ summary h3 {
   top: -10px;
   visibility: hidden;
 }
+
+/* Overrides */
+.container > .row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
