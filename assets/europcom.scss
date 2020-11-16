@@ -326,6 +326,10 @@ footer a, footer a:link, footer a:visited, footer a:focus {
   list-style: none;
 }
 
+.ec-europcom-faq summary {
+  outline: 0;
+}
+
 .ec-europcom-faq__item + .ec-europcom-faq__item {
   border-top: solid 1px var(--color-1);
 }
