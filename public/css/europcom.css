@@ -460,11 +460,12 @@ summary h3 {
   visibility: hidden; }
 
 /* Program page */
-.ec-europcom-program-page-themes {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
-  list-style: none; }
+@media screen and (min-width: 700px) {
+  .ec-europcom-program-page-themes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    list-style: none; } }
 
 /* Overrides */
 .container > .row {
