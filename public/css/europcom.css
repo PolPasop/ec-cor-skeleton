@@ -282,23 +282,18 @@ header#logos {
   text-align: center; }
 
 .ec-europcom-socialmedia ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  place-items: center;
+  margin: 0;
   list-style: none; }
-
-@media screen and (min-width: 700px) {
-  .ec-europcom-socialmedia ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0;
-    place-items: center;
-    margin: 0; } }
 
 .ec-europcom-socialmedia ul li {
   padding: 1rem 1.5rem; }
