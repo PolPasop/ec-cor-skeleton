@@ -277,20 +277,20 @@ header#logos {
 
 .ec-europcom-blockquote {
   padding: 0;
-  font-size: 1.5rem
+  font-size: 1.5rem;
 }
 
 @media screen and (min-width: 700px) {
   .ec-europcom-blockquote {
     font-size: 2rem;
-    padding: 1rem;
+    padding: 0 1rem 1rem;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .ec-europcom-blockquote {
     font-size: 2.5rem;
-    padding: 2rem;
+    padding: 0 2rem 1rem;
   }
 }
 
