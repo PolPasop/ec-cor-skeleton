@@ -304,6 +304,7 @@ header#logos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
+  padding: 0;
 }
 
 @media screen and (min-width: 700px) {
@@ -404,6 +405,7 @@ summary h3 {
 
 .ec-europcom-program__speakers-list {
   display: flex;
+  flex-wrap :wrap;
   list-style: none;
   padding: 0;
 }
