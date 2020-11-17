@@ -378,11 +378,16 @@ summary h3 {
 }
 
 .ec-europcom-program__item {
-  padding: 1rem 2rem;
+  padding: 1rem;
 }
 
 
-@media screen and (min-width:500px) {
+@media screen and (min-width:700px) {
+
+  .ec-europcom-program__item {
+    padding: 1rem 2rem;
+  }
+
   .ec-europcom-program__item {
     display: grid;
     gap: 2rem;
@@ -406,7 +411,15 @@ summary h3 {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  margin-bottom: 0;
   padding: 0;
+  justify-content: center;
+}
+
+@media screen and (min-width: 700px) {
+  .ec-europcom-program__speakers-list {
+    justify-content: flex-start;
+  }
 }
 
 .ec-europcom-program__speakers-list__item {
@@ -420,15 +433,22 @@ summary h3 {
   background: white;
 }
 
-.ec-europcom-program__item__workshops {
-  
+.ec-europcom-program__item__description h4 {
+  text-align: center;
 }
+
+@media screen and (min-width: 700px) {
+  .ec-europcom-program__item__description h4 {
+    text-align: left;
+  }
+}
+
 
 .ec-europcom-program__item__workshops__details-container {
   display: grid;
   gap: 1rem;
   grid-template-columns: auto 1fr;
-  padding: 1rem 1rem 1rem 0;
+  padding: 1rem 0 1rem 0;
 }
 
 .ec-europcom-program__item__img {
@@ -455,6 +475,7 @@ summary h3 {
 
 .ec-europcom-program__item__workshops__details {
   background: white;
+  border-radius: 4px;
 }
 
 .ec-europcom-program__item__img--citizens + details {
@@ -535,4 +556,10 @@ summary h3 {
 .container > .row {
   margin-right: -15px;
   margin-left: -15px;
+}
+
+@media screen and (max-width: 650px) {
+  .og-details {
+    width: auto;
+  }
 }
