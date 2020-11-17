@@ -516,6 +516,14 @@ summary h3 {
   visibility: hidden;
 }
 
+/* Program page */
+.ec-europcom-program-page-themes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  list-style: none;
+}
+
 /* Overrides */
 .container > .row {
   margin-right: -15px;
