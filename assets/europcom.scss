@@ -536,6 +536,7 @@ summary h3 {
 /* Program page */
 .ec-europcom-program-page-themes {
   list-style: none;
+  padding: 0;
 }
 
 @media screen and (min-width: 700px) {
@@ -557,4 +558,8 @@ summary h3 {
   .og-details {
     width: auto;
   }
+}
+
+.slick-next {
+  overflow: hidden;
 }
