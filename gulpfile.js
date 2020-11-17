@@ -80,7 +80,8 @@ function cssEuropcom() {
     .pipe(sassGlob())
     .pipe(sass())
     .on('error', sass.logError)
-    .pipe(postcss([autoprefixer(), postcssCustomProperties(), cssnano()]))
+    // .pipe(postcss([autoprefixer(), postcssCustomProperties(), cssnano()]))
+    .pipe(postcss([autoprefixer(), postcssCustomProperties()]))
     .pipe(gulp.dest("public/css"))
 }
 

@@ -265,6 +265,10 @@ header#logos {
   width: 30px;
 }
 
+.ec-europcom-blockquote div {
+  display: inline;
+}
+
 .ec-europcom-blockquote svg path {
   fill: var(--color-2);
 }
@@ -340,6 +344,14 @@ summary h3 {
 }
 
 /* Program */
+.Summit2019_Prog_Main,
+.ec-europcom-program__item__description {
+  border-radius: 4px;
+}
+
+.nav-tabs {
+  border-bottom: 0;
+}
 
 .ec-europcom-program__item {
   padding: 1rem 2rem;
