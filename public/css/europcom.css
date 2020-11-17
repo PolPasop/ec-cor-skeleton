@@ -498,3 +498,7 @@ summary h3 {
 
 .slick-next {
   overflow: hidden; }
+
+@media screen and (max-width: 650px) {
+  .og-fullimg {
+    display: none; } }
