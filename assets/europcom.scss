@@ -301,13 +301,20 @@ header#logos {
 }
 
 .ec-europcom-socialmedia ul{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
-  padding: 0;
-  place-items: center;
-  margin: 0;
+}
+
+@media screen and (min-width: 700px) {
+  .ec-europcom-socialmedia ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    place-items: center;
+    margin: 0;
+  }  
 }
 
 .ec-europcom-socialmedia ul li {
