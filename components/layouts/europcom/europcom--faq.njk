@@ -5,10 +5,18 @@
       
         <h2 class="ec-europcom-pagetitle">Frequently Asked Questions(FAQ)</h2>
 
+        <ul>
+        {% for item in faq %}
+          <li><a href="#{{ loop.index }}">{{ item.question }}</a></li>
+        {% endfor %}
+        </ul>
+
+        <hr/>
+
         <ul class="ec-europcom-faq">
         {% for item in faq %}
-          <li class="ec-europcom-faq__item py-3" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <details>
+          <li id="{{ loop.index }}" class="ec-europcom-faq__item py-3" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <details open>
               <summary itemprop="name"><span class="h3">{{ item.question }}</span></summary>
             <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
               <div itemprop="text pt-3">

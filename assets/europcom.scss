@@ -31,6 +31,16 @@ body {
   color: var(--color-7);
 }
 
+#logos {
+  display: none;
+}
+
+@media screen and (min-width:990px) {
+  #logos {
+    display: block;
+  }
+}
+
 header#title .title {
   margin-top: 70px;
 }
@@ -111,6 +121,7 @@ header#title .title {
   grid-template-areas: "greenpicture greentext"
                        "citizenspicture citizenstext"
                        "digitalpicture  digitaltext";
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .ec-europcom-themes > div {
@@ -119,6 +130,10 @@ header#title .title {
 
 .ec-europcom-themes__theme {
   background: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .ec-europcom-themes__theme + div {
@@ -158,7 +173,7 @@ header#title .title {
   grid-area: digitaltext;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 700px) {
   .ec-europcom-themes {
     display: grid;
     gap: 15px;
@@ -287,6 +302,7 @@ header#logos {
 
 .ec-europcom-socialmedia ul{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   list-style: none;
   padding: 0;
@@ -330,7 +346,8 @@ footer a, footer a:link, footer a:visited, footer a:focus {
   list-style: none;
 }
 
-.ec-europcom-faq summary {
+.ec-europcom-faq summary,
+.ec-europcom-program summary {
   outline: 0;
 }
 

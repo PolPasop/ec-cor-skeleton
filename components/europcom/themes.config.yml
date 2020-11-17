@@ -2,15 +2,11 @@ preview: "@europcompreview"
 context:
   themes:
     - title: "Green"
-      description: "Conversations will explore the various aspects of the communication on Green deal. 
-What are citizens expectations ? How can we engage the public in ambitions for climate action? Does the COVID-19 outbreak change the game? "
+      description: "Conversations will explore"
       picture: "/images/green.svg"
     - title: "Digital"
-      description: "Discussions will reflect on innovative digital forms of participatory democracy as well as disinformation in time of crisis. 
-What are the latest trends, tools and platforms enabling citizens to have their say in co-constructing the future of European democracy? How to recognise and counter disinformation narratives?"
+      description: "Discussions will reflect"
       picture: "/images/digital.svg"
     - title: "Citizens"
-      description: "Discussions will focus on the roles of citizens in the EU democracy and on the Conference on the future of Europe.
-How can citizens play a leading role in the Conference on the Future of Europe ? What are the emerging forms of political debates? How do regions and cities contribute to the future of EU democracy? 
-"
+      description: "Discussions will focus on the roles"
       picture: "/images/citizens.svg"
