@@ -140,7 +140,7 @@ header#title .title {
 .ec-europcom-themes {
   display: grid;
   gap: 15px;
-  grid-template-areas: "greenpicture greentext" "citizenspicture citizenstext" "digitalpicture  digitaltext";
+  grid-template-areas: "greenpicture greentext" "citizenspicture citizenstext" "digitalpicture  digitaltext";
   grid-template-rows: 1fr 1fr 1fr; }
 
 .ec-europcom-themes > div {
@@ -196,7 +196,7 @@ header#title .title {
     display: grid;
     gap: 15px;
     grid: 1fr 1fr / 1fr 1fr 1fr;
-    grid-template-areas: "greentext citizenspicture digitaltext" "greenpicture citizenstext digitalpicture"; } }
+    grid-template-areas: "greentext citizenspicture digitaltext" "greenpicture citizenstext digitalpicture"; } }
 
 /* Header */
 header#title .location {
@@ -227,7 +227,7 @@ header#title {
   text-align: center; }
 
 .highlight {
-  color: var(--color-6); }
+  color: #9f0113; }
 
 #about-container {
   background-color: var(--color-3); }
