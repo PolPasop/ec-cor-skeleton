@@ -570,6 +570,41 @@ summary h3 {
   }
 }
 
+#GoToTop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #232942; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 5px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+#GoToTop i {
+    font-size: 40px;
+}
+    
+#GoToTop:hover {
+  background-color: #EFC740; /* Add a dark-grey background on hover */
+  color: #232942;
+}
+
+ 
+
+.slick-slider .slick-prev {
+    margin-left: 10px;
+}
+.ec-europcom-faq :target {
+  display: block;
+  position: relative;
+  top: -52px;
+  }
+  
 /* Overrides */
 .container > .row {
   margin-right: -15px;

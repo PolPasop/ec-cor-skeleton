@@ -9,6 +9,8 @@ const postcssCustomProperties = require('postcss-custom-properties');
 const path = require('path');
 const { rollup } = require('rollup');
 const { babel } = require('@rollup/plugin-babel');
+const imagemin = require('gulp-imagemin');
+const imageminWebp = require('imagemin-webp');
 
 sass.compiler = require('node-sass');
 
@@ -23,6 +25,10 @@ const paths = {
   },
   svg: {
     src: "./icons/*.svg"
+  },
+  images: {
+    src: "public/images/speakers/*.{jpg,png}",
+    dest: "public/images/speakers/webp"
   }
 };
 
@@ -88,11 +94,23 @@ function deleteOldMainStyles() {
   return del('public/css')
 }
 
+/**
+ * Images
+ */
+async function convertImagesToWebp() {
+  gulp.src(paths.images.src)
+    .pipe(imagemin([imageminWebp({ quality: 50 })]))
+    .pipe(gulp.dest(paths.images.dest))
+
+  console.log('Images optimized')
+}
+
 /*
  * Configure a Fractal instance.
  */
 
 const fractal = require('./fractal.config.js');
+const { image } = require('faker');
 
 const logger = fractal.cli.console; // keep a reference to the fractal CLI console utility
 
@@ -139,6 +157,8 @@ function watch() {
   gulp.watch(['components/**/*.scss', 'assets/*.scss'], gulp.series(deleteOldMainStyles, css, cssEuropcom));
   gulp.watch(['components/**/*.js', 'assets/*.js'], gulp.series(deleteOldBundle, bundle, bundleEuropcom, compress));
 }
+
+exports.images = convertImagesToWebp;
 
 // exports.default = gulp.series(fractalStart, css, watch);
 exports.default = gulp.series(fractalStart, css, watch);
