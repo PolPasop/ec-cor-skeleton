@@ -1,6 +1,16 @@
 @import "settings.scss";
 @import "../components/europcom/*.scss";
 
+:root {
+  --color-1: #bac4ca;
+  --color-2: #e7e5dd;
+  --color-3: #cde5d7;
+  --color-4: #9bc5ce;
+  --color-5: #eaba52;
+  --color-6: #e16962;
+  --color-7: #0f3753;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,15 +22,8 @@ body {
 
 
 
-#CorContainer {
-  --color-1: #bac4ca;
-  --color-2: #e7e5dd;
-  --color-3: #cde5d7;
-  --color-4: #9bc5ce;
-  --color-5: #eaba52;
-  --color-6: #e16962;
-  --color-7: #0f3753;
-}
+
+
 
 .navbar .navbar-collapse {
   background-color: var(--color-7);
