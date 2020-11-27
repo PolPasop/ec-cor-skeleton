@@ -1,0 +1,10 @@
+.cor-c-toc {
+  --color: var(--links-color);
+  --padding: 1rem;
+
+  color: var(--color);
+}
+
+.cor-c-toc__link {
+  padding: var(--padding);
+}

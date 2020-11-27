@@ -1,0 +1,7 @@
+<ul class="cor-list {% if modifierClass %}cor-list--{{ modifierClass }}{% endif %}">
+  {% for listitem in list %}
+  <li class="cor-list__item {% if modifierClass %}cor-list__item--{{ modifierClass }}{% endif %}">
+    {{ listitem | safe }}
+  </li>
+  {% endfor %}
+</ul>

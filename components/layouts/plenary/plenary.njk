@@ -11,13 +11,9 @@
     <div>
       <img src="https://placeimg.com/640/480/any"/>
     </div>
-    <nav>
-      <ol>
-        {% for navitem in navcontents %}
-        <li><a href="">{{ navitem }}</a></li>
-        {% endfor %}
-      </ol>
-    </nav>
+
+      {% render "@toc", {tableOfContent: tableOfContent, modifierClass: "plenary"} %}
+
     <div>
 
     </div>

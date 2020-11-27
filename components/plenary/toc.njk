@@ -1,0 +1,12 @@
+<nav clas="cor-c-toc" aria-label="Content">
+  <!-- {% render "@ulist", {list:tableOfContent, modifierClass: "toc"} %} -->
+  <ul class="cor-c-toc-list {% if modifierClass %}cor-c-toc-list--{{ modifierClass }}{% endif %}">
+
+    {% for section in tableOfContent %}
+    <li class="cor-c-toc-list__item {% if modifierClass %}cor-c-toc-list__item--{{ modifierClass }}{% endif %}">
+      <a class="cor-c-toc__link {% if modifierClass %}cor-c-toc__link--{{ modifierClass }}{% endif %}" href="{{ section | lower }}">{{ section }}</a>
+    </li>
+    {% endfor %}
+
+  </ul>
+</nav>

@@ -1,3 +1,4 @@
+{%  macro ulist(list) %}
 <ul class="cor-plenary-list">
   {% for listitem in list %}
   <li class="cor-plenary-list__item">
@@ -5,3 +6,18 @@
   </li>
   {% endfor %}
 </ul>
+{% endmacro %}
+
+{%  macro olist(list) %}
+<ol class="cor-plenary-list">
+  {% for listitem in list %}
+  <li class="cor-plenary-list__item">
+    {{ listitem }}
+  </li>
+  {% endfor %}
+</ol>
+{% endmacro %}
+
+{{ ulist(list) }}
+
+{{ olist(list) }}
