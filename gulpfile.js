@@ -6,6 +6,7 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const postcssCustomProperties = require('postcss-custom-properties');
+const purgecss = require('@fullhuman/postcss-purgecss')
 const path = require('path');
 const { rollup } = require('rollup');
 const { babel } = require('@rollup/plugin-babel');
@@ -82,13 +83,16 @@ function css() {
 
 function cssEuropcom() {
   return gulp
-    .src('assets/europcom.scss')
+    .src('assets/europcom2020.scss')
     .pipe(sassGlob())
     .pipe(sass())
     .on('error', sass.logError)
-    .pipe(postcss([autoprefixer(), postcssCustomProperties(), cssnano()]))
+    .pipe(postcss([purgecss({
+      content: ['./**/*.html']
+    }), autoprefixer(), postcssCustomProperties()]))
     .pipe(gulp.dest("public/css"))
 }
+
 
 function deleteOldMainStyles() {
   return del('public/css')
@@ -154,8 +158,8 @@ gulp.task('fractalBuild', function () {
 
 
 function watch() {
-  gulp.watch(['components/**/*.scss', 'assets/*.scss'], gulp.series(deleteOldMainStyles, css, cssEuropcom));
-  gulp.watch(['components/**/*.js', 'assets/*.js'], gulp.series(deleteOldBundle, bundle, bundleEuropcom, compress));
+  gulp.watch(['components/**/*.scss', 'assets/*.scss'], gulp.series(deleteOldMainStyles, css));
+  gulp.watch(['components/**/*.js', 'assets/*.js'], gulp.series(deleteOldBundle, bundle, compress));
 }
 
 exports.images = convertImagesToWebp;

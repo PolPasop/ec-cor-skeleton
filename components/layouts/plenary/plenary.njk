@@ -1,0 +1,25 @@
+<main class="cor-plenary">
+  <section class="cor-plenary__header">
+    <div>
+      <h1>{{ title }}</h1>
+      <p>{{ firstparagraph }}</p>
+      <p>
+        <a href="test.be">Next session</a>
+        <a href="test.be">Previous session</a>
+      </p>
+    </div>
+    <div>
+      <img src="https://placeimg.com/640/480/any"/>
+    </div>
+    <nav>
+      <ol>
+        {% for navitem in navcontents %}
+        <li><a href="">{{ navitem }}</a></li>
+        {% endfor %}
+      </ol>
+    </nav>
+    <div>
+
+    </div>
+  </section>
+</main>

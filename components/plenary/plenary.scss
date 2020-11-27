@@ -1,0 +1,50 @@
+@import "settings.scss";
+
+/*
+ * Typography
+ */
+ .ec-cor-barometer {
+  background-color: #fff;
+  color: var(--text-color);
+}
+
+.ec-cor-barometer .ec-cor-heading--1 {
+  color: var(--text-color);
+  font-size: var(--heading-size-1);
+  line-height: 1.2;
+  margin-bottom: var(--s1);
+}
+
+.ec-cor-barometer .ec-cor-heading--2 {
+  font-size: var(--heading-size);
+  margin-bottom: var(--s0);
+}
+
+.ec-cor-barometer .ec-cor-heading--3 {
+  color: var(--text-color);
+  font-size: var(--heading-size-secondary);
+  margin-bottom: var(--s0);
+  text-transform: uppercase;
+}
+
+.ec-cor-barometer p,
+.ec-cor-barometer-paragraph {
+  line-height: 1.5;
+  font-size: 1rem;
+  max-width: 45rem;
+  padding: 0 0 var(--s-2);
+}
+
+@media screen and ( min-width:60em) {
+  .ec-cor-barometer p,
+  .ec-cor-barometer-paragraph {
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and ( min-width:120em) {
+  .ec-cor-barometer p,
+  .ec-cor-barometer-paragraph {
+    font-size: 1.137rem;
+  }
+}

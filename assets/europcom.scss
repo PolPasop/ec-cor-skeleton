@@ -1,5 +1,4 @@
 @import "settings.scss";
-@import "../components/europcom/*.scss";
 
 :root {
   --color-1: #bac4ca;
@@ -443,6 +442,19 @@ summary h3 {
   width: 160px;
   padding: 1rem;
 } 
+
+
+@media screen and (min-width: 800px) {
+  .ec-europcom-program__speakers-list--moderators .ec-europcom-program__speakers-list__item {
+    width: auto;
+  }
+
+  .ec-europcom-program__speakers-list--moderators li a {
+    display: grid;
+    grid-template-columns: 128px 1fr;
+    gap: 2rem;
+  }
+}
 
 
 
