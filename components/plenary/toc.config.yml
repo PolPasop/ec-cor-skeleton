@@ -3,9 +3,11 @@ variants:
   - name: default
     context:
       title: Contents
-      tableOfContent: ["Section 1", "Section 2", "Section 3", "Section 4", "Section 5"]
+      aria: Content
+      tableOfContent: ["Introduction", "Next session", "Previous plenary sessions", "Document", "Contact"]
   - name: documents
     context:
       modifier: documents
       title: Documents
+      aria: Documents
       tableOfContent: ["Document 1", "Document 2", "Document 3"]

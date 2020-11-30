@@ -3,6 +3,11 @@
 .cor-plenary {
   --c-blue-1: rgb(41,93,152,1);
   --links-color: var(--c-blue-1);
+
+  --heading-size-1: 32px;
+  --heading-size: 24px;
+  --heading-size-secondary: 19px;
+  --heading-size-3: 16px;
 }
 
 
@@ -13,48 +18,57 @@
 /*
  * Typography
  */
- .ec-cor-barometer {
+.cor-plenary {
   background-color: #fff;
   color: var(--text-color);
 }
 
-.ec-cor-barometer .ec-cor-heading--1 {
+.cor-plenary-heading--1 {
   color: var(--text-color);
   font-size: var(--heading-size-1);
   line-height: 1.2;
   margin-bottom: var(--s1);
 }
-
-.ec-cor-barometer .ec-cor-heading--2 {
-  font-size: var(--heading-size);
-  margin-bottom: var(--s0);
+h1.cor-plenary-heading--1 {
+  font-size: var(--heading-size-1) !important;
 }
 
-.ec-cor-barometer .ec-cor-heading--3 {
+.cor-plenary-heading--2 {
   color: var(--text-color);
-  font-size: var(--heading-size-secondary);
+  font-size: var(--heading-size) !important;
   margin-bottom: var(--s0);
-  text-transform: uppercase;
 }
 
-.ec-cor-barometer p,
-.ec-cor-barometer-paragraph {
+.cor-plenary-heading--3 {
+  color: var(--text-color);
+  font-size: var(--heading-size-3) !important;
+  margin-bottom: var(--s0);
+}
+
+.cor-plenary-description,
+.cor-plenary p,
+.cor-plenary-paragraph {
   line-height: 1.5;
   font-size: 1rem;
   max-width: 45rem;
   padding: 0 0 var(--s-2);
 }
 
+.cor-plenary-description {
+  font-size: 1.25rem;
+  margin-bottom: var(--s3);
+}
+
 @media screen and ( min-width:60em) {
-  .ec-cor-barometer p,
-  .ec-cor-barometer-paragraph {
+  .cor-plenary p,
+  .cor-plenary-paragraph {
     font-size: 1.125rem;
   }
 }
 
 @media screen and ( min-width:120em) {
-  .ec-cor-barometer p,
-  .ec-cor-barometer-paragraph {
+  .cor-plenary p,
+  .cor-plenary-paragraph {
     font-size: 1.137rem;
   }
 }

@@ -1,26 +1,47 @@
 <main class="cor-plenary cor-l-plenary">
   <section class="cor-l-plenary__header">
-    <div>
-      <h1>{{ title }}</h1>
-      <p>{{ firstparagraph }}</p>
-      <p>
-        <a href="test.be">Next session</a>
-        <a href="test.be">Previous session</a>
-      </p>
+    <div class="cor-l-plenary__header__intro">
+      <h1 class="cor-plenary-heading--1">{{ title }}</h1>
+      <div class="cor-plenary-description">{{ firstparagraph }}</div>
     </div>
     <div class="cor-l-plenary__header__picture-container">
-      <img class="cor-l-plenary__header__picture" src="https://placeimg.com/640/480/any"/>
-    </div>
-
-      {% render "@toc" %}
-
-      {% render "@toc--documents" %}
-
-      <h2 class="cor-c-toc-title cor-c-plenary-title--sides">Contact</h2>
-      <a href="mailto:greffe@cor.europa.eu" class="cor-c-plenary-contact__link">greffe@cor.europa.eu</a>
-
-    <div>
-
+      <img class="cor-l-plenary__header__picture" src="https://placeimg.com/640/480/any" alt="Illustration of a plenary"/>
     </div>
   </section>
+
+  <section class="cor-l-plenary__toc">
+    {% render "@toc" %}
+  </section>
+
+  <section class="cor-l-plenary__docs-and-contact">
+    {% render "@toc--documents" %}
+
+    <h2 class="cor-c-toc-title cor-c-plenary-title--sides cor-plenary-heading--3">Contact</h2>
+    <a href="mailto:greffe@cor.europa.eu" class="cor-c-plenary-contact__link">greffe@cor.europa.eu</a>
+  </section>
+
+  <section class="cor-l-plenary__main">
+    <p>Normally chaired by CoR's President, the main purpose of the plenary sessions is to:</p>
+    <ul>
+      <li>Vote opinions, reports and resolutions</li>
+      <li>Adopt CoR's political programme at the beginning of every term</li>
+      <li>Elect President, First Vice-president and remaining members of the Bureau</li>
+      <li>Set up policy commissions within the institution</li>
+      <li>Approve CoR draft estimates of expenditure and revenue</li>
+      <li>Revise and agree on CoR Rules of Procedure</li>
+    </ul>
+
+    <p>The relevant CoR commission will appoint one of its members – known as the rapporteur – to draft an opinion on the legislative proposal which is then voted during one of CoR plenaries. If it gets a majority vote it is adopted and handed in to the other EU institutions.</p>
+
+    <p>The CoR may also proactively adopt a position on a particular issue through an own-initiative opinion.</p>
+  </section>
+
+  <section class="cor-l-plenary__next-plenary">
+    {% render "@nextplenary" %}
+  </section>
+
+  <section class="cor-l-plenary__previous-plenary">
+    {% render "@previousplenaries" %}
+  </section>
 </main>
+
