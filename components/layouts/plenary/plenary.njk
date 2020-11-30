@@ -1,5 +1,5 @@
-<main class="cor-plenary">
-  <section class="cor-plenary__header">
+<main class="cor-plenary cor-l-plenary">
+  <section class="cor-l-plenary__header">
     <div>
       <h1>{{ title }}</h1>
       <p>{{ firstparagraph }}</p>
@@ -8,11 +8,16 @@
         <a href="test.be">Previous session</a>
       </p>
     </div>
-    <div>
-      <img src="https://placeimg.com/640/480/any"/>
+    <div class="cor-l-plenary__header__picture-container">
+      <img class="cor-l-plenary__header__picture" src="https://placeimg.com/640/480/any"/>
     </div>
 
-      {% render "@toc", {tableOfContent: tableOfContent, modifierClass: "plenary"} %}
+      {% render "@toc" %}
+
+      {% render "@toc--documents" %}
+
+      <h2 class="cor-c-toc-title cor-c-plenary-title--sides">Contact</h2>
+      <a href="mailto:greffe@cor.europa.eu" class="cor-c-plenary-contact__link">greffe@cor.europa.eu</a>
 
     <div>
 

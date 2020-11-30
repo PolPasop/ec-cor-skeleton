@@ -1,2 +1,11 @@
-context:
-  tableOfContent: ["section 1", "section 2", "section 3", "section 4", "section 5"]
+title: Table of content
+variants:
+  - name: default
+    context:
+      title: Contents
+      tableOfContent: ["Section 1", "Section 2", "Section 3", "Section 4", "Section 5"]
+  - name: documents
+    context:
+      modifier: documents
+      title: Documents
+      tableOfContent: ["Document 1", "Document 2", "Document 3"]

@@ -1,10 +1,10 @@
 <nav class="cor-c-toc" aria-label="Content">
-
-  <ul class="cor-c-toc-list {% if modifierClass %}cor-c-toc-list--{{ modifierClass }}{% endif %}">
+  <h2 class="cor-c-toc-title cor-c-plenary-title--sides">{{ title }}</h2>
+  <ul class="cor-c-toc-list cor-c-toc-list--{{ modifier }}">
 
     {% for section in tableOfContent %}
-    <li class="cor-c-toc-list__item {% if modifierClass %}cor-c-toc-list__item--{{ modifierClass }}{% endif %}">
-      <a class="cor-c-toc__link {% if modifierClass %}cor-c-toc__link--{{ modifierClass }}{% endif %}" href="{{ section | lower }}">{{ section }}</a>
+    <li class="cor-c-toc-list__item cor-c-toc-list__item--{{ modifier }}">
+      <a class="cor-c-toc__link cor-c-toc__link--{{ modifier }}" href="{{ section | lower }}"><span class="cor-c-toc__link__content cor-c-toc__link__content--{{ modifier }}">{{ section }}</span></a>
     </li>
     {% endfor %}
 

@@ -1,6 +1,8 @@
 .cor-c-toc {
+  --border-radius: 8px;
   --color: var(--links-color);
   --padding: 1rem 0;
+  --title-color: var(--text-color);
 
   color: var(--color);
 }
@@ -8,4 +10,38 @@
 .cor-c-toc__link {
   display: block;
   padding: var(--padding);
+}
+
+.cor-c-toc-title {
+  color: var(--title-color);
+}
+
+.cor-c-toc-list--documents {
+  background-color: var(--c-yellow);
+  border-radius: var(--border-radius);
+  color: var(--text-color);
+  margin-top: var(--s2);
+}
+
+a.cor-c-toc__link--documents {
+  align-items: center;
+  color: var(--text-color);
+  display: flex;
+}
+
+a.cor-c-toc__link--documents:hover {
+  color: #000;
+}
+
+.cor-c-toc__link--documents:after {
+  background: url(../images/plenary/icons/doc.svg) no-repeat;
+  content: "";
+  display: block;
+  height: 16px;
+  margin-left: var(--s-2);
+  width: 16px;
+}
+
+.cor-c-toc__link__content--documents {
+  border-bottom: solid 1px;
 }

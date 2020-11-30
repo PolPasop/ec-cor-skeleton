@@ -1,0 +1,28 @@
+.cor-plenary {
+  --c-yellow: rgba(248,187,0,0.64);
+}
+
+.cor-l-plenary__header__picture {
+  display: none;
+}
+
+@media screen and (min-width: 500px) {
+  .cor-l-plenary__header__picture {
+    display: block;
+  }
+}
+
+/*
+ * Titles
+ */
+.cor-c-plenary-title--sides {
+  font-size: 16px !important;
+  margin-bottom: var(--s0);
+}
+
+/*
+ * Contact
+ */
+.cor-c-plenary-contact__link {
+  border-bottom: solid 1px;
+}
