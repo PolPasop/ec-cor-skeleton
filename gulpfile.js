@@ -6,6 +6,7 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const postcssCustomProperties = require('postcss-custom-properties');
+const cssvariables = require("postcss-css-variables");
 const purgecss = require('@fullhuman/postcss-purgecss')
 const path = require('path');
 const { rollup } = require('rollup');
@@ -77,7 +78,7 @@ function css() {
     .pipe(sassGlob())
     .pipe(sass())
     .on('error', sass.logError)
-    .pipe(postcss([autoprefixer(), postcssCustomProperties(), cssnano()]))
+    .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(gulp.dest("public/css"))
 }
 
