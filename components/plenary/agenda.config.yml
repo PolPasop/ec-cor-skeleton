@@ -1,0 +1,28 @@
+context:
+  agenda:
+    - day: Monday 12/12/2020
+      program:
+      - time: "10:00"
+        title: DEBATE WITH THE EIB ON FUNDS AND RECOVERY
+        description: "COR-2020-02500-09-01-PSP-TRA 36. Statement by: Werner Hoyer President of the European Investment Bank Lilyana Pavlova Vice-President of the European Investment Bank Debate with members of the European Committee of the Regions"
+      - time: "11:00"
+        title: DEBATE ON SOCIAL AFFAIRS
+        description: "COR-2020-02500-08-01-PSP-TRA 37. Statement by: Nicolas Schmit Commissioner for Jobs and Social Rights Debate with members of the European Committee of the Regions"
+      - time: "12:00"
+        title: ANNOUNCEMENT OF THE RESULTS OF THE FINAL VOTES ON OPINIONS AND OTHER DOCUMENTS
+        description: "39. Proposal to establish an ad-hoc commission on the revision of the Rules of Procedure COR-2020-00860-01-01-PSP-TRA"
+      - time: "16:00"
+        title: END OF THE PLENARY SESSION
+    - day: Tuesday 13/12/2020
+      program:
+      - time: "10:00"
+        title: DEBATE WITH THE EIB ON FUNDS AND RECOVERY
+        description: "COR-2020-02500-09-01-PSP-TRA 36. Statement by: Werner Hoyer President of the European Investment Bank Lilyana Pavlova Vice-President of the European Investment Bank Debate with members of the European Committee of the Regions"
+      - time: "11:00"
+        title: DEBATE ON SOCIAL AFFAIRS
+        description: "COR-2020-02500-08-01-PSP-TRA 37. Statement by: Nicolas Schmit Commissioner for Jobs and Social Rights Debate with members of the European Committee of the Regions"
+      - time: "12:00"
+        title: ANNOUNCEMENT OF THE RESULTS OF THE FINAL VOTES ON OPINIONS AND OTHER DOCUMENTS
+        description: "39. Proposal to establish an ad-hoc commission on the revision of the Rules of Procedure COR-2020-00860-01-01-PSP-TRA"
+      - time: "16:00"
+        title: END OF THE PLENARY SESSION 

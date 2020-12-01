@@ -1,0 +1,22 @@
+<div class="cor-plenary__agenda">
+  <h2 class="cor-plenary-heading--2">Agenda</h2>
+
+  {% for day in agenda %}
+
+  <details {% if loop.first %}open{% endif %}>
+    <summary>{{ day.day }}</summary>
+    <ul class="cor-plenary__agenda__list">
+      {% for agendaItem in day.program %}
+      <li class="cor-plenary__agenda__list__item">
+        <span class="cor-plenary__agenda__list__item__time">{{ agendaItem.time }}</span>
+        <div class="cor-plenary__agenda__list__item__description-container">
+          <strong class="cor-plenary__agenda__list__item__title">{{ agendaItem.title }}</strong>
+          <span  class="cor-plenary__agenda__list__item__description">{{ agendaItem.description }}</span>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </details>
+
+  {% endfor %}
+</div>
