@@ -89,3 +89,10 @@
     grid-column: 1 / -1;
   }
 }
+
+/*
+ * Overrides
+ */
+.mainContent li {
+    list-style-position: outside;
+}

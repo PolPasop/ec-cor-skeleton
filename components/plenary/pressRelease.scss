@@ -1,0 +1,30 @@
+
+.cor-plenary__press-release__list {
+  list-style: none;
+  padding: 0;
+}
+
+.cor-l-plenary__press-release-grid {
+  display: grid;
+  gap: var(--s1);
+  grid-template-columns: 1fr 1fr;
+}
+
+.cor-l-plenary__press-release__card {
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+  border-radius: 8px;
+  color: var(--text-color);
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  height: 100%;
+  overflow: hidden;
+}
+
+.cor-l-plenary__press-release__card__poster {
+  background-size: cover;
+}
+
+.cor-l-plenary__press-release__card__description {
+  display: grid;
+  padding: var(--s0);
+}

@@ -1,0 +1,27 @@
+<div class="cor-plenary__press-release ">
+  <h2 class="cor-plenary-heading--2">{{ title }}</h2>
+
+  
+
+    <ul class="cor-plenary__press-release__list cor-l-plenary__press-release-grid">
+
+      {% for pressRelease in pressReleases %}
+      <li>
+        <a href="#">
+          <article class="cor-l-plenary__press-release__card">
+            <div class="cor-l-plenary__press-release__card__poster" style="background-image:url({{ pressRelease.picture }})"></div>
+            <div class="cor-l-plenary__press-release__card__description">
+              <h1 class="cor-plenary-heading--3">{{ pressRelease.title }}</h1>
+
+              <span>By Rapporteur</span>
+              <strong>{{ pressRelease.name }}</strong>
+              <span>{{ pressRelease.country }}, {{ pressRelease.group }}</span>
+            </div>
+          </article>
+        </a>
+      </li>
+      {% endfor %}
+
+    </ul>
+
+</div>
