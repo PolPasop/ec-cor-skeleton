@@ -61,6 +61,10 @@
     grid-column: 1 / 2;
     order: initial;
   }
+
+  .cor-l-plenary__press-release-container {
+    grid-column: 1 / -1;
+  }
 }
 
 /*
@@ -81,6 +85,10 @@
   --background: rgba(198,229,241,1);
 
   background: var(--background);
+}
+
+.cor-l-plenary__agenda-container,
+.cor-l-plenary__press-release-container {
   padding: var(--s2);
 }
 

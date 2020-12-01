@@ -16,6 +16,8 @@ for (var i = 0; i < pressReleasesCount; i++) {
 
 module.exports = {
   context: {
+    title: "Press releases",
+    intro: "​The plenary assembly will discuss and vote​​ on the opinions listed here below.",
     pressReleases: pressReleasesData
   }
 };

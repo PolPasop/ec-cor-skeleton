@@ -7,7 +7,12 @@
 .cor-l-plenary__press-release-grid {
   display: grid;
   gap: var(--s1);
-  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (min-width:600px) {
+  .cor-l-plenary__press-release-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .cor-l-plenary__press-release__card {
@@ -15,7 +20,7 @@
   border-radius: 8px;
   color: var(--text-color);
   display: grid;
-  grid-template-columns: 100px 1fr;
+  grid-template-columns: 156px 1fr;
   height: 100%;
   overflow: hidden;
 }
@@ -27,4 +32,18 @@
 .cor-l-plenary__press-release__card__description {
   display: grid;
   padding: var(--s0);
+}
+
+.cor-l-plenary__press-release__card__function,
+.cor-l-plenary__press-release__card__countryandgroup {
+  color: var(--c-g-3);
+}
+
+.cor-l-plenary__press-release__card__logos {
+  text-align: right;
+}
+
+.cor-l-plenary__press-release__card__function,
+.cor-l-plenary__press-release__card__countryandgroup {
+  font-size: .75rem;
 }

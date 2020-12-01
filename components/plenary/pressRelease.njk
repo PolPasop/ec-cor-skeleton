@@ -1,7 +1,7 @@
 <div class="cor-plenary__press-release ">
   <h2 class="cor-plenary-heading--2">{{ title }}</h2>
 
-  
+  <div class="cor-plenary-description">{{ intro }}</div>
 
     <ul class="cor-plenary__press-release__list cor-l-plenary__press-release-grid">
 
@@ -11,11 +11,16 @@
           <article class="cor-l-plenary__press-release__card">
             <div class="cor-l-plenary__press-release__card__poster" style="background-image:url({{ pressRelease.picture }})"></div>
             <div class="cor-l-plenary__press-release__card__description">
-              <h1 class="cor-plenary-heading--3">{{ pressRelease.title }}</h1>
+              <h1 class="cor-plenary-heading--4">{{ pressRelease.title }}</h1>
 
-              <span>By Rapporteur</span>
-              <strong>{{ pressRelease.name }}</strong>
-              <span>{{ pressRelease.country }}, {{ pressRelease.group }}</span>
+              <span class="cor-l-plenary__press-release__card__function">By Rapporteur</span>
+              <strong class="cor-l-plenary__press-release__card__name">{{ pressRelease.name }}</strong>
+              <span class="cor-l-plenary__press-release__card__countryandgroup">{{ pressRelease.country }}, {{ pressRelease.group }}</span>
+
+              <div class="cor-l-plenary__press-release__card__logos">
+                <img src="/images/plenary/flag.png" alt="flag of {{ pressRelease.country }}"/>
+                <img src="/images/plenary/group.png" alt="logo of {{ pressRelease.group }}" />
+              </div>
             </div>
           </article>
         </a>
