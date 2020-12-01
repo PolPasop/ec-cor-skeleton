@@ -1,0 +1,32 @@
+<div class="cor-plenary__opinions ">
+  <h2 class="cor-plenary-heading--2">{{ title }}</h2>
+
+  <div class="cor-plenary-description">{{ intro }}</div>
+
+    <ul class="cor-plenary__opinions__list cor-l-plenary__opinions-grid">
+
+      {% for opinion in opinions %}
+      <li>
+        <a href="#">
+          <article class="cor-l-plenary__opinions__card">
+            <div class="cor-l-plenary__opinions__card__poster" style="background-image:url({{ opinion.picture }})"></div>
+            <div class="cor-l-plenary__opinions__card__description">
+              <h1 class="cor-plenary-heading--4">{{ opinion.title }}</h1>
+
+              <span class="cor-l-plenary__opinions__card__function">By Rapporteur</span>
+              <strong class="cor-l-plenary__opinions__card__name">{{ opinion.name }}</strong>
+              <span class="cor-l-plenary__opinions__card__countryandgroup">{{ opinion.country }}, {{ opinion.group }}</span>
+
+              <div class="cor-l-plenary__opinions__card__logos">
+                <img src="/images/plenary/flag.png" alt="flag of {{ opinion.country }}"/>
+                <img src="/images/plenary/group.png" alt="logo of {{ opinion.group }}" />
+              </div>
+            </div>
+          </article>
+        </a>
+      </li>
+      {% endfor %}
+
+    </ul>
+
+</div>

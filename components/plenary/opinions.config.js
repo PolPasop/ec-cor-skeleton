@@ -1,10 +1,10 @@
 const faker = require('faker');
 
-const pressReleasesCount = 32;
-const pressReleasesData = [];
+const opinionsCount = 32;
+const opinionsData = [];
 
-for (var i = 0; i < pressReleasesCount; i++) {
-  pressReleasesData.push({
+for (var i = 0; i < opinionsCount; i++) {
+  opinionsData.push({
     picture: `https://fakeface.rest/face/view/${i}?minimum_age=25`,
     title: faker.lorem.sentence(),
     name: faker.name.findName(),
@@ -16,8 +16,8 @@ for (var i = 0; i < pressReleasesCount; i++) {
 
 module.exports = {
   context: {
-    title: "Press releases",
+    title: "Opinions",
     intro: "​The plenary assembly will discuss and vote​​ on the opinions listed here below.",
-    pressReleases: pressReleasesData
+    opinions: opinionsData
   }
 };
