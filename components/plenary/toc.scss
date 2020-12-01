@@ -1,7 +1,7 @@
 .cor-c-toc {
   --border-radius: 8px;
   --color: var(--links-color);
-  --padding: 1rem 0;
+  --padding: var(--s-2) 0;
   --title-color: var(--text-color);
 
   color: var(--color);
@@ -20,7 +20,9 @@
   background-color: var(--c-yellow);
   border-radius: var(--border-radius);
   color: var(--text-color);
-  margin-top: var(--s2);
+  margin-top: var(--s0);
+  padding-top: var(--s0);
+  padding-bottom: var(--s0);
 }
 
 a.cor-c-toc__link--documents {

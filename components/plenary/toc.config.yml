@@ -10,4 +10,4 @@ variants:
       modifier: documents
       title: Documents
       aria: Documents
-      tableOfContent: ["Document 1", "Document 2", "Document 3"]
+      tableOfContent: ["Meetings calendar 2020", "Meetings documents"]

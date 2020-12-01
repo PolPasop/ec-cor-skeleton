@@ -5,6 +5,7 @@
 .cor-l-plenary {
   display: flex;
   flex-direction: column;
+  
 }
 
 .cor-l-plenary__docs-and-contact {
@@ -14,6 +15,8 @@
 .cor-l-plenary__header__picture {
   display: none;
 }
+
+
 
 @media screen and (min-width: 500px) {
   .cor-l-plenary {
@@ -28,6 +31,7 @@
     gap: var(--s0);
     grid-template-columns: 50% 50%;
     grid-column: 1 / -1;
+    padding-left: var(--s0);
   }
 
   .cor-l-plenary__header__intro {
@@ -64,6 +68,14 @@
 
   .cor-l-plenary__opinions-container {
     grid-column: 1 / -1;
+  }
+
+  .cor-l-plenary__toc {
+    padding-left: var(--s0);
+  }
+
+  .cor-l-plenary__main {
+    padding-right: var(--s0);
   }
 }
 
