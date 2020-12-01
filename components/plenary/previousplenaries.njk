@@ -1,15 +1,18 @@
 <div class="cor-l-plenary__previous-plenary">
-  <h2 class="cor-plenary-heading--2">Previous plenary sessions</h2>
-  <div class="cor-plenary-paragraph">The relevant CoR commission will appoint one of its members – known as the rapporteur – to draft an opinion on the legislative proposal which is then voted during one of CoR plenaries. If it gets a majority vote it is adopted and handed in to the other EU institutions.</div>
+  <h2 class="cor-plenary-heading--2 cor-l-plenary__previous-plenary__title">Previous plenary sessions</h2>
+  <div class="cor-plenary-paragraph cor-l-plenary__previous-plenary__description">The relevant CoR commission will appoint one of its members – known as the rapporteur – to draft an opinion on the legislative proposal which is then voted during one of CoR plenaries. If it gets a majority vote it is adopted and handed in to the other EU institutions.</div>
   
-  <ul class="cor-l-plenary__previous-plenary-list">
-    {% for plenary in previousplenaries %}
-    <li class="cor-l-plenary__previous-plenary-list__item">
-      <a href="">
-        <span class="cor-l-plenary__previous-plenary-number">{{ plenary.number }}</span>
-        <span class="cor-l-plenary__previous-plenary-date">{{ plenary.date }}</span>
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
+  <div class="cor-l-plenary__previous-plenary-list-container">
+    <ul class="cor-l-plenary__previous-plenary-list">
+      {% for plenary in previousplenaries %}
+      <li class="cor-l-plenary__previous-plenary-list__item">
+        <a href="" class="cor-l-plenary__previous-plenary-tile">
+          <span class="cor-l-plenary__previous-plenary-number">{{ plenary.number }}</span>
+          <span class="cor-l-plenary__previous-plenary-date">{{ plenary.date }}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <a href="" class="cor-l-plenary__previous-plenary__archive-link">Archives</a>
+  </div>
 </div>

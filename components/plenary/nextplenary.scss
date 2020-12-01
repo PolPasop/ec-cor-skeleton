@@ -9,6 +9,16 @@
   padding: var(--s0);
 }
 
+@media  screen and (min-width:500px) {
+  .cor-l-plenary__next-plenary {
+    gap: var(--s0);
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .cor-l-plenary__previous-plenary__archive-link {
+    place-self: center;
+  }
+}
 .cor-l-plenary__next-plenary__title,
 .cor-l-plenary__next-plenary__subtitle {
   color: var(--text-color);
