@@ -1,5 +1,4 @@
 .cor-c-toc {
-  --border-radius: 8px;
   --color: var(--links-color);
   --padding: var(--s-2) 0;
   --title-color: var(--text-color);
@@ -18,7 +17,6 @@
 
 .cor-c-toc-list--documents {
   background-color: var(--c-yellow);
-  border-radius: var(--border-radius);
   color: var(--text-color);
   margin-top: var(--s0);
   padding-top: var(--s0);

@@ -97,11 +97,18 @@
   --background: rgba(198,229,241,1);
 
   background: var(--background);
+  padding: var(--s3) var(--s0);
 }
 
-.cor-l-plenary__agenda-container,
-.cor-l-plenary__opinions-container {
-  padding: var(--s2);
+.cor-l-plenary__opinions-container,
+.cor-l-plenary__webstreaming-container {
+  padding: var(--s0);
+}
+
+.cor-l-plenary__webstreaming-container {
+  grid-column: 1 / -1;
+  background: rgba(0,120,170,1);
+  padding: var(--s3) var(--s0);
 }
 
 @media screen and (min-width: 500px) {

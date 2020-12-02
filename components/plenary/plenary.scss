@@ -14,12 +14,27 @@
 
 
 
+.cor-plenary *,.cor-plenary *:before,.cor-plenary  *:after {
+    -moz-box-sizing: content-box;
+    box-sizing: border-box;
+}
 
+/*
+ * Grid
+ */
+.cor-l-plenary-grid {
+  display: grid;
+}
+ .cor-l-plenary-grid--2 {
+  gap: var(--s0) ;
+  grid-template-columns: 1fr 1fr;
+ }
 
 /*
  * Typography
  */
-.cor-plenary {
+
+ .cor-plenary {
   background-color: #fff;
   color: var(--text-color);
 }
@@ -66,3 +81,39 @@ h1.cor-plenary-heading--1 {
   margin-bottom: var(--s3);
 }
 
+/*
+ * Buttons
+ */
+.cor-c-plenary__btn {
+  border: solid 1px white;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--s-2);
+}
+
+a.cor-c-plenary__btn,
+a.cor-c-plenary__btn:visited {
+  color: white;
+}
+
+.cor-c-plenary__btn--twitter {
+  background-color: white;
+  color: rgba(29,161,242,1);
+}
+
+a.cor-c-plenary__btn--twitter,
+a.cor-c-plenary__btn--twitter:visited {
+  color: rgba(29,161,242,1);
+}
+
+
+
+.cor-c-plenary__btn:hover {
+  background-color: #006088;
+}
+
+.cor-c-plenary__btn svg {
+  margin-left: var(--s0);
+}
