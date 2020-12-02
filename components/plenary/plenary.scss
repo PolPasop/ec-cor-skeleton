@@ -1,5 +1,9 @@
 @import "settings.scss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 .cor-plenary {
   --c-blue-1: rgb(41,93,152,1);
   --links-color: var(--c-blue-1);

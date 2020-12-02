@@ -4,7 +4,7 @@
 
     {% for section in tableOfContent %}
     <li class="cor-c-toc-list__item cor-c-toc-list__item--{{ modifier }}">
-      <a class="cor-c-toc__link cor-c-toc__link--{{ modifier }}" href="{{ section | lower }}"><span class="cor-c-toc__link__content cor-c-toc__link__content--{{ modifier }}">{{ section }}</span></a>
+      <a class="cor-c-toc__link cor-c-toc__link--{{ modifier }}" href="#{{ section | lower }}"><span class="cor-c-toc__link__content cor-c-toc__link__content--{{ modifier }}">{{ section }}</span></a>
     </li>
     {% endfor %}
 
