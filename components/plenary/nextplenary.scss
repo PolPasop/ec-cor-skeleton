@@ -9,6 +9,11 @@
   padding: var(--s0);
 }
 
+.cor-l-plenary__next-plenary__picture-container img {
+  display: block;
+  max-width: 100%;
+}
+
 @media  screen and (min-width:500px) {
   .cor-l-plenary__next-plenary {
     gap: var(--s0);
