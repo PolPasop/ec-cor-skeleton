@@ -3,11 +3,20 @@
   background: rgba(0,120,170,1);
 }
 
+
 .cor-l-webstreaming {
   display: grid;
   gap: var(--s3);
-  grid-template-columns: 1fr 2fr;
 }
+
+@media screen and (min-width: 500px) {
+  .cor-l-webstreaming {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+
 
 .cor-l-webstreaming .cor-plenary-heading--2 {
   color: white;
