@@ -19,6 +19,8 @@
   background-color: var(--c-yellow);
   color: var(--text-color);
   margin-top: var(--s0);
+  list-style: none;
+  padding-left: var(--s0);
   padding-top: var(--s0);
   padding-bottom: var(--s0);
 }
@@ -33,13 +35,26 @@ a.cor-c-toc__link--documents:hover {
   color: #000;
 }
 
-.cor-c-toc__link--documents:after {
+.cor-c-toc__link--documents:before {
   background: url(../images/plenary/icons/doc.svg) no-repeat;
   content: "";
-  display: block;
+  display: inline-block;
   height: 16px;
-  margin-left: var(--s-2);
+  margin-right: var(--s-2);
   width: 16px;
+}
+
+.cor-c-toc__link[href="#document"]
+.cor-c-toc__link[href="contact"] {
+  display: block;
+}  
+
+
+@media screen and (min-width: 500px) {
+  .cor-c-toc__link[href="#document"],
+  .cor-c-toc__link[href="contact"] {
+    display: none;
+  }  
 }
 
 .cor-c-toc__link__content--documents {
