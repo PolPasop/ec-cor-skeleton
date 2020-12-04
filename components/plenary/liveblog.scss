@@ -8,3 +8,9 @@
   display: grid;
   gap: var(--s0);
 }
+
+@media screen and (min-width: 600px) {
+  .cor-l-plenary-liveblog__buttons {
+    grid-template-columns: 1fr 1fr;
+  }
+}

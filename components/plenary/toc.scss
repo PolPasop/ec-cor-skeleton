@@ -26,9 +26,7 @@
 }
 
 a.cor-c-toc__link--documents {
-  align-items: center;
   color: var(--text-color);
-  display: flex;
 }
 
 a.cor-c-toc__link--documents:hover {
@@ -41,10 +39,10 @@ a.cor-c-toc__link--documents:hover {
   display: inline-block;
   height: 16px;
   margin-right: var(--s-2);
-  width: 16px;
+  width: 20px;
 }
 
-.cor-c-toc__link[href="#document"]
+.cor-c-toc__link[href="#document"],
 .cor-c-toc__link[href="contact"] {
   display: block;
 }  

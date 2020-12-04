@@ -82,9 +82,13 @@ h1.cor-plenary-heading--1 {
 
 .cor-plenary-description {
   font-size: 1.25rem;
-  margin-bottom: var(--s3);
 }
 
+@media screen and (min-width: 800px) {
+  .cor-plenary-description {
+    margin-bottom: 0;
+  }
+}
 /*
  * Buttons
  */

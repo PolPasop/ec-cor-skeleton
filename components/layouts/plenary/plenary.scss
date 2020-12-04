@@ -16,9 +16,12 @@
   display: none;
 }
 
+.cor-l-plenary > section {
+  margin-bottom: var(--s3);
+}
 
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 800px) {
   .cor-l-plenary {
     display: grid;
     gap: var(--s2);
