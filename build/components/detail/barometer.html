@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.4.0" type="text/css">
 
 
-<title>Example component | Ec Cor Styleguide</title>
+<title>Barometer layout | Ec Cor Styleguide</title>
 
 </head>
 <body>
@@ -65,7 +65,7 @@
     <div class="Pen-panel Pen-header">
     <h1 class="Pen-title">
         <a class="Pen-previewLink" href="../preview/barometer.html" title="Component preview">
-            Example component
+            Barometer layout
             <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
@@ -158,33 +158,41 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-50d5cbe3786e30ae657c5d437e036c3a-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer"</span>&gt;</span>
 
     <span class="hljs-comment">&lt;!-- Banner --&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-banner"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-banner"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"https://placeimg.com/320/240/animals 320w, https://placeimg.com/640/360/nature 480w, https://placeimg.com/800/600/architecture 800w"</span> <span class="hljs-attr">sizes</span>=<span class="hljs-string">"(max-width: 320px) 280px,max-width: 480px) 440px, 800px"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://placeimg.com/640/480/any"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"banner alt text"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"/images/4370 CoR barometer content page - EN.png@2x 2x"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/images/4370 CoR barometer content page - EN.png"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"banner alt text"</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
     <span class="hljs-comment">&lt;!-- /Banner --&gt;</span>
 
     <span class="hljs-comment">&lt;!-- Web streaming section --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-webstreaming"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-webstreaming ec-cor-barometer-container"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-webstreaming__title ec-cor-heading--2"</span>&gt;</span>State of the regions and cities of the Europe Union<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"embed-responsive embed-responsive-16by9"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"embed-responsive-item"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.youtube.com/embed/zpOULjyy-n8?rel=0"</span> <span class="hljs-attr">allowfullscreen</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"embed-responsive-item"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.youtube.com/embed/zpOULjyy-n8?rel=0"</span> <span class="hljs-attr">allowfullscreen</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Video speech"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--2"</span>&gt;</span>State of the regions and cities of the Europe Union<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Speech EN<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Speech FR<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Speech DE<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+        <span class="hljs-comment">&lt;!--p&gt;
+      &lt;a class="ec-cor-barometer-link" href="#"&gt;&lt;span&gt;Read the full speech&lt;/span&gt;&lt;/a&gt;
+      &lt;small&gt;also available in &lt;a href=""&gt;other languages&lt;/a&gt;&lt;/small&gt;
+    &lt;/p--&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-webstreaming__links"</span>&gt;</span>
+            <span class="hljs-comment">&lt;!--
+      &lt;a class="ec-cor-barometer-link" href="#"&gt;&lt;span&gt;Read the full speech&lt;/span&gt;&lt;/a&gt;
+      &lt;small&gt;also available in &lt;a href=""&gt;FR&lt;/a&gt; / &lt;a href=""&gt;DE&lt;/a&gt; / &lt;a href=""&gt;GR&lt;/a&gt;&lt;/small&gt;--&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Read the full speech<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Speech EN<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Speech FR<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Speech DE<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"blockquote"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"51"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"32"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 51 32"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M22.1079 10.6682C22.1079 16.5559 17.1611 21.33 11.054 21.33C4.94687 21.33 0 16.5559 0 10.6682C0 4.78054 4.94687 0 11.054 0C17.1611 0 22.1079 4.77414 22.1079 10.6682Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#40403F"</span> /&gt;</span>
@@ -202,61 +210,68 @@
 
     <span class="hljs-comment">&lt;!-- Report --&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-report"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--2"</span>&gt;</span>Title for report<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-container"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--2"</span>&gt;</span>Title for report<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Our Members have the power to shape the future of Europe from the ground up. They represent the EU<span class="hljs-symbol">&amp;#39;</span>s one million locally elected leaders, and come together at the CoR to ensure that the needs, ambitions and aspirations of millions of citizens are heard and acted​​ upon.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-paragraph"</span>&gt;</span>Our Members have the power to shape the future of Europe from the ground up. They represent the EU<span class="hljs-symbol">&amp;#39;</span>s one million locally elected leaders, and come together at the CoR to ensure that the needs, ambitions and aspirations of millions of citizens are heard and acted​​ upon.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uppercase"</span>&gt;</span>Report<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--3"</span>&gt;</span>Report<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-report__links__list"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-report__links__item"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uppercase ec-cor-barometer-report__links__item"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"15"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"15"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 15 15"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">clip-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M15 7.5C15 9.48912 14.2098 11.3968 12.8033 12.8033C11.3968 14.2098 9.48912 15 7.5 15C5.51088 15 3.60322 14.2098 2.1967 12.8033C0.790176 11.3968 0 9.48912 0 7.5C0 5.51088 0.790176 3.60322 2.1967 2.1967C3.60322 0.790176 5.51088 0 7.5 0C9.48912 0 11.3968 0.790176 12.8033 2.1967C14.2098 3.60322 15 5.51088 15 7.5ZM7.96875 4.21875C7.96875 4.09443 7.91936 3.9752 7.83146 3.88729C7.74355 3.79939 7.62432 3.75 7.5 3.75C7.37568 3.75 7.25645 3.79939 7.16854 3.88729C7.08064 3.9752 7.03125 4.09443 7.03125 4.21875V9.64969L5.01937 7.63688C4.93136 7.54886 4.81198 7.49941 4.6875 7.49941C4.56302 7.49941 4.44364 7.54886 4.35563 7.63688C4.26761 7.72489 4.21816 7.84427 4.21816 7.96875C4.21816 8.09323 4.26761 8.21261 4.35563 8.30062L7.16813 11.1131C7.21167 11.1568 7.26339 11.1914 7.32034 11.215C7.37729 11.2387 7.43834 11.2508 7.5 11.2508C7.56166 11.2508 7.62271 11.2387 7.67966 11.215C7.7366 11.1914 7.78833 11.1568 7.83187 11.1131L10.6444 8.30062C10.7324 8.21261 10.7818 8.09323 10.7818 7.96875C10.7818 7.84427 10.7324 7.72489 10.6444 7.63688C10.5564 7.54886 10.437 7.49941 10.3125 7.49941C10.188 7.49941 10.0686 7.54886 9.98063 7.63688L7.96875 9.64969V4.21875Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#024089"</span> /&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span> Download teaser
-                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span>3 MB PDF<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-report__links__item"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uppercase ec-cor-barometer-report__links__item"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"15"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"15"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 15 15"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">clip-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M15 7.5C15 9.48912 14.2098 11.3968 12.8033 12.8033C11.3968 14.2098 9.48912 15 7.5 15C5.51088 15 3.60322 14.2098 2.1967 12.8033C0.790176 11.3968 0 9.48912 0 7.5C0 5.51088 0.790176 3.60322 2.1967 2.1967C3.60322 0.790176 5.51088 0 7.5 0C9.48912 0 11.3968 0.790176 12.8033 2.1967C14.2098 3.60322 15 5.51088 15 7.5ZM7.96875 4.21875C7.96875 4.09443 7.91936 3.9752 7.83146 3.88729C7.74355 3.79939 7.62432 3.75 7.5 3.75C7.37568 3.75 7.25645 3.79939 7.16854 3.88729C7.08064 3.9752 7.03125 4.09443 7.03125 4.21875V9.64969L5.01937 7.63688C4.93136 7.54886 4.81198 7.49941 4.6875 7.49941C4.56302 7.49941 4.44364 7.54886 4.35563 7.63688C4.26761 7.72489 4.21816 7.84427 4.21816 7.96875C4.21816 8.09323 4.26761 8.21261 4.35563 8.30062L7.16813 11.1131C7.21167 11.1568 7.26339 11.1914 7.32034 11.215C7.37729 11.2387 7.43834 11.2508 7.5 11.2508C7.56166 11.2508 7.62271 11.2387 7.67966 11.215C7.7366 11.1914 7.78833 11.1568 7.83187 11.1131L10.6444 8.30062C10.7324 8.21261 10.7818 8.09323 10.7818 7.96875C10.7818 7.84427 10.7324 7.72489 10.6444 7.63688C10.5564 7.54886 10.437 7.49941 10.3125 7.49941C10.188 7.49941 10.0686 7.54886 9.98063 7.63688L7.96875 9.64969V4.21875Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#024089"</span> /&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span> Download full report
-                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span>15 MB PDF<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-report__links__list"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-report__links__item"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-link ec-cor-barometer-link--report"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"15"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"15"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 15 15"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">clip-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M15 7.5C15 9.48912 14.2098 11.3968 12.8033 12.8033C11.3968 14.2098 9.48912 15 7.5 15C5.51088 15 3.60322 14.2098 2.1967 12.8033C0.790176 11.3968 0 9.48912 0 7.5C0 5.51088 0.790176 3.60322 2.1967 2.1967C3.60322 0.790176 5.51088 0 7.5 0C9.48912 0 11.3968 0.790176 12.8033 2.1967C14.2098 3.60322 15 5.51088 15 7.5ZM7.96875 4.21875C7.96875 4.09443 7.91936 3.9752 7.83146 3.88729C7.74355 3.79939 7.62432 3.75 7.5 3.75C7.37568 3.75 7.25645 3.79939 7.16854 3.88729C7.08064 3.9752 7.03125 4.09443 7.03125 4.21875V9.64969L5.01937 7.63688C4.93136 7.54886 4.81198 7.49941 4.6875 7.49941C4.56302 7.49941 4.44364 7.54886 4.35563 7.63688C4.26761 7.72489 4.21816 7.84427 4.21816 7.96875C4.21816 8.09323 4.26761 8.21261 4.35563 8.30062L7.16813 11.1131C7.21167 11.1568 7.26339 11.1914 7.32034 11.215C7.37729 11.2387 7.43834 11.2508 7.5 11.2508C7.56166 11.2508 7.62271 11.2387 7.67966 11.215C7.7366 11.1914 7.78833 11.1568 7.83187 11.1131L10.6444 8.30062C10.7324 8.21261 10.7818 8.09323 10.7818 7.96875C10.7818 7.84427 10.7324 7.72489 10.6444 7.63688C10.5564 7.54886 10.437 7.49941 10.3125 7.49941C10.188 7.49941 10.0686 7.54886 9.98063 7.63688L7.96875 9.64969V4.21875Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#024089"</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Download teaser<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span>3 MB PDF<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-report__links__item"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-link ec-cor-barometer-link--report"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"15"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"15"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 15 15"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">clip-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M15 7.5C15 9.48912 14.2098 11.3968 12.8033 12.8033C11.3968 14.2098 9.48912 15 7.5 15C5.51088 15 3.60322 14.2098 2.1967 12.8033C0.790176 11.3968 0 9.48912 0 7.5C0 5.51088 0.790176 3.60322 2.1967 2.1967C3.60322 0.790176 5.51088 0 7.5 0C9.48912 0 11.3968 0.790176 12.8033 2.1967C14.2098 3.60322 15 5.51088 15 7.5ZM7.96875 4.21875C7.96875 4.09443 7.91936 3.9752 7.83146 3.88729C7.74355 3.79939 7.62432 3.75 7.5 3.75C7.37568 3.75 7.25645 3.79939 7.16854 3.88729C7.08064 3.9752 7.03125 4.09443 7.03125 4.21875V9.64969L5.01937 7.63688C4.93136 7.54886 4.81198 7.49941 4.6875 7.49941C4.56302 7.49941 4.44364 7.54886 4.35563 7.63688C4.26761 7.72489 4.21816 7.84427 4.21816 7.96875C4.21816 8.09323 4.26761 8.21261 4.35563 8.30062L7.16813 11.1131C7.21167 11.1568 7.26339 11.1914 7.32034 11.215C7.37729 11.2387 7.43834 11.2508 7.5 11.2508C7.56166 11.2508 7.62271 11.2387 7.67966 11.215C7.7366 11.1914 7.78833 11.1568 7.83187 11.1131L10.6444 8.30062C10.7324 8.21261 10.7818 8.09323 10.7818 7.96875C10.7818 7.84427 10.7324 7.72489 10.6444 7.63688C10.5564 7.54886 10.437 7.49941 10.3125 7.49941C10.188 7.49941 10.0686 7.54886 9.98063 7.63688L7.96875 9.64969V4.21875Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#024089"</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Download full report<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span>15 MB PDF<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://placeimg.com/180/234/any"</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-report__cover"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://placeimg.com/180/234/nature"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Barometer report cover"</span> /&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
         <span class="hljs-comment">&lt;!-- Stories --&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-stories"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-stories__list"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-stories ec-cor-barometer-masked"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-mask"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-background"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-stories__list ec-cor-barometer-container"</span>&gt;</span>
                 <span class="hljs-comment">&lt;!-- Story --&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-item"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-stories__item"</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"30"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"30"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 30 30"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">clip-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M14.9996 3.46128C23.3208 -5.09247 44.1259 9.87566 14.9996 29.1225C-14.1267 9.87753 6.67834 -5.09247 14.9996 3.46128Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"white"</span> /&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
 
-                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Health<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--3"</span>&gt;</span>Health<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
 
-                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Our Members have the power to shape the future of Europe from the ground up.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-paragraph"</span>&gt;</span>Our Members have the power to shape the future of Europe from the ground up.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span>&gt;</span>CTA to story <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"21"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"17"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 21 17"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-link ec-cor-barometer-link--stories"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>CTA to story<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"21"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"17"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 21 17"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
                             <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">clip-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M0.8125 8.51533C0.8125 8.28361 0.886347 8.06138 1.0178 7.89753C1.14924 7.73368 1.32753 7.64163 1.51342 7.64163H18.0454L13.6338 2.14427C13.5022 1.98021 13.4283 1.7577 13.4283 1.52569C13.4283 1.29367 13.5022 1.07116 13.6338 0.907104C13.7654 0.743046 13.9439 0.650879 14.1301 0.650879C14.3162 0.650879 14.4947 0.743046 14.6263 0.907104L20.2337 7.89675C20.299 7.97791 20.3508 8.07432 20.3861 8.18047C20.4215 8.28662 20.4396 8.40041 20.4396 8.51533C20.4396 8.63025 20.4215 8.74405 20.3861 8.85019C20.3508 8.95634 20.299 9.05276 20.2337 9.13392L14.6263 16.1236C14.4947 16.2876 14.3162 16.3798 14.1301 16.3798C13.9439 16.3798 13.7654 16.2876 13.6338 16.1236C13.5022 15.9595 13.4283 15.737 13.4283 15.505C13.4283 15.273 13.5022 15.0505 13.6338 14.8864L18.0454 9.38904H1.51342C1.32753 9.38904 1.14924 9.29699 1.0178 9.13314C0.886347 8.96928 0.8125 8.74705 0.8125 8.51533V8.51533Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#004896"</span> /&gt;</span>
                         <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                 <span class="hljs-comment">&lt;!-- /Story --&gt;</span>
                 <span class="hljs-comment">&lt;!-- Story --&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-item"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-stories__item"</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"32"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"30"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 32 30"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M0 13.75H4.06977C3.99577 14.1667 3.99577 14.5833 3.99577 15C3.99577 15.4167 3.99577 15.8333 4.06977 16.25H1.18393L0 18.75H4.51374C6.36364 25.1389 12.6903 30 19.9789 30C24.0116 30 27.7854 28.5069 30.6342 26.0764V22.4653C28.1924 25.5208 24.3076 27.5 19.9789 27.5C14.0592 27.5 8.99049 23.8194 7.28858 18.75H25.3066L26.4905 16.25H6.73361C6.65962 15.8333 6.65962 15.4167 6.65962 15C6.65962 14.6528 6.65962 14.1667 6.73361 13.75H27.6744L28.8584 11.25H7.28858C8.95349 6.25 13.9852 2.5 19.9789 2.5C24.6406 2.5 28.1924 4.47917 30.6342 7.5L31.8182 5.03472C28.8584 1.94444 24.6406 0 19.9789 0C12.6533 0 6.32664 4.93056 4.51374 11.25H1.18393L0 13.75Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"white"</span> /&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
 
-                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Economy<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--3"</span>&gt;</span>Economy<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
 
-                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Our Members have the power to shape the future of Europe from the ground up.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-paragraph"</span>&gt;</span>Our Members have the power to shape the future of Europe from the ground up.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span>&gt;</span>CTA to story <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"21"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"17"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 21 17"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-link ec-cor-barometer-link--stories"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>CTA to story<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"21"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"17"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 21 17"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
                             <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">clip-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M0.8125 8.51533C0.8125 8.28361 0.886347 8.06138 1.0178 7.89753C1.14924 7.73368 1.32753 7.64163 1.51342 7.64163H18.0454L13.6338 2.14427C13.5022 1.98021 13.4283 1.7577 13.4283 1.52569C13.4283 1.29367 13.5022 1.07116 13.6338 0.907104C13.7654 0.743046 13.9439 0.650879 14.1301 0.650879C14.3162 0.650879 14.4947 0.743046 14.6263 0.907104L20.2337 7.89675C20.299 7.97791 20.3508 8.07432 20.3861 8.18047C20.4215 8.28662 20.4396 8.40041 20.4396 8.51533C20.4396 8.63025 20.4215 8.74405 20.3861 8.85019C20.3508 8.95634 20.299 9.05276 20.2337 9.13392L14.6263 16.1236C14.4947 16.2876 14.3162 16.3798 14.1301 16.3798C13.9439 16.3798 13.7654 16.2876 13.6338 16.1236C13.5022 15.9595 13.4283 15.737 13.4283 15.505C13.4283 15.273 13.5022 15.0505 13.6338 14.8864L18.0454 9.38904H1.51342C1.32753 9.38904 1.14924 9.29699 1.0178 9.13314C0.886347 8.96928 0.8125 8.74705 0.8125 8.51533V8.51533Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#004896"</span> /&gt;</span>
                         <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -269,107 +284,43 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
     <span class="hljs-comment">&lt;!-- /Report --&gt;</span>
 
-    <span class="hljs-comment">&lt;!-- Media fact sheets --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-mediafactsheets"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- News --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-news ec-cor-barometer-container"</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--2"</span>&gt;</span>News title<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-mediafactsheets__list"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-mediafactsheets__item"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"30"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"30"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 30 30"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M7.5 0H17.8125V1.875H7.5C7.00272 1.875 6.52581 2.07254 6.17417 2.42417C5.82254 2.77581 5.625 3.25272 5.625 3.75V26.25C5.625 26.7473 5.82254 27.2242 6.17417 27.5758C6.52581 27.9275 7.00272 28.125 7.5 28.125H22.5C22.9973 28.125 23.4742 27.9275 23.8258 27.5758C24.1775 27.2242 24.375 26.7473 24.375 26.25V8.4375H26.25V26.25C26.25 27.2446 25.8549 28.1984 25.1516 28.9016C24.4484 29.6049 23.4946 30 22.5 30H7.5C6.50544 30 5.55161 29.6049 4.84835 28.9016C4.14509 28.1984 3.75 27.2446 3.75 26.25V3.75C3.75 2.75544 4.14509 1.80161 4.84835 1.09835C5.55161 0.395088 6.50544 0 7.5 0V0Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#40403F"</span> /&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M17.8125 5.625V0L26.25 8.4375H20.625C19.8791 8.4375 19.1637 8.14118 18.6363 7.61374C18.1088 7.08629 17.8125 6.37092 17.8125 5.625Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#40403F"</span> /&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">clip-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M9.375 21.5625C9.375 21.3139 9.47377 21.0754 9.64959 20.8996C9.8254 20.7238 10.0639 20.625 10.3125 20.625H14.0625C14.3111 20.625 14.5496 20.7238 14.7254 20.8996C14.9012 21.0754 15 21.3139 15 21.5625C15 21.8111 14.9012 22.0496 14.7254 22.2254C14.5496 22.4012 14.3111 22.5 14.0625 22.5H10.3125C10.0639 22.5 9.8254 22.4012 9.64959 22.2254C9.47377 22.0496 9.375 21.8111 9.375 21.5625ZM9.375 17.8125C9.375 17.5639 9.47377 17.3254 9.64959 17.1496C9.8254 16.9738 10.0639 16.875 10.3125 16.875H19.6875C19.9361 16.875 20.1746 16.9738 20.3504 17.1496C20.5262 17.3254 20.625 17.5639 20.625 17.8125C20.625 18.0611 20.5262 18.2996 20.3504 18.4754C20.1746 18.6512 19.9361 18.75 19.6875 18.75H10.3125C10.0639 18.75 9.8254 18.6512 9.64959 18.4754C9.47377 18.2996 9.375 18.0611 9.375 17.8125ZM9.375 14.0625C9.375 13.8139 9.47377 13.5754 9.64959 13.3996C9.8254 13.2238 10.0639 13.125 10.3125 13.125H19.6875C19.9361 13.125 20.1746 13.2238 20.3504 13.3996C20.5262 13.5754 20.625 13.8139 20.625 14.0625C20.625 14.3111 20.5262 14.5496 20.3504 14.7254C20.1746 14.9012 19.9361 15 19.6875 15H10.3125C10.0639 15 9.8254 14.9012 9.64959 14.7254C9.47377 14.5496 9.375 14.3111 9.375 14.0625Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#40403F"</span> /&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
-
-                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-mediafactsheets__country"</span>&gt;</span>Country<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-mediafactsheets__title"</span>&gt;</span>Media factsheet<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group ec-cor-barometer-mediafactsheets__languageselector"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"exampleFormControlSelect1"</span>&gt;</span>Language:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"exampleFormControlSelect1"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>EN<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>FR<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>DE<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-mediafactsheets__button"</span>&gt;</span>Download
-                    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"15"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"13"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 15 13"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">clip-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M7.82798 8.81887C7.78792 8.85671 7.74033 8.88672 7.68793 8.9072C7.63553 8.92768 7.57936 8.93822 7.52263 8.93822C7.46591 8.93822 7.40973 8.92768 7.35734 8.9072C7.30494 8.88672 7.25735 8.85671 7.21728 8.81887L4.62957 6.38137C4.54859 6.30509 4.50309 6.20163 4.50309 6.09375C4.50309 5.98587 4.54859 5.88241 4.62957 5.80612C4.71056 5.72984 4.8204 5.68699 4.93492 5.68699C5.04945 5.68699 5.15929 5.72984 5.24027 5.80612L7.09135 7.55056V0.40625C7.09135 0.298506 7.13679 0.195174 7.21767 0.118988C7.29855 0.0428012 7.40825 0 7.52263 0C7.63702 0 7.74672 0.0428012 7.8276 0.118988C7.90848 0.195174 7.95392 0.298506 7.95392 0.40625V7.55056L9.80499 5.80612C9.88598 5.72984 9.99582 5.68699 10.1103 5.68699C10.2249 5.68699 10.3347 5.72984 10.4157 5.80612C10.4967 5.88241 10.5422 5.98587 10.5422 6.09375C10.5422 6.20163 10.4967 6.30509 10.4157 6.38137L7.82798 8.81887Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#40403F"</span> /&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">clip-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M13.9919 8.93823C13.8775 8.93823 13.7678 8.98103 13.6869 9.05722C13.6061 9.13341 13.5606 9.23674 13.5606 9.34448V11.3757C13.5606 11.5912 13.4697 11.7979 13.308 11.9503C13.1462 12.1026 12.9268 12.1882 12.698 12.1882H2.34721C2.11844 12.1882 1.89904 12.1026 1.73728 11.9503C1.57552 11.7979 1.48464 11.5912 1.48464 11.3757V9.34448C1.48464 9.23674 1.4392 9.13341 1.35832 9.05722C1.27744 8.98103 1.16774 8.93823 1.05336 8.93823C0.938971 8.93823 0.829272 8.98103 0.74839 9.05722C0.667509 9.13341 0.62207 9.23674 0.62207 9.34448V11.3757C0.62207 11.8067 0.803826 12.22 1.12735 12.5248C1.45088 12.8295 1.88967 13.0007 2.34721 13.0007H12.698C13.1556 13.0007 13.5944 12.8295 13.9179 12.5248C14.2414 12.22 14.4232 11.8067 14.4232 11.3757V9.34448C14.4232 9.23674 14.3777 9.13341 14.2969 9.05722C14.216 8.98103 14.1063 8.93823 13.9919 8.93823Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#40403F"</span> /&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-
+        <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-news__list"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-news__item"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-news ec-cor-news--barometer"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-news__title"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span>&gt;</span>European Committee of the Regions launches UK Contact Group<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-news__date"</span>&gt;</span>22.09.2020<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-mediafactsheets__item"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"30"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"30"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 30 30"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M7.5 0H17.8125V1.875H7.5C7.00272 1.875 6.52581 2.07254 6.17417 2.42417C5.82254 2.77581 5.625 3.25272 5.625 3.75V26.25C5.625 26.7473 5.82254 27.2242 6.17417 27.5758C6.52581 27.9275 7.00272 28.125 7.5 28.125H22.5C22.9973 28.125 23.4742 27.9275 23.8258 27.5758C24.1775 27.2242 24.375 26.7473 24.375 26.25V8.4375H26.25V26.25C26.25 27.2446 25.8549 28.1984 25.1516 28.9016C24.4484 29.6049 23.4946 30 22.5 30H7.5C6.50544 30 5.55161 29.6049 4.84835 28.9016C4.14509 28.1984 3.75 27.2446 3.75 26.25V3.75C3.75 2.75544 4.14509 1.80161 4.84835 1.09835C5.55161 0.395088 6.50544 0 7.5 0V0Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#40403F"</span> /&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M17.8125 5.625V0L26.25 8.4375H20.625C19.8791 8.4375 19.1637 8.14118 18.6363 7.61374C18.1088 7.08629 17.8125 6.37092 17.8125 5.625Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#40403F"</span> /&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">clip-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M9.375 21.5625C9.375 21.3139 9.47377 21.0754 9.64959 20.8996C9.8254 20.7238 10.0639 20.625 10.3125 20.625H14.0625C14.3111 20.625 14.5496 20.7238 14.7254 20.8996C14.9012 21.0754 15 21.3139 15 21.5625C15 21.8111 14.9012 22.0496 14.7254 22.2254C14.5496 22.4012 14.3111 22.5 14.0625 22.5H10.3125C10.0639 22.5 9.8254 22.4012 9.64959 22.2254C9.47377 22.0496 9.375 21.8111 9.375 21.5625ZM9.375 17.8125C9.375 17.5639 9.47377 17.3254 9.64959 17.1496C9.8254 16.9738 10.0639 16.875 10.3125 16.875H19.6875C19.9361 16.875 20.1746 16.9738 20.3504 17.1496C20.5262 17.3254 20.625 17.5639 20.625 17.8125C20.625 18.0611 20.5262 18.2996 20.3504 18.4754C20.1746 18.6512 19.9361 18.75 19.6875 18.75H10.3125C10.0639 18.75 9.8254 18.6512 9.64959 18.4754C9.47377 18.2996 9.375 18.0611 9.375 17.8125ZM9.375 14.0625C9.375 13.8139 9.47377 13.5754 9.64959 13.3996C9.8254 13.2238 10.0639 13.125 10.3125 13.125H19.6875C19.9361 13.125 20.1746 13.2238 20.3504 13.3996C20.5262 13.5754 20.625 13.8139 20.625 14.0625C20.625 14.3111 20.5262 14.5496 20.3504 14.7254C20.1746 14.9012 19.9361 15 19.6875 15H10.3125C10.0639 15 9.8254 14.9012 9.64959 14.7254C9.47377 14.5496 9.375 14.3111 9.375 14.0625Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#40403F"</span> /&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
-
-                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-mediafactsheets__country"</span>&gt;</span>Country<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-mediafactsheets__title"</span>&gt;</span>Media factsheet<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group ec-cor-barometer-mediafactsheets__languageselector"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"exampleFormControlSelect1"</span>&gt;</span>Language:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"exampleFormControlSelect1"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>EN<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>FR<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>DE<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-mediafactsheets__button"</span>&gt;</span>Download
-                    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"15"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"13"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 15 13"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">clip-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M7.82798 8.81887C7.78792 8.85671 7.74033 8.88672 7.68793 8.9072C7.63553 8.92768 7.57936 8.93822 7.52263 8.93822C7.46591 8.93822 7.40973 8.92768 7.35734 8.9072C7.30494 8.88672 7.25735 8.85671 7.21728 8.81887L4.62957 6.38137C4.54859 6.30509 4.50309 6.20163 4.50309 6.09375C4.50309 5.98587 4.54859 5.88241 4.62957 5.80612C4.71056 5.72984 4.8204 5.68699 4.93492 5.68699C5.04945 5.68699 5.15929 5.72984 5.24027 5.80612L7.09135 7.55056V0.40625C7.09135 0.298506 7.13679 0.195174 7.21767 0.118988C7.29855 0.0428012 7.40825 0 7.52263 0C7.63702 0 7.74672 0.0428012 7.8276 0.118988C7.90848 0.195174 7.95392 0.298506 7.95392 0.40625V7.55056L9.80499 5.80612C9.88598 5.72984 9.99582 5.68699 10.1103 5.68699C10.2249 5.68699 10.3347 5.72984 10.4157 5.80612C10.4967 5.88241 10.5422 5.98587 10.5422 6.09375C10.5422 6.20163 10.4967 6.30509 10.4157 6.38137L7.82798 8.81887Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#40403F"</span> /&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">clip-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M13.9919 8.93823C13.8775 8.93823 13.7678 8.98103 13.6869 9.05722C13.6061 9.13341 13.5606 9.23674 13.5606 9.34448V11.3757C13.5606 11.5912 13.4697 11.7979 13.308 11.9503C13.1462 12.1026 12.9268 12.1882 12.698 12.1882H2.34721C2.11844 12.1882 1.89904 12.1026 1.73728 11.9503C1.57552 11.7979 1.48464 11.5912 1.48464 11.3757V9.34448C1.48464 9.23674 1.4392 9.13341 1.35832 9.05722C1.27744 8.98103 1.16774 8.93823 1.05336 8.93823C0.938971 8.93823 0.829272 8.98103 0.74839 9.05722C0.667509 9.13341 0.62207 9.23674 0.62207 9.34448V11.3757C0.62207 11.8067 0.803826 12.22 1.12735 12.5248C1.45088 12.8295 1.88967 13.0007 2.34721 13.0007H12.698C13.1556 13.0007 13.5944 12.8295 13.9179 12.5248C14.2414 12.22 14.4232 11.8067 14.4232 11.3757V9.34448C14.4232 9.23674 14.3777 9.13341 14.2969 9.05722C14.216 8.98103 14.1063 8.93823 13.9919 8.93823Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#40403F"</span> /&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-news__item"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-news ec-cor-news--barometer"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-news__title"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span>&gt;</span>European Committee of the Regions launches UK Contact Group<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-news__date"</span>&gt;</span>22.09.2020<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-mediafactsheets__item"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"30"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"30"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 30 30"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M7.5 0H17.8125V1.875H7.5C7.00272 1.875 6.52581 2.07254 6.17417 2.42417C5.82254 2.77581 5.625 3.25272 5.625 3.75V26.25C5.625 26.7473 5.82254 27.2242 6.17417 27.5758C6.52581 27.9275 7.00272 28.125 7.5 28.125H22.5C22.9973 28.125 23.4742 27.9275 23.8258 27.5758C24.1775 27.2242 24.375 26.7473 24.375 26.25V8.4375H26.25V26.25C26.25 27.2446 25.8549 28.1984 25.1516 28.9016C24.4484 29.6049 23.4946 30 22.5 30H7.5C6.50544 30 5.55161 29.6049 4.84835 28.9016C4.14509 28.1984 3.75 27.2446 3.75 26.25V3.75C3.75 2.75544 4.14509 1.80161 4.84835 1.09835C5.55161 0.395088 6.50544 0 7.5 0V0Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#40403F"</span> /&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M17.8125 5.625V0L26.25 8.4375H20.625C19.8791 8.4375 19.1637 8.14118 18.6363 7.61374C18.1088 7.08629 17.8125 6.37092 17.8125 5.625Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#40403F"</span> /&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">clip-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M9.375 21.5625C9.375 21.3139 9.47377 21.0754 9.64959 20.8996C9.8254 20.7238 10.0639 20.625 10.3125 20.625H14.0625C14.3111 20.625 14.5496 20.7238 14.7254 20.8996C14.9012 21.0754 15 21.3139 15 21.5625C15 21.8111 14.9012 22.0496 14.7254 22.2254C14.5496 22.4012 14.3111 22.5 14.0625 22.5H10.3125C10.0639 22.5 9.8254 22.4012 9.64959 22.2254C9.47377 22.0496 9.375 21.8111 9.375 21.5625ZM9.375 17.8125C9.375 17.5639 9.47377 17.3254 9.64959 17.1496C9.8254 16.9738 10.0639 16.875 10.3125 16.875H19.6875C19.9361 16.875 20.1746 16.9738 20.3504 17.1496C20.5262 17.3254 20.625 17.5639 20.625 17.8125C20.625 18.0611 20.5262 18.2996 20.3504 18.4754C20.1746 18.6512 19.9361 18.75 19.6875 18.75H10.3125C10.0639 18.75 9.8254 18.6512 9.64959 18.4754C9.47377 18.2996 9.375 18.0611 9.375 17.8125ZM9.375 14.0625C9.375 13.8139 9.47377 13.5754 9.64959 13.3996C9.8254 13.2238 10.0639 13.125 10.3125 13.125H19.6875C19.9361 13.125 20.1746 13.2238 20.3504 13.3996C20.5262 13.5754 20.625 13.8139 20.625 14.0625C20.625 14.3111 20.5262 14.5496 20.3504 14.7254C20.1746 14.9012 19.9361 15 19.6875 15H10.3125C10.0639 15 9.8254 14.9012 9.64959 14.7254C9.47377 14.5496 9.375 14.3111 9.375 14.0625Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#40403F"</span> /&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
-
-                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-mediafactsheets__country"</span>&gt;</span>Country<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-mediafactsheets__title"</span>&gt;</span>Media factsheet<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group ec-cor-barometer-mediafactsheets__languageselector"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"exampleFormControlSelect1"</span>&gt;</span>Language:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"exampleFormControlSelect1"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>EN<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>FR<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>DE<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-mediafactsheets__button"</span>&gt;</span>Download
-                    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"15"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"13"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 15 13"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">clip-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M7.82798 8.81887C7.78792 8.85671 7.74033 8.88672 7.68793 8.9072C7.63553 8.92768 7.57936 8.93822 7.52263 8.93822C7.46591 8.93822 7.40973 8.92768 7.35734 8.9072C7.30494 8.88672 7.25735 8.85671 7.21728 8.81887L4.62957 6.38137C4.54859 6.30509 4.50309 6.20163 4.50309 6.09375C4.50309 5.98587 4.54859 5.88241 4.62957 5.80612C4.71056 5.72984 4.8204 5.68699 4.93492 5.68699C5.04945 5.68699 5.15929 5.72984 5.24027 5.80612L7.09135 7.55056V0.40625C7.09135 0.298506 7.13679 0.195174 7.21767 0.118988C7.29855 0.0428012 7.40825 0 7.52263 0C7.63702 0 7.74672 0.0428012 7.8276 0.118988C7.90848 0.195174 7.95392 0.298506 7.95392 0.40625V7.55056L9.80499 5.80612C9.88598 5.72984 9.99582 5.68699 10.1103 5.68699C10.2249 5.68699 10.3347 5.72984 10.4157 5.80612C10.4967 5.88241 10.5422 5.98587 10.5422 6.09375C10.5422 6.20163 10.4967 6.30509 10.4157 6.38137L7.82798 8.81887Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#40403F"</span> /&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">clip-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M13.9919 8.93823C13.8775 8.93823 13.7678 8.98103 13.6869 9.05722C13.6061 9.13341 13.5606 9.23674 13.5606 9.34448V11.3757C13.5606 11.5912 13.4697 11.7979 13.308 11.9503C13.1462 12.1026 12.9268 12.1882 12.698 12.1882H2.34721C2.11844 12.1882 1.89904 12.1026 1.73728 11.9503C1.57552 11.7979 1.48464 11.5912 1.48464 11.3757V9.34448C1.48464 9.23674 1.4392 9.13341 1.35832 9.05722C1.27744 8.98103 1.16774 8.93823 1.05336 8.93823C0.938971 8.93823 0.829272 8.98103 0.74839 9.05722C0.667509 9.13341 0.62207 9.23674 0.62207 9.34448V11.3757C0.62207 11.8067 0.803826 12.22 1.12735 12.5248C1.45088 12.8295 1.88967 13.0007 2.34721 13.0007H12.698C13.1556 13.0007 13.5944 12.8295 13.9179 12.5248C14.2414 12.22 14.4232 11.8067 14.4232 11.3757V9.34448C14.4232 9.23674 14.3777 9.13341 14.2969 9.05722C14.216 8.98103 14.1063 8.93823 13.9919 8.93823Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#40403F"</span> /&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-news__item"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-news ec-cor-news--barometer"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-news__title"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span>&gt;</span>European Committee of the Regions launches UK Contact Group<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-news__date"</span>&gt;</span>22.09.2020<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
-
     <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-    <span class="hljs-comment">&lt;!-- /Media fact sheets --&gt;</span>
+    <span class="hljs-comment">&lt;!-- /News --&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-separator"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
     <span class="hljs-comment">&lt;!-- Public opinion survey --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-publicopinion"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-publicopinion ec-cor-barometer-container"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--2"</span>&gt;</span>Public opinion survey<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Our Members have the power to shape the future of Europe from the ground up. They represent the EU<span class="hljs-symbol">&amp;#39;</span>s one million locally elected leaders, and come together at the CoR to ensure that the needs, ambitions and aspirations of millions of citizens are heard and acted​​ upon.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-paragraph"</span>&gt;</span>Our Members have the power to shape the future of Europe from the ground up. They represent the EU<span class="hljs-symbol">&amp;#39;</span>s one million locally elected leaders, and come together at the CoR to ensure that the needs, ambitions and aspirations of millions of citizens are heard and acted​​ upon.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-link ec-cor-barometer-link--survey"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"50"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"38"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 50 38"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">clip-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M21.875 37.5C21.875 37.5 18.75 37.5 18.75 34.375C18.75 31.25 21.875 21.875 34.375 21.875C46.875 21.875 50 31.25 50 34.375C50 37.5 46.875 37.5 46.875 37.5H21.875ZM34.375 18.75C36.8614 18.75 39.246 17.7623 41.0041 16.0041C42.7623 14.246 43.75 11.8614 43.75 9.375C43.75 6.8886 42.7623 4.50403 41.0041 2.74587C39.246 0.987721 36.8614 0 34.375 0C31.8886 0 29.504 0.987721 27.7459 2.74587C25.9877 4.50403 25 6.8886 25 9.375C25 11.8614 25.9877 14.246 27.7459 16.0041C29.504 17.7623 31.8886 18.75 34.375 18.75ZM16.3 37.5C15.8367 36.5244 15.6057 35.4548 15.625 34.375C15.625 30.1406 17.75 25.7812 21.675 22.75C19.7159 22.1464 17.6748 21.8512 15.625 21.875C3.125 21.875 0 31.25 0 34.375C0 37.5 3.125 37.5 3.125 37.5H16.3ZM14.0625 18.75C16.1345 18.75 18.1216 17.9269 19.5868 16.4618C21.0519 14.9966 21.875 13.0095 21.875 10.9375C21.875 8.8655 21.0519 6.87836 19.5868 5.41323C18.1216 3.9481 16.1345 3.125 14.0625 3.125C11.9905 3.125 10.0034 3.9481 8.53823 5.41323C7.0731 6.87836 6.25 8.8655 6.25 10.9375C6.25 13.0095 7.0731 14.9966 8.53823 16.4618C10.0034 17.9269 11.9905 18.75 14.0625 18.75Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"white"</span> /&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
@@ -381,7 +332,40 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
     <span class="hljs-comment">&lt;!-- /Public opinion survey --&gt;</span>
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-separator"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- Twitter --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-twitter ec-cor-barometer-container"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--2"</span>&gt;</span>Twitter<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://europa.eu/webtools/webtools.smk.css?utilities=true"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"application/json"</span>&gt;</span><span class="actionscript">
+            {
+                <span class="hljs-string">"service"</span>: <span class="hljs-string">"smk"</span>,
+                <span class="hljs-string">"type"</span>: <span class="hljs-string">"user"</span>,
+                <span class="hljs-string">"screen_name"</span>: <span class="hljs-string">"EU_Commission"</span>,
+                <span class="hljs-string">"count"</span>: <span class="hljs-number">3</span>,
+                <span class="hljs-string">"include_rts"</span>: <span class="hljs-literal">false</span>,
+                <span class="hljs-string">"rts_display_original"</span>: <span class="hljs-literal">false</span>,
+                <span class="hljs-string">"exclude_replies"</span>: <span class="hljs-literal">true</span>,
+                <span class="hljs-string">"display_user"</span>: <span class="hljs-literal">true</span>,
+                <span class="hljs-string">"display_user_pic"</span>: <span class="hljs-literal">true</span>,
+                <span class="hljs-string">"auto_expand_photo"</span>: <span class="hljs-literal">false</span>,
+                <span class="hljs-string">"auto_expand_video"</span>: <span class="hljs-literal">false</span>,
+                <span class="hljs-string">"tweet_more_btn"</span>: <span class="hljs-literal">true</span>
+            }
+        </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- /Twitter --&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-twitter ec-cor-barometer-container"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--1"</span>&gt;</span>Heading one Heading one Heading one Heading one v Heading one v v Heading one Heading one Heading one v<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-paragraph"</span>&gt;</span>Our Members have the power to shape the future of Europe from the ground up.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--2"</span>&gt;</span>Heading one Heading one Heading one Heading one Heading one Heading one Heading one Heading one<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-paragraph"</span>&gt;</span>Our Members have the power to shape the future of Europe from the ground up.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--3"</span>&gt;</span>Heading one<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-paragraph"</span>&gt;</span>Our Members have the power to shape the future of Europe from the ground up.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -389,7 +373,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-50d5cbe3786e30ae657c5d437e036c3a-panel-view">
     <code class="Code Code--lang-django hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer"</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer"</span>&gt;</span>
   
   <span class="hljs-comment">&lt;!-- Banner --&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-banner"</span>&gt;</span>
@@ -398,10 +382,29 @@
   <span class="hljs-comment">&lt;!-- /Banner --&gt;</span>
 
   <span class="hljs-comment">&lt;!-- Web streaming section --&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-webstreaming"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-webstreaming ec-cor-barometer-container"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-webstreaming__title ec-cor-heading--2"</span>&gt;</span></span><span class="hljs-template-variable">{{ video.title }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
     </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> '<a href="embed.html">@embed</a>' %}</span><span class="xml">
-    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--2"</span>&gt;</span></span><span class="hljs-template-variable">{{ video.title }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-    </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> '<a href="nav.html">@nav</a>' %}</span><span class="xml">
+    <span class="hljs-comment">&lt;!--p&gt;
+      &lt;a class="ec-cor-barometer-link" href="#"&gt;&lt;span&gt;Read the full speech&lt;/span&gt;&lt;/a&gt;
+      &lt;small&gt;also available in &lt;a href=""&gt;other languages&lt;/a&gt;&lt;/small&gt;
+    &lt;/p--&gt;</span>
+    
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-webstreaming__links"</span>&gt;</span>
+      <span class="hljs-comment">&lt;!--
+      &lt;a class="ec-cor-barometer-link" href="#"&gt;&lt;span&gt;Read the full speech&lt;/span&gt;&lt;/a&gt;
+      &lt;small&gt;also available in &lt;a href=""&gt;FR&lt;/a&gt; / &lt;a href=""&gt;DE&lt;/a&gt; / &lt;a href=""&gt;GR&lt;/a&gt;&lt;/small&gt;--&gt;</span>
+    
+    
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Read the full speech<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Speech EN<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Speech FR<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Speech DE<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> '<a href="quote.html">@quote</a>' %}</span><span class="xml">
   <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
   <span class="hljs-comment">&lt;!-- /Web streaming section --&gt;</span>
@@ -410,62 +413,68 @@
 
   <span class="hljs-comment">&lt;!-- Report --&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-report"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--2"</span>&gt;</span></span><span class="hljs-template-variable">{{ report.title }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-container"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--2"</span>&gt;</span></span><span class="hljs-template-variable">{{ report.title }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span></span><span class="hljs-template-variable">{{ report.intro }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-paragraph"</span>&gt;</span></span><span class="hljs-template-variable">{{ report.intro }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uppercase"</span>&gt;</span>Report<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--3"</span>&gt;</span>Report<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-report__links__list"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-report__links__item"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uppercase ec-cor-barometer-report__links__item"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"15"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"15"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 15 15"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">clip-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M15 7.5C15 9.48912 14.2098 11.3968 12.8033 12.8033C11.3968 14.2098 9.48912 15 7.5 15C5.51088 15 3.60322 14.2098 2.1967 12.8033C0.790176 11.3968 0 9.48912 0 7.5C0 5.51088 0.790176 3.60322 2.1967 2.1967C3.60322 0.790176 5.51088 0 7.5 0C9.48912 0 11.3968 0.790176 12.8033 2.1967C14.2098 3.60322 15 5.51088 15 7.5ZM7.96875 4.21875C7.96875 4.09443 7.91936 3.9752 7.83146 3.88729C7.74355 3.79939 7.62432 3.75 7.5 3.75C7.37568 3.75 7.25645 3.79939 7.16854 3.88729C7.08064 3.9752 7.03125 4.09443 7.03125 4.21875V9.64969L5.01937 7.63688C4.93136 7.54886 4.81198 7.49941 4.6875 7.49941C4.56302 7.49941 4.44364 7.54886 4.35563 7.63688C4.26761 7.72489 4.21816 7.84427 4.21816 7.96875C4.21816 8.09323 4.26761 8.21261 4.35563 8.30062L7.16813 11.1131C7.21167 11.1568 7.26339 11.1914 7.32034 11.215C7.37729 11.2387 7.43834 11.2508 7.5 11.2508C7.56166 11.2508 7.62271 11.2387 7.67966 11.215C7.7366 11.1914 7.78833 11.1568 7.83187 11.1131L10.6444 8.30062C10.7324 8.21261 10.7818 8.09323 10.7818 7.96875C10.7818 7.84427 10.7324 7.72489 10.6444 7.63688C10.5564 7.54886 10.437 7.49941 10.3125 7.49941C10.188 7.49941 10.0686 7.54886 9.98063 7.63688L7.96875 9.64969V4.21875Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#024089"</span>/&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span> Download teaser
-        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span>3 MB PDF<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-report__links__item"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"uppercase ec-cor-barometer-report__links__item"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"15"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"15"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 15 15"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">clip-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M15 7.5C15 9.48912 14.2098 11.3968 12.8033 12.8033C11.3968 14.2098 9.48912 15 7.5 15C5.51088 15 3.60322 14.2098 2.1967 12.8033C0.790176 11.3968 0 9.48912 0 7.5C0 5.51088 0.790176 3.60322 2.1967 2.1967C3.60322 0.790176 5.51088 0 7.5 0C9.48912 0 11.3968 0.790176 12.8033 2.1967C14.2098 3.60322 15 5.51088 15 7.5ZM7.96875 4.21875C7.96875 4.09443 7.91936 3.9752 7.83146 3.88729C7.74355 3.79939 7.62432 3.75 7.5 3.75C7.37568 3.75 7.25645 3.79939 7.16854 3.88729C7.08064 3.9752 7.03125 4.09443 7.03125 4.21875V9.64969L5.01937 7.63688C4.93136 7.54886 4.81198 7.49941 4.6875 7.49941C4.56302 7.49941 4.44364 7.54886 4.35563 7.63688C4.26761 7.72489 4.21816 7.84427 4.21816 7.96875C4.21816 8.09323 4.26761 8.21261 4.35563 8.30062L7.16813 11.1131C7.21167 11.1568 7.26339 11.1914 7.32034 11.215C7.37729 11.2387 7.43834 11.2508 7.5 11.2508C7.56166 11.2508 7.62271 11.2387 7.67966 11.215C7.7366 11.1914 7.78833 11.1568 7.83187 11.1131L10.6444 8.30062C10.7324 8.21261 10.7818 8.09323 10.7818 7.96875C10.7818 7.84427 10.7324 7.72489 10.6444 7.63688C10.5564 7.54886 10.437 7.49941 10.3125 7.49941C10.188 7.49941 10.0686 7.54886 9.98063 7.63688L7.96875 9.64969V4.21875Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#024089"</span>/&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span> Download full report
-        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span>15 MB PDF<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-report__links__list"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-report__links__item"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-link ec-cor-barometer-link--report"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"15"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"15"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 15 15"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">clip-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M15 7.5C15 9.48912 14.2098 11.3968 12.8033 12.8033C11.3968 14.2098 9.48912 15 7.5 15C5.51088 15 3.60322 14.2098 2.1967 12.8033C0.790176 11.3968 0 9.48912 0 7.5C0 5.51088 0.790176 3.60322 2.1967 2.1967C3.60322 0.790176 5.51088 0 7.5 0C9.48912 0 11.3968 0.790176 12.8033 2.1967C14.2098 3.60322 15 5.51088 15 7.5ZM7.96875 4.21875C7.96875 4.09443 7.91936 3.9752 7.83146 3.88729C7.74355 3.79939 7.62432 3.75 7.5 3.75C7.37568 3.75 7.25645 3.79939 7.16854 3.88729C7.08064 3.9752 7.03125 4.09443 7.03125 4.21875V9.64969L5.01937 7.63688C4.93136 7.54886 4.81198 7.49941 4.6875 7.49941C4.56302 7.49941 4.44364 7.54886 4.35563 7.63688C4.26761 7.72489 4.21816 7.84427 4.21816 7.96875C4.21816 8.09323 4.26761 8.21261 4.35563 8.30062L7.16813 11.1131C7.21167 11.1568 7.26339 11.1914 7.32034 11.215C7.37729 11.2387 7.43834 11.2508 7.5 11.2508C7.56166 11.2508 7.62271 11.2387 7.67966 11.215C7.7366 11.1914 7.78833 11.1568 7.83187 11.1131L10.6444 8.30062C10.7324 8.21261 10.7818 8.09323 10.7818 7.96875C10.7818 7.84427 10.7324 7.72489 10.6444 7.63688C10.5564 7.54886 10.437 7.49941 10.3125 7.49941C10.188 7.49941 10.0686 7.54886 9.98063 7.63688L7.96875 9.64969V4.21875Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#024089"</span>/&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Download teaser<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span>3 MB PDF<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-report__links__item"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-link ec-cor-barometer-link--report"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"15"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"15"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 15 15"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">clip-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M15 7.5C15 9.48912 14.2098 11.3968 12.8033 12.8033C11.3968 14.2098 9.48912 15 7.5 15C5.51088 15 3.60322 14.2098 2.1967 12.8033C0.790176 11.3968 0 9.48912 0 7.5C0 5.51088 0.790176 3.60322 2.1967 2.1967C3.60322 0.790176 5.51088 0 7.5 0C9.48912 0 11.3968 0.790176 12.8033 2.1967C14.2098 3.60322 15 5.51088 15 7.5ZM7.96875 4.21875C7.96875 4.09443 7.91936 3.9752 7.83146 3.88729C7.74355 3.79939 7.62432 3.75 7.5 3.75C7.37568 3.75 7.25645 3.79939 7.16854 3.88729C7.08064 3.9752 7.03125 4.09443 7.03125 4.21875V9.64969L5.01937 7.63688C4.93136 7.54886 4.81198 7.49941 4.6875 7.49941C4.56302 7.49941 4.44364 7.54886 4.35563 7.63688C4.26761 7.72489 4.21816 7.84427 4.21816 7.96875C4.21816 8.09323 4.26761 8.21261 4.35563 8.30062L7.16813 11.1131C7.21167 11.1568 7.26339 11.1914 7.32034 11.215C7.37729 11.2387 7.43834 11.2508 7.5 11.2508C7.56166 11.2508 7.62271 11.2387 7.67966 11.215C7.7366 11.1914 7.78833 11.1568 7.83187 11.1131L10.6444 8.30062C10.7324 8.21261 10.7818 8.09323 10.7818 7.96875C10.7818 7.84427 10.7324 7.72489 10.6444 7.63688C10.5564 7.54886 10.437 7.49941 10.3125 7.49941C10.188 7.49941 10.0686 7.54886 9.98063 7.63688L7.96875 9.64969V4.21875Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#024089"</span>/&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Download full report<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span>15 MB PDF<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://placeimg.com/180/234/any"</span>/&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-report__cover"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://placeimg.com/180/234/nature"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Barometer report cover"</span>/&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    
 
     <span class="hljs-comment">&lt;!-- Stories --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-stories"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-stories__list"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-stories ec-cor-barometer-masked"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-mask"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-background"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-stories__list ec-cor-barometer-container"</span>&gt;</span>
         <span class="hljs-comment">&lt;!-- Story --&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-item"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-stories__item"</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"30"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"30"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 30 30"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">clip-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M14.9996 3.46128C23.3208 -5.09247 44.1259 9.87566 14.9996 29.1225C-14.1267 9.87753 6.67834 -5.09247 14.9996 3.46128Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"white"</span>/&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
 
-          <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Health<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--3"</span>&gt;</span>Health<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
 
-          <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Our Members have the power to shape the future of Europe from the ground up.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-paragraph"</span>&gt;</span>Our Members have the power to shape the future of Europe from the ground up.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span>&gt;</span>CTA to story <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"21"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"17"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 21 17"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-link ec-cor-barometer-link--stories"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>CTA to story<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"21"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"17"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 21 17"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">clip-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M0.8125 8.51533C0.8125 8.28361 0.886347 8.06138 1.0178 7.89753C1.14924 7.73368 1.32753 7.64163 1.51342 7.64163H18.0454L13.6338 2.14427C13.5022 1.98021 13.4283 1.7577 13.4283 1.52569C13.4283 1.29367 13.5022 1.07116 13.6338 0.907104C13.7654 0.743046 13.9439 0.650879 14.1301 0.650879C14.3162 0.650879 14.4947 0.743046 14.6263 0.907104L20.2337 7.89675C20.299 7.97791 20.3508 8.07432 20.3861 8.18047C20.4215 8.28662 20.4396 8.40041 20.4396 8.51533C20.4396 8.63025 20.4215 8.74405 20.3861 8.85019C20.3508 8.95634 20.299 9.05276 20.2337 9.13392L14.6263 16.1236C14.4947 16.2876 14.3162 16.3798 14.1301 16.3798C13.9439 16.3798 13.7654 16.2876 13.6338 16.1236C13.5022 15.9595 13.4283 15.737 13.4283 15.505C13.4283 15.273 13.5022 15.0505 13.6338 14.8864L18.0454 9.38904H1.51342C1.32753 9.38904 1.14924 9.29699 1.0178 9.13314C0.886347 8.96928 0.8125 8.74705 0.8125 8.51533V8.51533Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#004896"</span>/&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
         <span class="hljs-comment">&lt;!-- /Story --&gt;</span>
         <span class="hljs-comment">&lt;!-- Story --&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-item"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-stories__item"</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"32"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"30"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 32 30"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M0 13.75H4.06977C3.99577 14.1667 3.99577 14.5833 3.99577 15C3.99577 15.4167 3.99577 15.8333 4.06977 16.25H1.18393L0 18.75H4.51374C6.36364 25.1389 12.6903 30 19.9789 30C24.0116 30 27.7854 28.5069 30.6342 26.0764V22.4653C28.1924 25.5208 24.3076 27.5 19.9789 27.5C14.0592 27.5 8.99049 23.8194 7.28858 18.75H25.3066L26.4905 16.25H6.73361C6.65962 15.8333 6.65962 15.4167 6.65962 15C6.65962 14.6528 6.65962 14.1667 6.73361 13.75H27.6744L28.8584 11.25H7.28858C8.95349 6.25 13.9852 2.5 19.9789 2.5C24.6406 2.5 28.1924 4.47917 30.6342 7.5L31.8182 5.03472C28.8584 1.94444 24.6406 0 19.9789 0C12.6533 0 6.32664 4.93056 4.51374 11.25H1.18393L0 13.75Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"white"</span>/&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
 
 
-          <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Economy<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--3"</span>&gt;</span>Economy<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
 
-          <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Our Members have the power to shape the future of Europe from the ground up.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-paragraph"</span>&gt;</span>Our Members have the power to shape the future of Europe from the ground up.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span>&gt;</span>CTA to story <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"21"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"17"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 21 17"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-link ec-cor-barometer-link--stories"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>CTA to story<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"21"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"17"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 21 17"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">clip-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M0.8125 8.51533C0.8125 8.28361 0.886347 8.06138 1.0178 7.89753C1.14924 7.73368 1.32753 7.64163 1.51342 7.64163H18.0454L13.6338 2.14427C13.5022 1.98021 13.4283 1.7577 13.4283 1.52569C13.4283 1.29367 13.5022 1.07116 13.6338 0.907104C13.7654 0.743046 13.9439 0.650879 14.1301 0.650879C14.3162 0.650879 14.4947 0.743046 14.6263 0.907104L20.2337 7.89675C20.299 7.97791 20.3508 8.07432 20.3861 8.18047C20.4215 8.28662 20.4396 8.40041 20.4396 8.51533C20.4396 8.63025 20.4215 8.74405 20.3861 8.85019C20.3508 8.95634 20.299 9.05276 20.2337 9.13392L14.6263 16.1236C14.4947 16.2876 14.3162 16.3798 14.1301 16.3798C13.9439 16.3798 13.7654 16.2876 13.6338 16.1236C13.5022 15.9595 13.4283 15.737 13.4283 15.505C13.4283 15.273 13.5022 15.0505 13.6338 14.8864L18.0454 9.38904H1.51342C1.32753 9.38904 1.14924 9.29699 1.0178 9.13314C0.886347 8.96928 0.8125 8.74705 0.8125 8.51533V8.51533Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#004896"</span>/&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -478,35 +487,34 @@
   <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
   <span class="hljs-comment">&lt;!-- /Report --&gt;</span>
 
-  <span class="hljs-comment">&lt;!-- Media fact sheets --&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-mediafactsheets"</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- News --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-news ec-cor-barometer-container"</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--2"</span>&gt;</span></span><span class="hljs-template-variable">{{ mediafactsheets.title }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--2"</span>&gt;</span></span><span class="hljs-template-variable">{{ news.title }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-mediafactsheets__list"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-mediafactsheets__item"</span>&gt;</span>
-        </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> '<a href="mediafactsheet.html">@mediafactsheet</a>' %}</span><span class="xml">
+    <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-news__list"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-news__item"</span>&gt;</span>
+        </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> '<a href="news--barometer.html">@news--barometer</a>' %}</span><span class="xml">
       <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-mediafactsheets__item"</span>&gt;</span>
-        </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> '<a href="mediafactsheet.html">@mediafactsheet</a>' %}</span><span class="xml">
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-news__item"</span>&gt;</span>
+        </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> '<a href="news--barometer.html">@news--barometer</a>' %}</span><span class="xml">
       <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-mediafactsheets__item"</span>&gt;</span>
-        </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> '<a href="mediafactsheet.html">@mediafactsheet</a>' %}</span><span class="xml">
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-news__item"</span>&gt;</span>
+        </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> '<a href="news--barometer.html">@news--barometer</a>' %}</span><span class="xml">
       <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
-
   <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-comment">&lt;!-- /Media fact sheets --&gt;</span>
+  <span class="hljs-comment">&lt;!-- /News --&gt;</span>
 
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-separator"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
   <span class="hljs-comment">&lt;!-- Public opinion survey --&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-publicopinion"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-publicopinion ec-cor-barometer-container"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--2"</span>&gt;</span></span><span class="hljs-template-variable">{{ publicOpinion.title }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span></span><span class="hljs-template-variable">{{ publicOpinion.text }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-paragraph"</span>&gt;</span></span><span class="hljs-template-variable">{{ publicOpinion.text }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-link ec-cor-barometer-link--survey"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"50"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"38"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 50 38"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">clip-rule</span>=<span class="hljs-string">"evenodd"</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M21.875 37.5C21.875 37.5 18.75 37.5 18.75 34.375C18.75 31.25 21.875 21.875 34.375 21.875C46.875 21.875 50 31.25 50 34.375C50 37.5 46.875 37.5 46.875 37.5H21.875ZM34.375 18.75C36.8614 18.75 39.246 17.7623 41.0041 16.0041C42.7623 14.246 43.75 11.8614 43.75 9.375C43.75 6.8886 42.7623 4.50403 41.0041 2.74587C39.246 0.987721 36.8614 0 34.375 0C31.8886 0 29.504 0.987721 27.7459 2.74587C25.9877 4.50403 25 6.8886 25 9.375C25 11.8614 25.9877 14.246 27.7459 16.0041C29.504 17.7623 31.8886 18.75 34.375 18.75ZM16.3 37.5C15.8367 36.5244 15.6057 35.4548 15.625 34.375C15.625 30.1406 17.75 25.7812 21.675 22.75C19.7159 22.1464 17.6748 21.8512 15.625 21.875C3.125 21.875 0 31.25 0 34.375C0 37.5 3.125 37.5 3.125 37.5H16.3ZM14.0625 18.75C16.1345 18.75 18.1216 17.9269 19.5868 16.4618C21.0519 14.9966 21.875 13.0095 21.875 10.9375C21.875 8.8655 21.0519 6.87836 19.5868 5.41323C18.1216 3.9481 16.1345 3.125 14.0625 3.125C11.9905 3.125 10.0034 3.9481 8.53823 5.41323C7.0731 6.87836 6.25 8.8655 6.25 10.9375C6.25 13.0095 7.0731 14.9966 8.53823 16.4618C10.0034 17.9269 11.9905 18.75 14.0625 18.75Z"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"white"</span>/&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
@@ -518,7 +526,24 @@
   <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
   <span class="hljs-comment">&lt;!-- /Public opinion survey --&gt;</span>
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-separator"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- Twitter --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-twitter ec-cor-barometer-container"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--2"</span>&gt;</span>Twitter<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> '<a href="twitter.html">@twitter</a>' %}</span><span class="xml">
+  <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- /Twitter --&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-twitter ec-cor-barometer-container"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--1"</span>&gt;</span>Heading one Heading one Heading one Heading one v Heading one v v Heading one Heading one Heading one v<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-paragraph"</span>&gt;</span>Our Members have the power to shape the future of Europe from the ground up.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--2"</span>&gt;</span>Heading one Heading one Heading one Heading one Heading one Heading one Heading one Heading one<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-paragraph"</span>&gt;</span>Our Members have the power to shape the future of Europe from the ground up.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-heading--3"</span>&gt;</span>Heading one<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ec-cor-barometer-paragraph"</span>&gt;</span>Our Members have the power to shape the future of Europe from the ground up.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span></span></pre>
     </code>
 </div>
 
@@ -531,10 +556,16 @@
   <span class="hljs-attr">"video"</span>: {
     <span class="hljs-attr">"title"</span>: <span class="hljs-string">"State of the regions and cities of the Europe Union"</span>
   },
-  <span class="hljs-attr">"quote"</span>: <span class="hljs-string">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</span>,
+  <span class="hljs-attr">"quote"</span>: <span class="hljs-string">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer au posuere erat a ante."</span>,
   <span class="hljs-attr">"report"</span>: {
     <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Title for report"</span>,
     <span class="hljs-attr">"intro"</span>: <span class="hljs-string">"Our Members have the power to shape the future of Europe from the ground up. They represent the EU's one million locally elected leaders, and come together at the CoR to ensure that the needs, ambitions and aspirations of millions of citizens are heard and acted​​ upon."</span>
+  },
+  <span class="hljs-attr">"news"</span>: {
+    <span class="hljs-attr">"title"</span>: <span class="hljs-string">"News title"</span>
+  },
+  <span class="hljs-attr">"mediafactsheets"</span>: {
+    <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Media factsheets title"</span>
   },
   <span class="hljs-attr">"publicOpinion"</span>: {
     <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Public opinion survey"</span>,
@@ -594,11 +625,11 @@
             
                 <a href="embed.html">@<span>embed</span></a>, 
             
-                <a href="nav.html">@<span>nav</span></a>, 
-            
                 <a href="quote.html">@<span>quote</span></a>, 
             
-                <a href="mediafactsheet.html">@<span>mediafactsheet</span></a>
+                <a href="news--barometer.html">@<span>news--barometer</span></a>, 
+            
+                <a href="twitter.html">@<span>twitter</span></a>
             
             </span>
         </li class="Meta-item">
@@ -669,6 +700,30 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="autocomplete.html" data-pjax>
+                <span>Autocomplete</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="banner.html" data-pjax>
                 <span>Banner</span>
                 
@@ -711,6 +766,294 @@
 
 
             </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-europcom">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-europcom-items">
+                Europcom
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-europcom-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="bannereuropcom.html" data-pjax>
+                <span>Bannereuropcom</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="blockquote.html" data-pjax>
+                <span>Blockquote</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="footer.html" data-pjax>
+                <span>Footer</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="header.html" data-pjax>
+                <span>Header</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-nav">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-nav-items">
+                Nav
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-nav-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="nav--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="nav--mobile.html" data-pjax>
+                <span>Mobile</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="program.html" data-pjax>
+                <span>Program</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-speakers">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-speakers-items">
+                Speakers
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-speakers-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="speakers--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="speakers--slider.html" data-pjax>
+                <span>Slider</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="themes.html" data-pjax>
+                <span>Themes</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     
@@ -773,6 +1116,254 @@
         </li>
         
     
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-europcom">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-europcom-items">
+                Europcom
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-europcom-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="europcom--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="europcom--speakers.html" data-pjax>
+                <span>Speakers</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="europcom--program.html" data-pjax>
+                <span>Program</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="europcom--faq.html" data-pjax>
+                <span>Faq</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="europcom--player.html" data-pjax>
+                <span>Player</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="mediafactsheets.html" data-pjax>
+                <span>Mediafactsheets</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-plenary">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-plenary-items">
+                Plenary
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-plenary-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="plenary--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="plenary--plenaries.html" data-pjax>
+                <span>Plenaries</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="plenary--plenary.html" data-pjax>
+                <span>Plenary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
 
             </ul>
         </li>
@@ -803,10 +1394,61 @@
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-lists">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-lists-items">
+                Lists
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-lists-items">
+            
+            
+            
+            
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="mediafactsheet.html" data-pjax>
-                <span>Mediafactsheet</span>
+            <a class="Tree-entityLink" href="listofmediafactsheet.html" data-pjax>
+                <span>Listofmediafactsheet</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-mediafactsheet">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-mediafactsheet-items">
+                Mediafactsheet
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-mediafactsheet-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="mediafactsheet--default.html" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -829,8 +1471,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="nav.html" data-pjax>
-                <span>Nav</span>
+            <a class="Tree-entityLink" href="mediafactsheet--card.html" data-pjax>
+                <span>Card</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -847,6 +1489,371 @@
 
 
             </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="mediafactsheet--sliding.html" data-pjax>
+                <span>Sliding</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-news">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-news-items">
+                News
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-news-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="news--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="news--barometer.html" data-pjax>
+                <span>Barometer</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-plenary">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-plenary-items">
+                Plenary
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-plenary-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="agenda.html" data-pjax>
+                <span>Agenda</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="lists.html" data-pjax>
+                <span>Lists</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="liveblog.html" data-pjax>
+                <span>Liveblog</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="nextplenary.html" data-pjax>
+                <span>Nextplenary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="opinions.html" data-pjax>
+                <span>Opinions</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="previousplenaries.html" data-pjax>
+                <span>Previousplenaries</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-toc">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-toc-items">
+                Toc
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-toc-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="toc--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="toc--documents.html" data-pjax>
+                <span>Documents</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="ulist.html" data-pjax>
+                <span>Ulist</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="webstreaming.html" data-pjax>
+                <span>Webstreaming</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     
@@ -855,6 +1862,30 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="quote.html" data-pjax>
                 <span>Quote</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="twitter.html" data-pjax>
+                <span>Twitter</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -927,8 +1958,8 @@
         </div>
         <div class="Tree-aside">
             Built on:
-            <time datetime="2020-10-05T06:58:43.635Z">
-                10/5/2020
+            <time datetime="2020-12-07T07:17:45.565Z">
+                12/7/2020
             </time>
         </div>
     </div>

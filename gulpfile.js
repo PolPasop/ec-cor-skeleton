@@ -82,6 +82,18 @@ function css() {
     .pipe(gulp.dest("public/css"))
 }
 
+function cssPlenary() {
+  return gulp
+    .src('assets/plenary.scss')
+    .pipe(sassGlob())
+    .pipe(sass())
+    .on('error', sass.logError)
+    .pipe(postcss([purgecss({
+      content: ['./**/*.html']
+    }), autoprefixer(), postcssCustomProperties()]))
+    .pipe(gulp.dest("public/css"))
+}
+
 function cssEuropcom() {
   return gulp
     .src('assets/europcom2020.scss')
@@ -159,11 +171,11 @@ gulp.task('fractalBuild', function () {
 
 
 function watch() {
-  gulp.watch(['components/**/*.scss', 'assets/*.scss'], gulp.series(deleteOldMainStyles, css));
+  gulp.watch(['components/**/*.scss', 'assets/*.scss'], gulp.series(deleteOldMainStyles, css, cssPlenary));
   gulp.watch(['components/**/*.js', 'assets/*.js'], gulp.series(deleteOldBundle, bundle, compress));
 }
 
 exports.images = convertImagesToWebp;
-
+exports.buildCssPlenary = cssPlenary;
 // exports.default = gulp.series(fractalStart, css, watch);
 exports.default = gulp.series(fractalStart, css, watch);

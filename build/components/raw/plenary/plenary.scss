@@ -1,0 +1,136 @@
+.cor-plenary {
+  --c-yellow: rgba(248,187,0,0.64);
+}
+
+.cor-l-plenary {
+  display: flex;
+  flex-direction: column;
+  padding-top: var(--s0);
+}
+
+.cor-l-plenary__docs-and-contact {
+  order:1;
+}
+
+.cor-l-plenary__header__picture-container img {
+  display: none;
+}
+
+.cor-l-plenary > section {
+  margin-bottom: var(--s3);
+  padding: 0 var(--s0);
+}
+
+
+@media screen and (min-width: 800px) {
+  .cor-l-plenary {
+    display: grid;
+    gap: var(--s2);
+    grid-auto-flow: row dense;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .cor-l-plenary__header {
+    display: grid;
+    gap: var(--s0);
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1 / -1;
+  }
+
+  .cor-l-plenary__header__intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: var(--s0);
+  }
+
+  .cor-l-plenary__header__picture-container {
+    grid-column-start: 2;
+  }
+
+  .cor-l-plenary__header__picture-container img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .cor-l-plenary__main,
+  .cor-l-plenary__previous-plenary-container {
+    grid-column: 2 / -1;
+  }
+
+  .cor-l-plenary__next-plenary-container {
+    grid-column: 1 / -1;
+  }
+
+  .cor-l-plenary__previous-plenary-container {
+    grid-row: 5;
+  }
+
+  .cor-l-plenary__docs-and-contact {
+    grid-column: 1 / 2;
+    order: initial;
+  }
+
+  .cor-l-plenary__opinions-container {
+    grid-column: 1 / -1;
+  }
+
+  .cor-l-plenary__toc {
+    padding-left: var(--s0);
+  }
+
+  .cor-l-plenary__main {
+    padding-right: var(--s0);
+  }
+}
+
+/*
+ * Titles
+ */
+.cor-c-plenary-title--sides {
+  margin-bottom: var(--s0);
+}
+
+/*
+ * Contact
+ */
+.cor-c-plenary-contact__link {
+  border-bottom: solid 1px;
+  color: #1CBBFF;
+} 
+
+.cor-c-plenary-contact__link:hover {
+  border-bottom: solid 1px;
+  color: #004896;
+} 
+
+.cor-l-plenary__agenda-container {
+  --background: rgba(198,229,241,1);
+
+  background: var(--background);
+  padding: var(--s3) var(--s0);
+}
+
+.cor-l-plenary__opinions-container,
+.cor-l-plenary__webstreaming-container {
+  padding: var(--s0);
+}
+
+.cor-l-plenary__webstreaming-container {
+  grid-column: 1 / -1;
+  background: rgba(0,120,170,1);
+  padding: var(--s3) var(--s0);
+}
+
+@media screen and (min-width: 500px) {
+  .cor-l-plenary__agenda-container {
+    grid-column: 1 / -1;
+  }
+}
+
+/*
+ * Overrides
+ */
+.mainContent li {
+    list-style-position: outside;
+}

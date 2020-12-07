@@ -5,41 +5,56 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Preview Layout</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<link rel="stylesheet" href="https://cor.europa.eu/Style%20Library/Cor/style/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cor.europa.eu/Style%20Library/Cor/style/css/Main2.css">
 	<link rel="stylesheet" href="https://cor.europa.eu/Style%20Library/Cor/style/css/Main.css">
 	<link rel="stylesheet" href="../../css/styles.css">
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script defer src="https://europa.eu/webtools/load.js"></script>
+	<script defer src="../../js/bundle.js"></script>
 </head>
 <body>
-	<div class="ec-cor-barometer">
+	<div class="mainContent"><main class="ec-cor-barometer">
   
   <!-- Banner -->
   <section class="ec-cor-barometer-banner">
     <div class="ec-cor-banner">
-  <img srcset="https://placeimg.com/320/240/animals 320w, https://placeimg.com/640/360/nature 480w, https://placeimg.com/800/600/architecture 800w" sizes="(max-width: 320px) 280px,max-width: 480px) 440px, 800px" src="https://placeimg.com/640/480/any" class="img-fluid" alt="banner alt text">
+  <img srcset="/images/4370 CoR barometer content page - EN.png@2x 2x" src="/images/4370 CoR barometer content page - EN.png" class="img-fluid" alt="banner alt text">
 </div>
   </section>
   <!-- /Banner -->
 
   <!-- Web streaming section -->
-  <section class="ec-cor-barometer-webstreaming">
+  <section class="ec-cor-barometer-webstreaming ec-cor-barometer-container">
+    <h2 class="ec-cor-barometer-webstreaming__title ec-cor-heading--2">State of the regions and cities of the Europe Union</h2>
     <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen title="Video speech"></iframe>
 </div>
-    <h2 class="ec-cor-heading--2">State of the regions and cities of the Europe Union</h2>
-    <ul class="nav">
-  <li class="nav-item">
-    <a class="nav-link" href="#">Speech EN</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Speech FR</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Speech DE</a>
-  </li>
-</ul>
+    <!--p>
+      <a class="ec-cor-barometer-link" href="#"><span>Read the full speech</span></a>
+      <small>also available in <a href="">other languages</a></small>
+    </p-->
+    
+    <div class="ec-cor-barometer-webstreaming__links">
+      <!--
+      <a class="ec-cor-barometer-link" href="#"><span>Read the full speech</span></a>
+      <small>also available in <a href="">FR</a> / <a href="">DE</a> / <a href="">GR</a></small>-->
+    
+    
+    <p>
+      <a class="ec-cor-barometer-link" href="#"><span>Read the full speech</span></a>
+      <br/>
+      <a class="ec-cor-barometer-link" href="#"><span>Speech EN</span></a>
+      <a class="ec-cor-barometer-link" href="#"><span>Speech FR</span></a>
+      <a class="ec-cor-barometer-link" href="#"><span>Speech DE</span></a>
+    </p>
+
+    </div>
     <blockquote class="blockquote">
   <svg width="51" height="32" viewBox="0 0 51 32" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M22.1079 10.6682C22.1079 16.5559 17.1611 21.33 11.054 21.33C4.94687 21.33 0 16.5559 0 10.6682C0 4.78054 4.94687 0 11.054 0C17.1611 0 22.1079 4.77414 22.1079 10.6682Z" fill="#40403F"/>
@@ -57,62 +72,68 @@
 
   <!-- Report -->
   <section class="ec-cor-barometer-report">
-    <h2 class="ec-cor-heading--2">Title for report</h2>
+    <div class="ec-cor-barometer-container">
+      <h2 class="ec-cor-heading--2">Title for report</h2>
 
-    <p>Our Members have the power to shape the future of Europe from the ground up. They represent the EU&#39;s one million locally elected leaders, and come together at the CoR to ensure that the needs, ambitions and aspirations of millions of citizens are heard and acted​​ upon.</p>
+      <div class="ec-cor-barometer-paragraph">Our Members have the power to shape the future of Europe from the ground up. They represent the EU&#39;s one million locally elected leaders, and come together at the CoR to ensure that the needs, ambitions and aspirations of millions of citizens are heard and acted​​ upon.</div>
 
-    <h3 class="uppercase">Report</h3>
+      <h3 class="ec-cor-heading--3">Report</h3>
 
-    <ul class="ec-cor-barometer-report__links__list">
-      <li class="ec-cor-barometer-report__links__item">
-        <a class="uppercase ec-cor-barometer-report__links__item">
-          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 7.5C15 9.48912 14.2098 11.3968 12.8033 12.8033C11.3968 14.2098 9.48912 15 7.5 15C5.51088 15 3.60322 14.2098 2.1967 12.8033C0.790176 11.3968 0 9.48912 0 7.5C0 5.51088 0.790176 3.60322 2.1967 2.1967C3.60322 0.790176 5.51088 0 7.5 0C9.48912 0 11.3968 0.790176 12.8033 2.1967C14.2098 3.60322 15 5.51088 15 7.5ZM7.96875 4.21875C7.96875 4.09443 7.91936 3.9752 7.83146 3.88729C7.74355 3.79939 7.62432 3.75 7.5 3.75C7.37568 3.75 7.25645 3.79939 7.16854 3.88729C7.08064 3.9752 7.03125 4.09443 7.03125 4.21875V9.64969L5.01937 7.63688C4.93136 7.54886 4.81198 7.49941 4.6875 7.49941C4.56302 7.49941 4.44364 7.54886 4.35563 7.63688C4.26761 7.72489 4.21816 7.84427 4.21816 7.96875C4.21816 8.09323 4.26761 8.21261 4.35563 8.30062L7.16813 11.1131C7.21167 11.1568 7.26339 11.1914 7.32034 11.215C7.37729 11.2387 7.43834 11.2508 7.5 11.2508C7.56166 11.2508 7.62271 11.2387 7.67966 11.215C7.7366 11.1914 7.78833 11.1568 7.83187 11.1131L10.6444 8.30062C10.7324 8.21261 10.7818 8.09323 10.7818 7.96875C10.7818 7.84427 10.7324 7.72489 10.6444 7.63688C10.5564 7.54886 10.437 7.49941 10.3125 7.49941C10.188 7.49941 10.0686 7.54886 9.98063 7.63688L7.96875 9.64969V4.21875Z" fill="#024089"/>
-          </svg> Download teaser
-        </a> <small>3 MB PDF</small>
-      </li>
-      <li class="ec-cor-barometer-report__links__item">
-        <a class="uppercase ec-cor-barometer-report__links__item">
-          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 7.5C15 9.48912 14.2098 11.3968 12.8033 12.8033C11.3968 14.2098 9.48912 15 7.5 15C5.51088 15 3.60322 14.2098 2.1967 12.8033C0.790176 11.3968 0 9.48912 0 7.5C0 5.51088 0.790176 3.60322 2.1967 2.1967C3.60322 0.790176 5.51088 0 7.5 0C9.48912 0 11.3968 0.790176 12.8033 2.1967C14.2098 3.60322 15 5.51088 15 7.5ZM7.96875 4.21875C7.96875 4.09443 7.91936 3.9752 7.83146 3.88729C7.74355 3.79939 7.62432 3.75 7.5 3.75C7.37568 3.75 7.25645 3.79939 7.16854 3.88729C7.08064 3.9752 7.03125 4.09443 7.03125 4.21875V9.64969L5.01937 7.63688C4.93136 7.54886 4.81198 7.49941 4.6875 7.49941C4.56302 7.49941 4.44364 7.54886 4.35563 7.63688C4.26761 7.72489 4.21816 7.84427 4.21816 7.96875C4.21816 8.09323 4.26761 8.21261 4.35563 8.30062L7.16813 11.1131C7.21167 11.1568 7.26339 11.1914 7.32034 11.215C7.37729 11.2387 7.43834 11.2508 7.5 11.2508C7.56166 11.2508 7.62271 11.2387 7.67966 11.215C7.7366 11.1914 7.78833 11.1568 7.83187 11.1131L10.6444 8.30062C10.7324 8.21261 10.7818 8.09323 10.7818 7.96875C10.7818 7.84427 10.7324 7.72489 10.6444 7.63688C10.5564 7.54886 10.437 7.49941 10.3125 7.49941C10.188 7.49941 10.0686 7.54886 9.98063 7.63688L7.96875 9.64969V4.21875Z" fill="#024089"/>
-          </svg> Download full report
-        </a> <small>15 MB PDF</small>
-      </li>
-    </ul>
+      <ul class="ec-cor-barometer-report__links__list">
+        <li class="ec-cor-barometer-report__links__item">
+          <a class="ec-cor-barometer-link ec-cor-barometer-link--report" href="#">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M15 7.5C15 9.48912 14.2098 11.3968 12.8033 12.8033C11.3968 14.2098 9.48912 15 7.5 15C5.51088 15 3.60322 14.2098 2.1967 12.8033C0.790176 11.3968 0 9.48912 0 7.5C0 5.51088 0.790176 3.60322 2.1967 2.1967C3.60322 0.790176 5.51088 0 7.5 0C9.48912 0 11.3968 0.790176 12.8033 2.1967C14.2098 3.60322 15 5.51088 15 7.5ZM7.96875 4.21875C7.96875 4.09443 7.91936 3.9752 7.83146 3.88729C7.74355 3.79939 7.62432 3.75 7.5 3.75C7.37568 3.75 7.25645 3.79939 7.16854 3.88729C7.08064 3.9752 7.03125 4.09443 7.03125 4.21875V9.64969L5.01937 7.63688C4.93136 7.54886 4.81198 7.49941 4.6875 7.49941C4.56302 7.49941 4.44364 7.54886 4.35563 7.63688C4.26761 7.72489 4.21816 7.84427 4.21816 7.96875C4.21816 8.09323 4.26761 8.21261 4.35563 8.30062L7.16813 11.1131C7.21167 11.1568 7.26339 11.1914 7.32034 11.215C7.37729 11.2387 7.43834 11.2508 7.5 11.2508C7.56166 11.2508 7.62271 11.2387 7.67966 11.215C7.7366 11.1914 7.78833 11.1568 7.83187 11.1131L10.6444 8.30062C10.7324 8.21261 10.7818 8.09323 10.7818 7.96875C10.7818 7.84427 10.7324 7.72489 10.6444 7.63688C10.5564 7.54886 10.437 7.49941 10.3125 7.49941C10.188 7.49941 10.0686 7.54886 9.98063 7.63688L7.96875 9.64969V4.21875Z" fill="#024089"/>
+            </svg> <span>Download teaser</span>
+          </a> <small>3 MB PDF</small>
+        </li>
+        <li class="ec-cor-barometer-report__links__item">
+          <a class="ec-cor-barometer-link ec-cor-barometer-link--report" href="#">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M15 7.5C15 9.48912 14.2098 11.3968 12.8033 12.8033C11.3968 14.2098 9.48912 15 7.5 15C5.51088 15 3.60322 14.2098 2.1967 12.8033C0.790176 11.3968 0 9.48912 0 7.5C0 5.51088 0.790176 3.60322 2.1967 2.1967C3.60322 0.790176 5.51088 0 7.5 0C9.48912 0 11.3968 0.790176 12.8033 2.1967C14.2098 3.60322 15 5.51088 15 7.5ZM7.96875 4.21875C7.96875 4.09443 7.91936 3.9752 7.83146 3.88729C7.74355 3.79939 7.62432 3.75 7.5 3.75C7.37568 3.75 7.25645 3.79939 7.16854 3.88729C7.08064 3.9752 7.03125 4.09443 7.03125 4.21875V9.64969L5.01937 7.63688C4.93136 7.54886 4.81198 7.49941 4.6875 7.49941C4.56302 7.49941 4.44364 7.54886 4.35563 7.63688C4.26761 7.72489 4.21816 7.84427 4.21816 7.96875C4.21816 8.09323 4.26761 8.21261 4.35563 8.30062L7.16813 11.1131C7.21167 11.1568 7.26339 11.1914 7.32034 11.215C7.37729 11.2387 7.43834 11.2508 7.5 11.2508C7.56166 11.2508 7.62271 11.2387 7.67966 11.215C7.7366 11.1914 7.78833 11.1568 7.83187 11.1131L10.6444 8.30062C10.7324 8.21261 10.7818 8.09323 10.7818 7.96875C10.7818 7.84427 10.7324 7.72489 10.6444 7.63688C10.5564 7.54886 10.437 7.49941 10.3125 7.49941C10.188 7.49941 10.0686 7.54886 9.98063 7.63688L7.96875 9.64969V4.21875Z" fill="#024089"/>
+            </svg> <span>Download full report</span>
+          </a> <small>15 MB PDF</small>
+        </li>
+      </ul>
 
-    <img src="https://placeimg.com/180/234/any"/>
+      <div class="ec-cor-barometer-report__cover">
+        <img src="https://placeimg.com/180/234/nature" alt="Barometer report cover"/>
+      </div>
+    </div>
+    
 
     <!-- Stories -->
-    <div class="ec-cor-barometer-stories">
-      <ul class="ec-cor-barometer-stories__list">
+    <div class="ec-cor-barometer-stories ec-cor-barometer-masked">
+      <div class="ec-cor-barometer-mask"><div class="ec-cor-barometer-background"></div></div>
+      <ul class="ec-cor-barometer-stories__list ec-cor-barometer-container">
         <!-- Story -->
-        <li class="ec-cor-barometer-item">
+        <li class="ec-cor-barometer-stories__item">
           <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9996 3.46128C23.3208 -5.09247 44.1259 9.87566 14.9996 29.1225C-14.1267 9.87753 6.67834 -5.09247 14.9996 3.46128Z" fill="white"/>
           </svg>
 
-          <h3>Health</h3>
+          <h3 class="ec-cor-heading--3">Health</h3>
 
-          <p>Our Members have the power to shape the future of Europe from the ground up.</p>
+          <div class="ec-cor-barometer-paragraph">Our Members have the power to shape the future of Europe from the ground up.</div>
 
-          <a href="">CTA to story <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a class="ec-cor-barometer-link ec-cor-barometer-link--stories" href="#"><span>CTA to story</span> <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M0.8125 8.51533C0.8125 8.28361 0.886347 8.06138 1.0178 7.89753C1.14924 7.73368 1.32753 7.64163 1.51342 7.64163H18.0454L13.6338 2.14427C13.5022 1.98021 13.4283 1.7577 13.4283 1.52569C13.4283 1.29367 13.5022 1.07116 13.6338 0.907104C13.7654 0.743046 13.9439 0.650879 14.1301 0.650879C14.3162 0.650879 14.4947 0.743046 14.6263 0.907104L20.2337 7.89675C20.299 7.97791 20.3508 8.07432 20.3861 8.18047C20.4215 8.28662 20.4396 8.40041 20.4396 8.51533C20.4396 8.63025 20.4215 8.74405 20.3861 8.85019C20.3508 8.95634 20.299 9.05276 20.2337 9.13392L14.6263 16.1236C14.4947 16.2876 14.3162 16.3798 14.1301 16.3798C13.9439 16.3798 13.7654 16.2876 13.6338 16.1236C13.5022 15.9595 13.4283 15.737 13.4283 15.505C13.4283 15.273 13.5022 15.0505 13.6338 14.8864L18.0454 9.38904H1.51342C1.32753 9.38904 1.14924 9.29699 1.0178 9.13314C0.886347 8.96928 0.8125 8.74705 0.8125 8.51533V8.51533Z" fill="#004896"/>
             </svg>
           </a>
         </li>
         <!-- /Story -->
         <!-- Story -->
-        <li class="ec-cor-barometer-item">
+        <li class="ec-cor-barometer-stories__item">
           <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 13.75H4.06977C3.99577 14.1667 3.99577 14.5833 3.99577 15C3.99577 15.4167 3.99577 15.8333 4.06977 16.25H1.18393L0 18.75H4.51374C6.36364 25.1389 12.6903 30 19.9789 30C24.0116 30 27.7854 28.5069 30.6342 26.0764V22.4653C28.1924 25.5208 24.3076 27.5 19.9789 27.5C14.0592 27.5 8.99049 23.8194 7.28858 18.75H25.3066L26.4905 16.25H6.73361C6.65962 15.8333 6.65962 15.4167 6.65962 15C6.65962 14.6528 6.65962 14.1667 6.73361 13.75H27.6744L28.8584 11.25H7.28858C8.95349 6.25 13.9852 2.5 19.9789 2.5C24.6406 2.5 28.1924 4.47917 30.6342 7.5L31.8182 5.03472C28.8584 1.94444 24.6406 0 19.9789 0C12.6533 0 6.32664 4.93056 4.51374 11.25H1.18393L0 13.75Z" fill="white"/>
           </svg>
 
 
-          <h3>Economy</h3>
+          <h3 class="ec-cor-heading--3">Economy</h3>
 
-          <p>Our Members have the power to shape the future of Europe from the ground up.</p>
+          <div class="ec-cor-barometer-paragraph">Our Members have the power to shape the future of Europe from the ground up.</div>
 
-          <a href="">CTA to story <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a class="ec-cor-barometer-link ec-cor-barometer-link--stories" href="#"><span>CTA to story</span> <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M0.8125 8.51533C0.8125 8.28361 0.886347 8.06138 1.0178 7.89753C1.14924 7.73368 1.32753 7.64163 1.51342 7.64163H18.0454L13.6338 2.14427C13.5022 1.98021 13.4283 1.7577 13.4283 1.52569C13.4283 1.29367 13.5022 1.07116 13.6338 0.907104C13.7654 0.743046 13.9439 0.650879 14.1301 0.650879C14.3162 0.650879 14.4947 0.743046 14.6263 0.907104L20.2337 7.89675C20.299 7.97791 20.3508 8.07432 20.3861 8.18047C20.4215 8.28662 20.4396 8.40041 20.4396 8.51533C20.4396 8.63025 20.4215 8.74405 20.3861 8.85019C20.3508 8.95634 20.299 9.05276 20.2337 9.13392L14.6263 16.1236C14.4947 16.2876 14.3162 16.3798 14.1301 16.3798C13.9439 16.3798 13.7654 16.2876 13.6338 16.1236C13.5022 15.9595 13.4283 15.737 13.4283 15.505C13.4283 15.273 13.5022 15.0505 13.6338 14.8864L18.0454 9.38904H1.51342C1.32753 9.38904 1.14924 9.29699 1.0178 9.13314C0.886347 8.96928 0.8125 8.74705 0.8125 8.51533V8.51533Z" fill="#004896"/>
             </svg>
           </a>
@@ -125,107 +146,43 @@
   </section>
   <!-- /Report -->
 
-  <!-- Media fact sheets -->
-  <section class="ec-cor-barometer-mediafactsheets">
+  <!-- News -->
+  <section class="ec-cor-barometer-news ec-cor-barometer-container">
 
-    <h2 class="ec-cor-heading--2"></h2>
+    <h2 class="ec-cor-heading--2">News title</h2>
 
-    <ol class="ec-cor-barometer-mediafactsheets__list">
-      <li class="ec-cor-barometer-mediafactsheets__item">
-        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M7.5 0H17.8125V1.875H7.5C7.00272 1.875 6.52581 2.07254 6.17417 2.42417C5.82254 2.77581 5.625 3.25272 5.625 3.75V26.25C5.625 26.7473 5.82254 27.2242 6.17417 27.5758C6.52581 27.9275 7.00272 28.125 7.5 28.125H22.5C22.9973 28.125 23.4742 27.9275 23.8258 27.5758C24.1775 27.2242 24.375 26.7473 24.375 26.25V8.4375H26.25V26.25C26.25 27.2446 25.8549 28.1984 25.1516 28.9016C24.4484 29.6049 23.4946 30 22.5 30H7.5C6.50544 30 5.55161 29.6049 4.84835 28.9016C4.14509 28.1984 3.75 27.2446 3.75 26.25V3.75C3.75 2.75544 4.14509 1.80161 4.84835 1.09835C5.55161 0.395088 6.50544 0 7.5 0V0Z" fill="#40403F"/>
-  <path d="M17.8125 5.625V0L26.25 8.4375H20.625C19.8791 8.4375 19.1637 8.14118 18.6363 7.61374C18.1088 7.08629 17.8125 6.37092 17.8125 5.625Z" fill="#40403F"/>
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.375 21.5625C9.375 21.3139 9.47377 21.0754 9.64959 20.8996C9.8254 20.7238 10.0639 20.625 10.3125 20.625H14.0625C14.3111 20.625 14.5496 20.7238 14.7254 20.8996C14.9012 21.0754 15 21.3139 15 21.5625C15 21.8111 14.9012 22.0496 14.7254 22.2254C14.5496 22.4012 14.3111 22.5 14.0625 22.5H10.3125C10.0639 22.5 9.8254 22.4012 9.64959 22.2254C9.47377 22.0496 9.375 21.8111 9.375 21.5625ZM9.375 17.8125C9.375 17.5639 9.47377 17.3254 9.64959 17.1496C9.8254 16.9738 10.0639 16.875 10.3125 16.875H19.6875C19.9361 16.875 20.1746 16.9738 20.3504 17.1496C20.5262 17.3254 20.625 17.5639 20.625 17.8125C20.625 18.0611 20.5262 18.2996 20.3504 18.4754C20.1746 18.6512 19.9361 18.75 19.6875 18.75H10.3125C10.0639 18.75 9.8254 18.6512 9.64959 18.4754C9.47377 18.2996 9.375 18.0611 9.375 17.8125ZM9.375 14.0625C9.375 13.8139 9.47377 13.5754 9.64959 13.3996C9.8254 13.2238 10.0639 13.125 10.3125 13.125H19.6875C19.9361 13.125 20.1746 13.2238 20.3504 13.3996C20.5262 13.5754 20.625 13.8139 20.625 14.0625C20.625 14.3111 20.5262 14.5496 20.3504 14.7254C20.1746 14.9012 19.9361 15 19.6875 15H10.3125C10.0639 15 9.8254 14.9012 9.64959 14.7254C9.47377 14.5496 9.375 14.3111 9.375 14.0625Z" fill="#40403F"/>
-</svg>
-
-<span class="ec-cor-barometer-mediafactsheets__country">Country</span>
-<h3 class="ec-cor-barometer-mediafactsheets__title">Media factsheet</h3>
-
-<div class="form-group ec-cor-barometer-mediafactsheets__languageselector">
-  <label for="exampleFormControlSelect1">Language:</label>
-  <select class="form-control" id="exampleFormControlSelect1">
-    <option>EN</option>
-    <option>FR</option>
-    <option>DE</option>
-  </select>
-</div>
-
-<button class="ec-cor-barometer-mediafactsheets__button">Download 
-  <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.82798 8.81887C7.78792 8.85671 7.74033 8.88672 7.68793 8.9072C7.63553 8.92768 7.57936 8.93822 7.52263 8.93822C7.46591 8.93822 7.40973 8.92768 7.35734 8.9072C7.30494 8.88672 7.25735 8.85671 7.21728 8.81887L4.62957 6.38137C4.54859 6.30509 4.50309 6.20163 4.50309 6.09375C4.50309 5.98587 4.54859 5.88241 4.62957 5.80612C4.71056 5.72984 4.8204 5.68699 4.93492 5.68699C5.04945 5.68699 5.15929 5.72984 5.24027 5.80612L7.09135 7.55056V0.40625C7.09135 0.298506 7.13679 0.195174 7.21767 0.118988C7.29855 0.0428012 7.40825 0 7.52263 0C7.63702 0 7.74672 0.0428012 7.8276 0.118988C7.90848 0.195174 7.95392 0.298506 7.95392 0.40625V7.55056L9.80499 5.80612C9.88598 5.72984 9.99582 5.68699 10.1103 5.68699C10.2249 5.68699 10.3347 5.72984 10.4157 5.80612C10.4967 5.88241 10.5422 5.98587 10.5422 6.09375C10.5422 6.20163 10.4967 6.30509 10.4157 6.38137L7.82798 8.81887Z" fill="#40403F"/>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9919 8.93823C13.8775 8.93823 13.7678 8.98103 13.6869 9.05722C13.6061 9.13341 13.5606 9.23674 13.5606 9.34448V11.3757C13.5606 11.5912 13.4697 11.7979 13.308 11.9503C13.1462 12.1026 12.9268 12.1882 12.698 12.1882H2.34721C2.11844 12.1882 1.89904 12.1026 1.73728 11.9503C1.57552 11.7979 1.48464 11.5912 1.48464 11.3757V9.34448C1.48464 9.23674 1.4392 9.13341 1.35832 9.05722C1.27744 8.98103 1.16774 8.93823 1.05336 8.93823C0.938971 8.93823 0.829272 8.98103 0.74839 9.05722C0.667509 9.13341 0.62207 9.23674 0.62207 9.34448V11.3757C0.62207 11.8067 0.803826 12.22 1.12735 12.5248C1.45088 12.8295 1.88967 13.0007 2.34721 13.0007H12.698C13.1556 13.0007 13.5944 12.8295 13.9179 12.5248C14.2414 12.22 14.4232 11.8067 14.4232 11.3757V9.34448C14.4232 9.23674 14.3777 9.13341 14.2969 9.05722C14.216 8.98103 14.1063 8.93823 13.9919 8.93823Z" fill="#40403F"/>
-  </svg>
-</button>
-
+    <ol class="ec-cor-barometer-news__list">
+      <li class="ec-cor-barometer-news__item">
+        <article class="ec-cor-news ec-cor-news--barometer">
+  <h3 class="ec-cor-news__title"><a href="">European Committee of the Regions launches UK Contact Group</a></h3>
+  <small class="ec-cor-news__date">22.09.2020</small>
+</article>
       </li>
-      <li class="ec-cor-barometer-mediafactsheets__item">
-        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M7.5 0H17.8125V1.875H7.5C7.00272 1.875 6.52581 2.07254 6.17417 2.42417C5.82254 2.77581 5.625 3.25272 5.625 3.75V26.25C5.625 26.7473 5.82254 27.2242 6.17417 27.5758C6.52581 27.9275 7.00272 28.125 7.5 28.125H22.5C22.9973 28.125 23.4742 27.9275 23.8258 27.5758C24.1775 27.2242 24.375 26.7473 24.375 26.25V8.4375H26.25V26.25C26.25 27.2446 25.8549 28.1984 25.1516 28.9016C24.4484 29.6049 23.4946 30 22.5 30H7.5C6.50544 30 5.55161 29.6049 4.84835 28.9016C4.14509 28.1984 3.75 27.2446 3.75 26.25V3.75C3.75 2.75544 4.14509 1.80161 4.84835 1.09835C5.55161 0.395088 6.50544 0 7.5 0V0Z" fill="#40403F"/>
-  <path d="M17.8125 5.625V0L26.25 8.4375H20.625C19.8791 8.4375 19.1637 8.14118 18.6363 7.61374C18.1088 7.08629 17.8125 6.37092 17.8125 5.625Z" fill="#40403F"/>
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.375 21.5625C9.375 21.3139 9.47377 21.0754 9.64959 20.8996C9.8254 20.7238 10.0639 20.625 10.3125 20.625H14.0625C14.3111 20.625 14.5496 20.7238 14.7254 20.8996C14.9012 21.0754 15 21.3139 15 21.5625C15 21.8111 14.9012 22.0496 14.7254 22.2254C14.5496 22.4012 14.3111 22.5 14.0625 22.5H10.3125C10.0639 22.5 9.8254 22.4012 9.64959 22.2254C9.47377 22.0496 9.375 21.8111 9.375 21.5625ZM9.375 17.8125C9.375 17.5639 9.47377 17.3254 9.64959 17.1496C9.8254 16.9738 10.0639 16.875 10.3125 16.875H19.6875C19.9361 16.875 20.1746 16.9738 20.3504 17.1496C20.5262 17.3254 20.625 17.5639 20.625 17.8125C20.625 18.0611 20.5262 18.2996 20.3504 18.4754C20.1746 18.6512 19.9361 18.75 19.6875 18.75H10.3125C10.0639 18.75 9.8254 18.6512 9.64959 18.4754C9.47377 18.2996 9.375 18.0611 9.375 17.8125ZM9.375 14.0625C9.375 13.8139 9.47377 13.5754 9.64959 13.3996C9.8254 13.2238 10.0639 13.125 10.3125 13.125H19.6875C19.9361 13.125 20.1746 13.2238 20.3504 13.3996C20.5262 13.5754 20.625 13.8139 20.625 14.0625C20.625 14.3111 20.5262 14.5496 20.3504 14.7254C20.1746 14.9012 19.9361 15 19.6875 15H10.3125C10.0639 15 9.8254 14.9012 9.64959 14.7254C9.47377 14.5496 9.375 14.3111 9.375 14.0625Z" fill="#40403F"/>
-</svg>
-
-<span class="ec-cor-barometer-mediafactsheets__country">Country</span>
-<h3 class="ec-cor-barometer-mediafactsheets__title">Media factsheet</h3>
-
-<div class="form-group ec-cor-barometer-mediafactsheets__languageselector">
-  <label for="exampleFormControlSelect1">Language:</label>
-  <select class="form-control" id="exampleFormControlSelect1">
-    <option>EN</option>
-    <option>FR</option>
-    <option>DE</option>
-  </select>
-</div>
-
-<button class="ec-cor-barometer-mediafactsheets__button">Download 
-  <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.82798 8.81887C7.78792 8.85671 7.74033 8.88672 7.68793 8.9072C7.63553 8.92768 7.57936 8.93822 7.52263 8.93822C7.46591 8.93822 7.40973 8.92768 7.35734 8.9072C7.30494 8.88672 7.25735 8.85671 7.21728 8.81887L4.62957 6.38137C4.54859 6.30509 4.50309 6.20163 4.50309 6.09375C4.50309 5.98587 4.54859 5.88241 4.62957 5.80612C4.71056 5.72984 4.8204 5.68699 4.93492 5.68699C5.04945 5.68699 5.15929 5.72984 5.24027 5.80612L7.09135 7.55056V0.40625C7.09135 0.298506 7.13679 0.195174 7.21767 0.118988C7.29855 0.0428012 7.40825 0 7.52263 0C7.63702 0 7.74672 0.0428012 7.8276 0.118988C7.90848 0.195174 7.95392 0.298506 7.95392 0.40625V7.55056L9.80499 5.80612C9.88598 5.72984 9.99582 5.68699 10.1103 5.68699C10.2249 5.68699 10.3347 5.72984 10.4157 5.80612C10.4967 5.88241 10.5422 5.98587 10.5422 6.09375C10.5422 6.20163 10.4967 6.30509 10.4157 6.38137L7.82798 8.81887Z" fill="#40403F"/>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9919 8.93823C13.8775 8.93823 13.7678 8.98103 13.6869 9.05722C13.6061 9.13341 13.5606 9.23674 13.5606 9.34448V11.3757C13.5606 11.5912 13.4697 11.7979 13.308 11.9503C13.1462 12.1026 12.9268 12.1882 12.698 12.1882H2.34721C2.11844 12.1882 1.89904 12.1026 1.73728 11.9503C1.57552 11.7979 1.48464 11.5912 1.48464 11.3757V9.34448C1.48464 9.23674 1.4392 9.13341 1.35832 9.05722C1.27744 8.98103 1.16774 8.93823 1.05336 8.93823C0.938971 8.93823 0.829272 8.98103 0.74839 9.05722C0.667509 9.13341 0.62207 9.23674 0.62207 9.34448V11.3757C0.62207 11.8067 0.803826 12.22 1.12735 12.5248C1.45088 12.8295 1.88967 13.0007 2.34721 13.0007H12.698C13.1556 13.0007 13.5944 12.8295 13.9179 12.5248C14.2414 12.22 14.4232 11.8067 14.4232 11.3757V9.34448C14.4232 9.23674 14.3777 9.13341 14.2969 9.05722C14.216 8.98103 14.1063 8.93823 13.9919 8.93823Z" fill="#40403F"/>
-  </svg>
-</button>
-
+      <li class="ec-cor-barometer-news__item">
+        <article class="ec-cor-news ec-cor-news--barometer">
+  <h3 class="ec-cor-news__title"><a href="">European Committee of the Regions launches UK Contact Group</a></h3>
+  <small class="ec-cor-news__date">22.09.2020</small>
+</article>
       </li>
-      <li class="ec-cor-barometer-mediafactsheets__item">
-        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M7.5 0H17.8125V1.875H7.5C7.00272 1.875 6.52581 2.07254 6.17417 2.42417C5.82254 2.77581 5.625 3.25272 5.625 3.75V26.25C5.625 26.7473 5.82254 27.2242 6.17417 27.5758C6.52581 27.9275 7.00272 28.125 7.5 28.125H22.5C22.9973 28.125 23.4742 27.9275 23.8258 27.5758C24.1775 27.2242 24.375 26.7473 24.375 26.25V8.4375H26.25V26.25C26.25 27.2446 25.8549 28.1984 25.1516 28.9016C24.4484 29.6049 23.4946 30 22.5 30H7.5C6.50544 30 5.55161 29.6049 4.84835 28.9016C4.14509 28.1984 3.75 27.2446 3.75 26.25V3.75C3.75 2.75544 4.14509 1.80161 4.84835 1.09835C5.55161 0.395088 6.50544 0 7.5 0V0Z" fill="#40403F"/>
-  <path d="M17.8125 5.625V0L26.25 8.4375H20.625C19.8791 8.4375 19.1637 8.14118 18.6363 7.61374C18.1088 7.08629 17.8125 6.37092 17.8125 5.625Z" fill="#40403F"/>
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.375 21.5625C9.375 21.3139 9.47377 21.0754 9.64959 20.8996C9.8254 20.7238 10.0639 20.625 10.3125 20.625H14.0625C14.3111 20.625 14.5496 20.7238 14.7254 20.8996C14.9012 21.0754 15 21.3139 15 21.5625C15 21.8111 14.9012 22.0496 14.7254 22.2254C14.5496 22.4012 14.3111 22.5 14.0625 22.5H10.3125C10.0639 22.5 9.8254 22.4012 9.64959 22.2254C9.47377 22.0496 9.375 21.8111 9.375 21.5625ZM9.375 17.8125C9.375 17.5639 9.47377 17.3254 9.64959 17.1496C9.8254 16.9738 10.0639 16.875 10.3125 16.875H19.6875C19.9361 16.875 20.1746 16.9738 20.3504 17.1496C20.5262 17.3254 20.625 17.5639 20.625 17.8125C20.625 18.0611 20.5262 18.2996 20.3504 18.4754C20.1746 18.6512 19.9361 18.75 19.6875 18.75H10.3125C10.0639 18.75 9.8254 18.6512 9.64959 18.4754C9.47377 18.2996 9.375 18.0611 9.375 17.8125ZM9.375 14.0625C9.375 13.8139 9.47377 13.5754 9.64959 13.3996C9.8254 13.2238 10.0639 13.125 10.3125 13.125H19.6875C19.9361 13.125 20.1746 13.2238 20.3504 13.3996C20.5262 13.5754 20.625 13.8139 20.625 14.0625C20.625 14.3111 20.5262 14.5496 20.3504 14.7254C20.1746 14.9012 19.9361 15 19.6875 15H10.3125C10.0639 15 9.8254 14.9012 9.64959 14.7254C9.47377 14.5496 9.375 14.3111 9.375 14.0625Z" fill="#40403F"/>
-</svg>
-
-<span class="ec-cor-barometer-mediafactsheets__country">Country</span>
-<h3 class="ec-cor-barometer-mediafactsheets__title">Media factsheet</h3>
-
-<div class="form-group ec-cor-barometer-mediafactsheets__languageselector">
-  <label for="exampleFormControlSelect1">Language:</label>
-  <select class="form-control" id="exampleFormControlSelect1">
-    <option>EN</option>
-    <option>FR</option>
-    <option>DE</option>
-  </select>
-</div>
-
-<button class="ec-cor-barometer-mediafactsheets__button">Download 
-  <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.82798 8.81887C7.78792 8.85671 7.74033 8.88672 7.68793 8.9072C7.63553 8.92768 7.57936 8.93822 7.52263 8.93822C7.46591 8.93822 7.40973 8.92768 7.35734 8.9072C7.30494 8.88672 7.25735 8.85671 7.21728 8.81887L4.62957 6.38137C4.54859 6.30509 4.50309 6.20163 4.50309 6.09375C4.50309 5.98587 4.54859 5.88241 4.62957 5.80612C4.71056 5.72984 4.8204 5.68699 4.93492 5.68699C5.04945 5.68699 5.15929 5.72984 5.24027 5.80612L7.09135 7.55056V0.40625C7.09135 0.298506 7.13679 0.195174 7.21767 0.118988C7.29855 0.0428012 7.40825 0 7.52263 0C7.63702 0 7.74672 0.0428012 7.8276 0.118988C7.90848 0.195174 7.95392 0.298506 7.95392 0.40625V7.55056L9.80499 5.80612C9.88598 5.72984 9.99582 5.68699 10.1103 5.68699C10.2249 5.68699 10.3347 5.72984 10.4157 5.80612C10.4967 5.88241 10.5422 5.98587 10.5422 6.09375C10.5422 6.20163 10.4967 6.30509 10.4157 6.38137L7.82798 8.81887Z" fill="#40403F"/>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9919 8.93823C13.8775 8.93823 13.7678 8.98103 13.6869 9.05722C13.6061 9.13341 13.5606 9.23674 13.5606 9.34448V11.3757C13.5606 11.5912 13.4697 11.7979 13.308 11.9503C13.1462 12.1026 12.9268 12.1882 12.698 12.1882H2.34721C2.11844 12.1882 1.89904 12.1026 1.73728 11.9503C1.57552 11.7979 1.48464 11.5912 1.48464 11.3757V9.34448C1.48464 9.23674 1.4392 9.13341 1.35832 9.05722C1.27744 8.98103 1.16774 8.93823 1.05336 8.93823C0.938971 8.93823 0.829272 8.98103 0.74839 9.05722C0.667509 9.13341 0.62207 9.23674 0.62207 9.34448V11.3757C0.62207 11.8067 0.803826 12.22 1.12735 12.5248C1.45088 12.8295 1.88967 13.0007 2.34721 13.0007H12.698C13.1556 13.0007 13.5944 12.8295 13.9179 12.5248C14.2414 12.22 14.4232 11.8067 14.4232 11.3757V9.34448C14.4232 9.23674 14.3777 9.13341 14.2969 9.05722C14.216 8.98103 14.1063 8.93823 13.9919 8.93823Z" fill="#40403F"/>
-  </svg>
-</button>
-
+      <li class="ec-cor-barometer-news__item">
+        <article class="ec-cor-news ec-cor-news--barometer">
+  <h3 class="ec-cor-news__title"><a href="">European Committee of the Regions launches UK Contact Group</a></h3>
+  <small class="ec-cor-news__date">22.09.2020</small>
+</article>
       </li>
     </ol>
-
   </section>
-  <!-- /Media fact sheets -->
+  <!-- /News -->
 
   <div class="ec-cor-barometer-separator"></div>
 
   <!-- Public opinion survey -->
-  <section class="ec-cor-barometer-publicopinion">
+  <section class="ec-cor-barometer-publicopinion ec-cor-barometer-container">
     <h2 class="ec-cor-heading--2">Public opinion survey</h2>
 
-    <p>Our Members have the power to shape the future of Europe from the ground up. They represent the EU&#39;s one million locally elected leaders, and come together at the CoR to ensure that the needs, ambitions and aspirations of millions of citizens are heard and acted​​ upon.</p>
+    <div class="ec-cor-barometer-paragraph">Our Members have the power to shape the future of Europe from the ground up. They represent the EU&#39;s one million locally elected leaders, and come together at the CoR to ensure that the needs, ambitions and aspirations of millions of citizens are heard and acted​​ upon.</div>
 
-    <a>
+    <a href="" class="ec-cor-barometer-link ec-cor-barometer-link--survey">
       <svg width="50" height="38" viewBox="0 0 50 38" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M21.875 37.5C21.875 37.5 18.75 37.5 18.75 34.375C18.75 31.25 21.875 21.875 34.375 21.875C46.875 21.875 50 31.25 50 34.375C50 37.5 46.875 37.5 46.875 37.5H21.875ZM34.375 18.75C36.8614 18.75 39.246 17.7623 41.0041 16.0041C42.7623 14.246 43.75 11.8614 43.75 9.375C43.75 6.8886 42.7623 4.50403 41.0041 2.74587C39.246 0.987721 36.8614 0 34.375 0C31.8886 0 29.504 0.987721 27.7459 2.74587C25.9877 4.50403 25 6.8886 25 9.375C25 11.8614 25.9877 14.246 27.7459 16.0041C29.504 17.7623 31.8886 18.75 34.375 18.75ZM16.3 37.5C15.8367 36.5244 15.6057 35.4548 15.625 34.375C15.625 30.1406 17.75 25.7812 21.675 22.75C19.7159 22.1464 17.6748 21.8512 15.625 21.875C3.125 21.875 0 31.25 0 34.375C0 37.5 3.125 37.5 3.125 37.5H16.3ZM14.0625 18.75C16.1345 18.75 18.1216 17.9269 19.5868 16.4618C21.0519 14.9966 21.875 13.0095 21.875 10.9375C21.875 8.8655 21.0519 6.87836 19.5868 5.41323C18.1216 3.9481 16.1345 3.125 14.0625 3.125C11.9905 3.125 10.0034 3.9481 8.53823 5.41323C7.0731 6.87836 6.25 8.8655 6.25 10.9375C6.25 13.0095 7.0731 14.9966 8.53823 16.4618C10.0034 17.9269 11.9905 18.75 14.0625 18.75Z" fill="white"/>
       </svg>
@@ -237,6 +194,39 @@
   </section>
   <!-- /Public opinion survey -->
 
-</div>
+  <div class="ec-cor-barometer-separator"></div>
+
+  <!-- Twitter -->
+  <section class="ec-cor-barometer-twitter ec-cor-barometer-container">
+    <h2 class="ec-cor-heading--2">Twitter</h2>
+    <link rel="stylesheet" href="https://europa.eu/webtools/webtools.smk.css?utilities=true">
+<script type="application/json">
+{
+	"service": "smk",
+	"type": "user",
+	"screen_name": "EU_Commission",
+	"count": 3,
+	"include_rts": false,
+	"rts_display_original": false,
+	"exclude_replies": true,
+	"display_user": true,
+	"display_user_pic": true,
+	"auto_expand_photo": false,
+	"auto_expand_video": false,
+	"tweet_more_btn": true
+}
+</script>
+  </section>
+  <!-- /Twitter -->
+
+  <section class="ec-cor-barometer-twitter ec-cor-barometer-container">
+    <h1 class="ec-cor-heading--1">Heading one Heading one Heading one Heading one v Heading one v v Heading one Heading one Heading one v</h1>
+    <div class="ec-cor-barometer-paragraph">Our Members have the power to shape the future of Europe from the ground up.</div>
+    <h2 class="ec-cor-heading--2">Heading one Heading one Heading one Heading one Heading one Heading one Heading one Heading one</h2>
+    <div class="ec-cor-barometer-paragraph">Our Members have the power to shape the future of Europe from the ground up.</div>
+    <h3 class="ec-cor-heading--3">Heading one</h3>
+    <div class="ec-cor-barometer-paragraph">Our Members have the power to shape the future of Europe from the ground up.</div>
+  </section>
+</main></div>
 </body>
 </html>
