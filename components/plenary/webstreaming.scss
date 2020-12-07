@@ -7,9 +7,10 @@
 .cor-l-webstreaming {
   display: grid;
   gap: var(--s3);
+  padding: var(--s0);
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 800px) {
   .cor-l-webstreaming {
     display: grid;
     grid-template-columns: 1fr 2fr;
