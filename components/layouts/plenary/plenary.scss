@@ -3,8 +3,9 @@
 }
 
 .cor-l-plenary {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--s3);
   padding-top: var(--s0);
 }
 
@@ -14,11 +15,6 @@
 
 .cor-l-plenary__header__picture-container img {
   display: none;
-}
-
-.cor-l-plenary > section {
-  margin-bottom: var(--s3);
-  padding: 0 var(--s0);
 }
 
 
@@ -145,3 +141,4 @@
 .liveblog-container {
   margin-bottom: 0;
 }
+

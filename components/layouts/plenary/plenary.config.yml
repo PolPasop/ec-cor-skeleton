@@ -6,6 +6,11 @@ variants:
       title: "Plenary sessions"
       firstparagraph: "The European Committee of the Regions (CoR) holds up to 6 plenary sessions each year. Plenary sessions give the opportunity for CoR Members (or Alternates) to voice their opinions on EU law that may have an impact on regions and cities in the 27 EU countries."
       tableOfContent: ["Introduction", "Previous plenary sessions", "contact"]
+  - name: "archives"
+    context:
+      title: "Plenary sessions Archive"
+      firstparagraph: "The European Committee of the Regions (CoR) holds up to 6 plenary sessions each year. Plenary sessions give the opportunity for CoR Members (or Alternates) to voice their opinions on EU law that may have an impact on regions and cities in the 27 EU countries."
+      tableOfContent: ["Introduction", "Previous plenary sessions", "contact"]
   - name: "plenary"
     context:
       title: "141th Plenary session"

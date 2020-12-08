@@ -4,7 +4,7 @@ html {
 
 .cor-plenary {
   --c-blue-1: rgb(41,93,152,1);
-  --links-color: var(--c-blue-1);
+  --links-color: #0e5f82;
 
   --heading-size-1: 32px;
   --heading-size: 24px;
@@ -13,6 +13,12 @@ html {
   --heading-size-3: 16px;
 }
 
+.cor-plenary a,
+.cor-plenary a:link,
+.cor-plenary a:visited,
+.cor-plenary a:focus {
+  color: var(--links-color);
+}
 
 
 
