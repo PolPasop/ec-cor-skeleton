@@ -428,6 +428,11 @@ a.cor-c-plenary__btn--twitter:hover {
   margin-left: 1rem;
   margin-left: var(--s0); }
 
+.cor-c-plenary__btn--twitter {
+  margin-left: 0;
+  margin-right: 1rem;
+  margin-right: var(--s0); }
+
 @media screen and (min-width: 500px) {
   .cor-l-plenary--plenaries .cor-l-plenary__previous-plenary-list-container {
     display: grid;
