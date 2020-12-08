@@ -9,6 +9,12 @@
   padding-top: var(--s0);
 }
 
+@media screen and (min-width: 800px) {
+  .cor-l-plenary {
+    padding-top: 0;
+  }
+}
+
 .cor-l-plenary__docs-and-contact {
   order:1;
 }
