@@ -555,5 +555,9 @@ a.cor-c-toc__link--documents:hover {
     display: grid;
     grid-template-columns: 3fr 2fr; } }
 
-.cor-l-webstreaming .cor-plenary-heading--2 {
+.cor-l-webstreaming .cor-plenary-heading--2,
+.cor-l-webstreaming .cor-plenary-heading--3 {
   color: white; }
+
+.cor-l-webstreaming hr {
+  border-color: white; }
