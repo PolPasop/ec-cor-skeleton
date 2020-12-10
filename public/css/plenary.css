@@ -549,7 +549,8 @@ a.cor-c-toc__link--documents:hover {
   gap: calc(calc(calc(1rem * 1.5) * 1.5) * 1.5);
   gap: var(--s3);
   padding: 1rem;
-  padding: var(--s0); }
+  padding: var(--s0);
+  grid-template-columns: minmax(0, 1fr); }
 
 @media screen and (min-width: 800px) {
   .cor-l-webstreaming {
