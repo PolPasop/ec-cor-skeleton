@@ -554,9 +554,7 @@ a.cor-c-toc__link--documents:hover {
 @media screen and (min-width: 800px) {
   .cor-l-webstreaming {
     display: grid;
-    grid-template-columns: minmax(0, 3fr) 2fr; }
-  .cor-l-webstreaming > div:first-child {
-    overflow: hidden; } }
+    grid-template-columns: minmax(0, 3fr) 2fr; } }
 
 .cor-l-webstreaming .cor-plenary-heading--2,
 .cor-l-webstreaming .cor-plenary-heading--3,
