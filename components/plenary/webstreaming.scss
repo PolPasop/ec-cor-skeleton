@@ -13,14 +13,19 @@
 @media screen and (min-width: 800px) {
   .cor-l-webstreaming {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: minmax(0, 3fr) 2fr;
+  }
+
+  .cor-l-webstreaming > div:first-child {
+    overflow: hidden;
   }
 }
 
 
 
 .cor-l-webstreaming .cor-plenary-heading--2,
-.cor-l-webstreaming .cor-plenary-heading--3 {
+.cor-l-webstreaming .cor-plenary-heading--3,
+.cor-l-webstreaming .cor-plenary-heading--4 {
   color: white;
 }
 
