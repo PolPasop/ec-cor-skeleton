@@ -1,12 +1,12 @@
 .cor-plenary {
-  --c-yellow: rgba(248,187,0,0.64);
+  --c-yellow: rgba(248, 187, 0, 0.64);
 }
 
 .cor-l-plenary {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--s3);
-  padding-top: var(--s0);
+  padding: var(--s0);
 }
 
 @media screen and (min-width: 800px) {
@@ -16,13 +16,12 @@
 }
 
 .cor-l-plenary__docs-and-contact {
-  order:1;
+  order: 1;
 }
 
 .cor-l-plenary__header__picture-container img {
   display: none;
 }
-
 
 @media screen and (min-width: 800px) {
   .cor-l-plenary {
@@ -98,16 +97,16 @@
  */
 .cor-c-plenary-contact__link {
   border-bottom: solid 1px;
-  color: #1CBBFF;
-} 
+  color: #1cbbff;
+}
 
 .cor-c-plenary-contact__link:hover {
   border-bottom: solid 1px;
   color: #004896;
-} 
+}
 
 .cor-l-plenary__agenda-container {
-  --background: rgba(198,229,241,1);
+  --background: rgba(198, 229, 241, 1);
 
   background: var(--background);
   padding: var(--s3) var(--s0);
@@ -120,7 +119,7 @@
 
 .cor-l-plenary__webstreaming-container {
   grid-column: 1 / -1;
-  background: rgba(0,120,170,1);
+  background: rgba(0, 120, 170, 1);
   padding: var(--s3) var(--s0);
 }
 
@@ -134,11 +133,11 @@
  * Overrides
  */
 .mainContent li {
-    list-style-position: outside;
+  list-style-position: outside;
 }
 
 .cor-c-webstreaming div.ms-formfieldlabelcontainer span.ms-formfieldlabel {
-  color: #FFF;
+  color: #fff;
 }
 
 #LiveblogButton {
@@ -147,4 +146,3 @@
 .liveblog-container {
   margin-bottom: 0;
 }
-

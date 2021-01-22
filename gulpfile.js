@@ -88,9 +88,7 @@ function cssPlenary() {
     .pipe(sassGlob())
     .pipe(sass())
     .on('error', sass.logError)
-    .pipe(postcss([purgecss({
-      content: ['./**/*.html']
-    }), autoprefixer(), postcssCustomProperties()]))
+    .pipe(postcss([ autoprefixer(), postcssCustomProperties()]))
     .pipe(gulp.dest("public/css"))
 }
 

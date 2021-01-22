@@ -46,15 +46,15 @@
   --shadow-05: 0px 24px 32px rgba(37, 37, 37, 0.1); }
 
 .cor-plenary {
-  --c-yellow: rgba(248,187,0,0.64); }
+  --c-yellow: rgba(248, 187, 0, 0.64); }
 
 .cor-l-plenary {
   display: grid;
   grid-template-columns: 1fr;
   gap: calc(calc(calc(1rem * 1.5) * 1.5) * 1.5);
   gap: var(--s3);
-  padding-top: 1rem;
-  padding-top: var(--s0); }
+  padding: 1rem;
+  padding: var(--s0); }
 
 @media screen and (min-width: 800px) {
   .cor-l-plenary {
@@ -132,14 +132,14 @@
  */
 .cor-c-plenary-contact__link {
   border-bottom: solid 1px;
-  color: #1CBBFF; }
+  color: #1cbbff; }
 
 .cor-c-plenary-contact__link:hover {
   border-bottom: solid 1px;
   color: #004896; }
 
 .cor-l-plenary__agenda-container {
-  --background: rgba(198,229,241,1);
+  --background: rgba(198, 229, 241, 1);
   background: var(--background);
   padding: calc(calc(calc(1rem * 1.5) * 1.5) * 1.5) 1rem;
   padding: var(--s3) var(--s0); }
@@ -164,6 +164,15 @@
  */
 .mainContent li {
   list-style-position: outside; }
+
+.cor-c-webstreaming div.ms-formfieldlabelcontainer span.ms-formfieldlabel {
+  color: #fff; }
+
+#LiveblogButton {
+  display: none; }
+
+.liveblog-container {
+  margin-bottom: 0; }
 
 .cor-plenary__agenda {
   display: grid;
@@ -326,6 +335,13 @@ html {
 /*
  * Grid
  */
+.cor-l-plenary-grid {
+  display: grid; }
+
+.cor-l-plenary-grid--2 {
+  gap: 1rem;
+  gap: var(--s0);
+  grid-template-columns: 1fr 1fr; }
 
 /*
  * Typography
@@ -485,6 +501,9 @@ a.cor-c-plenary__btn--twitter:hover {
     margin-left: 1rem;
     margin-left: var(--s0); } }
 
+.cor-l-plenary--archives .cor-l-plenary__previous-plenary-list-container {
+  grid-template-columns: 1fr; }
+
 .cor-c-toc {
   --color: var(--links-color);
   --padding: var(--s-2) 0;
@@ -528,12 +547,12 @@ a.cor-c-toc__link--documents:hover {
   margin-right: var(--s-2);
   width: 20px; }
 
-
+.cor-c-toc__link[href="#document"],
 .cor-c-toc__link[href="contact"] {
   display: block; }
 
 @media screen and (min-width: 500px) {
-  
+  .cor-c-toc__link[href="#document"],
   .cor-c-toc__link[href="contact"] {
     display: none; } }
 
@@ -564,3 +583,19 @@ a.cor-c-toc__link--documents:hover {
 
 .cor-l-webstreaming hr {
   border-color: white; }
+
+.cor-l-webstreaming__videos-grid {
+  display: grid;
+  gap: 1rem;
+  gap: var(--s0); }
+
+@media screen and (min-width: 800px) {
+  .cor-l-webstreaming__related-videos {
+    display: grid;
+    gap: 1rem;
+    gap: var(--s0);
+    grid-template-columns: 1fr 1fr 1fr; } }
+
+.text-break {
+  word-wrap: break-word !important;
+  word-break: break-word !important; }
