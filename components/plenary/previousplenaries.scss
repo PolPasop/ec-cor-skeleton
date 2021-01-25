@@ -1,67 +1,84 @@
+.cor-l-plenary__previous-plenary {
+  --background: linear-gradient(180deg, #0078AA 0%, #069FDB 100%);
+  --border-radius: 8px;
+}
 
+.cor-l-plenary__previous-plenary-list-container {
+  display: grid;
+  gap: var(--s0);
+}
 
-@media screen and (min-width:500px) {
+@media screen and (min-width:600px) {
 
   .cor-l-plenary--plenaries .cor-l-plenary__previous-plenary-list-container {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    padding-top: var(--s0);
   }
 }
 
 .cor-l-plenary__previous-plenary-list {
-  margin-top: var(--s0);
+  display: grid;
+  gap: var(--s0);
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
 
 @media screen and (min-width:500px) {
   .cor-l-plenary__previous-plenary-list {
-    --background: linear-gradient(180deg, #0078AA 0%, #069FDB 100%);
-    --border-radius: 8px;
     
-    display: grid;
-    gap: var(--s0);
     grid-template-columns: 1fr 1fr 1fr;
-    list-style: none;
     padding: 0;
   }
 
 }
 
-.cor-l-plenary__previous-plenary-tile {
 
+
+
+.cor-l-plenary__previous-plenary-tile {
+  background: var(--background);
+  border-radius: var(--border-radius);
+  display: grid;
+  padding: var(--s0);
+}
+
+.cor-l-plenary__previous-plenary-number,
+.cor-l-plenary__previous-plenary-date {
+  color: white;
+}
+
+.cor-l-plenary__previous-plenary-number {
+  font-weight: bold;
+  font-size: var(--heading-size);
 }
 
 @media screen and (min-width:500px) {
   .cor-l-plenary__previous-plenary-tile {
     align-items: center;
-    background: var(--background);
-    border-radius: var(--border-radius);
     display: flex;
     flex-direction: column;
+    height: 100%;
     padding: var(--s0);
   }
 
-  .cor-l-plenary__previous-plenary-number,
-  .cor-l-plenary__previous-plenary-date {
-    color: white;
-  }
   .cor-l-plenary__previous-plenary-number {
     font-size: 2rem;
-    font-weight: bold;
+    
   }
 
 }
 
 .cor-l-plenary__previous-plenary__archive-link {
-  border-bottom: solid 1px;
+  border: solid 1px;
+  border-radius: var(--border-radius);
+  display: grid;
+  margin: 0;
+  padding: var(--s1) var(--s0);
+  place-items: center;
+  place-self: stretch;
 }
-
-@media screen and (max-width:500px) {
-  .cor-l-plenary__previous-plenary__archive-link {
-    margin-left: var(--s0);
-  }
-}
-
 
 .cor-l-plenary--archives .cor-l-plenary__previous-plenary-list-container {
   grid-template-columns: 1fr;
