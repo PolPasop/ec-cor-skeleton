@@ -610,6 +610,9 @@ a.cor-c-toc__link--documents:hover:before {
 .cor-l-webstreaming hr {
   border-color: white; }
 
+.cor-l-webstreaming__related-video[role="button"] {
+  cursor: pointer; }
+
 .cor-l-webstreaming__videos-grid {
   display: grid;
   gap: 1rem;
