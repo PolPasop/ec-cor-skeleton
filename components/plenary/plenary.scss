@@ -5,6 +5,7 @@ html {
 .cor-plenary {
   --c-blue-1: rgb(41, 93, 152, 1);
   --links-color: #0e5f82;
+  --c-blue-plenary: #0078aa;
 
   --heading-size-1: 32px;
   --heading-size: 24px;
@@ -95,6 +96,15 @@ h1.cor-plenary-heading--1 {
     margin-bottom: 0;
   }
 }
+
+/*
+ *
+ * Links
+ */
+.cor-l-plenary__main a {
+  text-decoration: underline;
+}
+
 /*
  * Buttons
  */
@@ -141,6 +151,6 @@ a.cor-c-plenary__btn--twitter:hover {
 
 .cor-plenary-separator {
   height: 3px;
-  background-color: var(--c-g-4);
+  background-color: var(--c-blue-plenary);
   margin: var(--s2) 0 var(--s2) 0;
 }

@@ -7,12 +7,16 @@
 }
 
 .cor-c-toc__link {
-  display: block;
+  display: inline-block;
   padding: var(--padding);
 }
 
 .cor-c-toc-title {
   color: var(--title-color);
+}
+
+.cor-c-toc-list {
+  padding-left: var(--s2);
 }
 
 .cor-c-toc-list--documents {
@@ -50,14 +54,13 @@ a.cor-c-toc__link--documents:hover:before {
 .cor-c-toc__link[href="#document"],
 .cor-c-toc__link[href="contact"] {
   display: block;
-}  
-
+}
 
 @media screen and (min-width: 500px) {
   .cor-c-toc__link[href="#document"],
   .cor-c-toc__link[href="contact"] {
     display: none;
-  }  
+  }
 }
 
 .cor-c-toc__link__content--documents {

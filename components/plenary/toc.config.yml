@@ -4,10 +4,33 @@ variants:
     context:
       title: Contents
       aria: Content
-      tableOfContent: ["Introduction", "Next session", "Previous plenary sessions", "Document", "Contact"]
+      tableOfContent:
+        [
+          "Introduction",
+          "Next session",
+          "Previous plenary sessions",
+          "Document",
+          "Contact",
+        ]
   - name: documents
     context:
       modifier: documents
       title: Documents
       aria: Documents
       tableOfContent: ["Meetings calendar 2020", "Meetings documents"]
+  - name: plenary
+    context:
+      modifier: plenary
+      title: Contents
+      aria: Content
+      tableOfContent:
+        [
+          "Introduction",
+          "Agenda",
+          "Streaming",
+          "Liveblog",
+          "Opinions",
+          "Press releases",
+          "Documents",
+          "Contact",
+        ]

@@ -11,7 +11,7 @@ The session will include the debate on the EU-UK Agreement and Territorial Conse
   </section>
 
   <section class="cor-l-plenary__toc">
-    {% render "@toc" %}
+    {% render "@toc--plenary" %}
 
     {% render "@toc--documents" %}
 
@@ -19,7 +19,7 @@ The session will include the debate on the EU-UK Agreement and Territorial Conse
     <span class="cor-c-plenary-contact__link"><a href="mailto:greffe@cor.europa.eu" >greffe@cor.europa.eu</a></span>
   </section>
 
-  <section class="cor-l-plenary__main">
+  <section class="cor-l-plenary__main" aria-label="Introduction" id="introduction">
 
     <alert><a href="">Plenary is live: Watch live</a></alert>
     <p>The M​embers of the European Committee of the Regions will meet remotely for the 141st plenary session on 8, 9 and 10 December​ 2020.</p>
@@ -44,16 +44,19 @@ The session will include the debate on the EU-UK Agreement and Territorial Conse
 </ul>
 
     <div class="cor-plenary-separator"></div>
-    {% render "@agenda--accessible" %}
+
+    <div aria-label="Agenda of the plenary" id="agenda">
+      {% render "@agenda--accessible" %}
+    </div>
   
 
   </section>
 
-  <section class="cor-l-plenary__webstreaming-container">
+  <section aria-label="Web streaming" class="cor-l-plenary__webstreaming-container" id="streaming">
     {% render "@webstreaming" %}
   </section>
   
-  <section class="cor-l-plenary__opinions-container">
+  <section  aria-label="Opinions" class="cor-l-plenary__opinions-container" id="opinions">
     {% render "@opinions" %}
   </section>
 
