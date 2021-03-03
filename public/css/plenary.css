@@ -174,11 +174,6 @@
 .liveblog-container {
   margin-bottom: 0; }
 
-.cor-plenary__agenda {
-  display: grid;
-  gap: 1rem;
-  gap: var(--s0); }
-
 .cor-plenary__agenda__list__item {
   margin-top: 1rem;
   margin-top: var(--s0); }
@@ -315,7 +310,7 @@ html {
   scroll-behavior: smooth; }
 
 .cor-plenary {
-  --c-blue-1: rgb(41,93,152,1);
+  --c-blue-1: rgb(41, 93, 152, 1);
   --links-color: #0e5f82;
   --heading-size-1: 32px;
   --heading-size: 24px;
@@ -329,7 +324,9 @@ html {
 .cor-plenary a:focus {
   color: var(--links-color); }
 
-.cor-plenary *, .cor-plenary *:before, .cor-plenary *:after {
+.cor-plenary *,
+.cor-plenary *:before,
+.cor-plenary *:after {
   box-sizing: border-box; }
 
 /*
@@ -449,6 +446,13 @@ a.cor-c-plenary__btn--twitter:hover {
   margin-left: 0;
   margin-right: 1rem;
   margin-right: var(--s0); }
+
+.cor-plenary-separator {
+  height: 3px;
+  background-color: hsl(0, 0%, 40%);
+  background-color: var(--c-g-4);
+  margin: calc(calc(1rem * 1.5) * 1.5) 0 calc(calc(1rem * 1.5) * 1.5) 0;
+  margin: var(--s2) 0 var(--s2) 0; }
 
 .cor-l-plenary__previous-plenary {
   --background: linear-gradient(180deg, #0078AA 0%, #069FDB 100%);

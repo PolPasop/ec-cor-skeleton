@@ -2,9 +2,8 @@
   <h2 class="cor-plenary-heading--2">Agenda</h2>
 
   {% for day in agenda %}
-
-  <details {% if loop.first %}open{% endif %}>
-    <summary>{{ day.day }}</summary>
+  <toggle-section {% if loop.first %}open{% endif %}>
+    <h3 class="cor-plenary-heading--3">{{ day.day }}</h3>
     <ul class="cor-plenary__agenda__list">
       {% for agendaItem in day.program %}
       <li class="cor-plenary__agenda__list__item">
@@ -16,8 +15,7 @@
       </li>
       {% endfor %}
     </ul>
-  </details>
-
+  </toggle-section>
   {% endfor %}
 
 </div>

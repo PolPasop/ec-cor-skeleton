@@ -1,0 +1,36 @@
+.toggle-section-controls {
+  text-align: right;
+  margin-bottom: 1em;
+}
+
+.toggle-section-controls li {
+  display: inline;
+}
+
+.toggle-section-controls button {
+  background: var(--links-color);
+  color: #fff;
+  border: 0;
+  font-size: 0.85rem;
+  border-radius: 0.25rem;
+}
+
+/*
+Custom elements are inline by default
+*/
+toggle-section {
+  display: block;
+}
+
+/*
+Only applies if script runs and 
+`role="region"` is added
+*/
+toggle-section[role="region"] {
+  border-width: 2px 0;
+  border-style: solid;
+}
+
+toggle-section[role="region"] + toggle-section {
+  border-top: 0;
+}

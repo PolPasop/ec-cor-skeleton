@@ -1,131 +1,135 @@
-const gulp = require('gulp');
-const sass = require('gulp-sass');
-const sassGlob = require('gulp-sass-glob');
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const sassGlob = require("gulp-sass-glob");
 const del = require("del");
 const postcss = require("gulp-postcss");
-const autoprefixer = require('autoprefixer');
-const cssnano = require('cssnano');
-const postcssCustomProperties = require('postcss-custom-properties');
+const autoprefixer = require("autoprefixer");
+const cssnano = require("cssnano");
+const uglify = require("gulp-uglify");
+const postcssCustomProperties = require("postcss-custom-properties");
 const cssvariables = require("postcss-css-variables");
-const purgecss = require('@fullhuman/postcss-purgecss')
-const path = require('path');
-const { rollup } = require('rollup');
-const { babel } = require('@rollup/plugin-babel');
-const imagemin = require('gulp-imagemin');
-const imageminWebp = require('imagemin-webp');
-
-sass.compiler = require('node-sass');
+const purgecss = require("@fullhuman/postcss-purgecss");
+const path = require("path");
+const { rollup } = require("rollup");
+const { babel } = require("@rollup/plugin-babel");
+const imagemin = require("gulp-imagemin");
+const imageminWebp = require("imagemin-webp");
+const pipeline = require("readable-stream").pipeline;
 
 const paths = {
   styles: {
     src: "./assets/scss/*.scss",
-    dest: "./public/css/styles.css"
+    dest: "./public/css/styles.css",
   },
   scripts: {
     src: ["./js/*.js", "./js/libs/*.js", "!./js/min/*.js"],
-    dest: "./js/min"
+    dest: "./js/min",
   },
   svg: {
-    src: "./icons/*.svg"
+    src: "./icons/*.svg",
   },
   images: {
     src: "public/images/speakers/*.{jpg,png}",
-    dest: "public/images/speakers/webp"
-  }
+    dest: "public/images/speakers/webp",
+  },
 };
 
 async function bundle() {
   const bundle = await rollup({
-    input: 'assets/app.js',
-    plugins: [babel({ babelHelpers: 'bundled' })]
+    input: "assets/app.js",
+    plugins: [babel({ babelHelpers: "bundled" })],
   });
 
   return bundle.write({
-    file: 'public/js/bundle.js',
-    format: 'iife'
+    file: "public/js/bundle.js",
+    format: "iife",
   });
 }
 
 async function bundleEuropcom() {
   const bundle = await rollup({
-    input: 'assets/europcom.js',
-    plugins: [
-      babel({ babelHelpers: 'bundled' }),
-      uglify()
-    ]
+    input: "assets/europcom.js",
+    plugins: [babel({ babelHelpers: "bundled" }), uglify()],
   });
 
   return bundle.write({
-    file: 'public/js/europcom.js',
-    format: 'iife'
+    file: "public/js/europcom.js",
+    format: "iife",
   });
 }
 
 function deleteOldBundle() {
-  return del('public/js')
+  return del("public/js");
 }
 
 function compress() {
-  return gulp
-    .src('public/js/europcom.js'),
+  return pipeline(
+    gulp.src("public/js/bundle.js"),
     uglify(),
-    gulp.dest('public/js')
+    gulp.dest("public/js")
+  );
 }
 
 function css() {
   return gulp
-    .src('assets/styles.scss')
+    .src("assets/styles.scss")
     .pipe(sassGlob())
     .pipe(sass())
-    .on('error', sass.logError)
+    .on("error", sass.logError)
     .pipe(postcss([autoprefixer(), cssnano()]))
-    .pipe(gulp.dest("public/css"))
+    .pipe(gulp.dest("public/css"));
 }
 
 function cssPlenary() {
   return gulp
-    .src('assets/plenary.scss')
+    .src("assets/plenary.scss")
     .pipe(sassGlob())
     .pipe(sass())
-    .on('error', sass.logError)
-    .pipe(postcss([ autoprefixer(), postcssCustomProperties()]))
-    .pipe(gulp.dest("public/css"))
+    .on("error", sass.logError)
+    .pipe(postcss([autoprefixer(), postcssCustomProperties()]))
+    .pipe(gulp.dest("public/css"));
 }
 
 function cssEuropcom() {
   return gulp
-    .src('assets/europcom2020.scss')
+    .src("assets/europcom2020.scss")
     .pipe(sassGlob())
     .pipe(sass())
-    .on('error', sass.logError)
-    .pipe(postcss([purgecss({
-      content: ['./**/*.html']
-    }), autoprefixer(), postcssCustomProperties()]))
-    .pipe(gulp.dest("public/css"))
+    .on("error", sass.logError)
+    .pipe(
+      postcss([
+        purgecss({
+          content: ["./**/*.html"],
+        }),
+        autoprefixer(),
+        postcssCustomProperties(),
+      ])
+    )
+    .pipe(gulp.dest("public/css"));
 }
 
-
 function deleteOldMainStyles() {
-  return del('public/css')
+  return del("public/css");
 }
 
 /**
  * Images
  */
 async function convertImagesToWebp() {
-  gulp.src(paths.images.src)
+  gulp
+    .src(paths.images.src)
     .pipe(imagemin([imageminWebp({ quality: 50 })]))
-    .pipe(gulp.dest(paths.images.dest))
+    .pipe(gulp.dest(paths.images.dest));
 
-  console.log('Images optimized')
+  console.log("Images optimized");
 }
 
 /*
  * Configure a Fractal instance.
  */
 
-const fractal = require('./fractal.config.js');
-const { image } = require('faker');
+const fractal = require("./fractal.config.js");
+const { image } = require("faker");
 
 const logger = fractal.cli.console; // keep a reference to the fractal CLI console utility
 
@@ -140,9 +144,9 @@ const logger = fractal.cli.console; // keep a reference to the fractal CLI conso
  */
 function fractalStart() {
   const server = fractal.web.server({
-    sync: true
+    sync: true,
   });
-  server.on('error', err => logger.error(err.message));
+  server.on("error", (err) => logger.error(err.message));
   return server.start().then(() => {
     logger.success(`Fractal server is now running at ${server.url}`);
   });
@@ -158,19 +162,26 @@ function fractalStart() {
  * configuration option set above.
  */
 
-gulp.task('fractalBuild', function () {
+gulp.task("fractalBuild", function () {
   const builder = fractal.web.builder();
-  builder.on('progress', (completed, total) => logger.update(`Exported ${completed} of ${total} items`, 'info'));
-  builder.on('error', err => logger.error(err.message));
+  builder.on("progress", (completed, total) =>
+    logger.update(`Exported ${completed} of ${total} items`, "info")
+  );
+  builder.on("error", (err) => logger.error(err.message));
   return builder.build().then(() => {
-    logger.success('Fractal build completed!');
+    logger.success("Fractal build completed!");
   });
 });
 
-
 function watch() {
-  gulp.watch(['components/**/*.scss', 'assets/*.scss'], gulp.series(deleteOldMainStyles, css, cssPlenary));
-  gulp.watch(['components/**/*.js', 'assets/*.js'], gulp.series(deleteOldBundle, bundle, compress));
+  gulp.watch(
+    ["components/**/*.scss", "assets/*.scss"],
+    gulp.series(deleteOldMainStyles, css, cssPlenary)
+  );
+  gulp.watch(
+    ["components/**/*.js", "assets/*.js"],
+    gulp.series(deleteOldBundle, bundle, compress)
+  );
 }
 
 exports.images = convertImagesToWebp;
