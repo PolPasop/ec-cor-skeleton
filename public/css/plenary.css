@@ -253,6 +253,7 @@
   margin-bottom: var(--s0); }
 
 .cor-plenary a.cor-l-plenary__next-plenary__btn,
+.cor-plenary a.cor-l-plenary__next-plenary__btn:link,
 .cor-plenary a.cor-l-plenary__next-plenary__btn:visited {
   color: #fff;
   border-bottom: solid 1px; }
