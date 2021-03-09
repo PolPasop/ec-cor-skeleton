@@ -16,6 +16,8 @@ const imagemin = require("gulp-imagemin");
 const imageminWebp = require("imagemin-webp");
 const pipeline = require("readable-stream").pipeline;
 
+sass.compiler = require('node-sass');
+
 const paths = {
   styles: {
     src: "./assets/scss/*.scss",
